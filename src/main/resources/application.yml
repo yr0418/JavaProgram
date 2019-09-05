@@ -10,6 +10,16 @@ spring:
     view:
       prefix: /templates/
       suffix: .ftl
+druid:
+  allow: 127.0.0.1
+  filters: stat,wall,log4j
+  initial-size: 1
+  max-active: 20
+  min-idle: 1
+  password: ${spring.datasource.password}
+  test-on-borrow: true
+  url: ${spring.datasource.url}
+  username: ${spring.datasource.username}
 
 logging:
   file: spring.log
