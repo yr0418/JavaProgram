@@ -1,0 +1,629 @@
+2019-09-05 17:04:44.528  INFO 980 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 980 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-05 17:04:44.535 DEBUG 980 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-05 17:04:44.535  INFO 980 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-05 17:04:44.583  INFO 980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 17:04:44.583  INFO 980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 17:04:45.573  INFO 980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 17:04:45.650  INFO 980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 1 repository interfaces.
+2019-09-05 17:04:45.954  INFO 980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bede7e58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 17:04:46.301  INFO 980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-05 17:04:46.325  INFO 980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-05 17:04:46.325  INFO 980 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 17:04:46.422  INFO 980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-05 17:04:46.422  INFO 980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1839 ms
+2019-09-05 17:04:46.499  INFO 980 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-05 17:04:46.658 ERROR 980 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-05 17:04:46.662  INFO 980 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-05 17:04:46.868  INFO 980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-05 17:04:46.972  INFO 980 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 17:04:47.069  INFO 980 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 17:04:47.071  INFO 980 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-05 17:04:47.237  INFO 980 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 17:04:47.375  INFO 980 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-09-05 17:04:48.003  INFO 980 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 17:04:48.540  INFO 980 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-05 17:04:48.653  WARN 980 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-05 17:04:48.782  WARN 980 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-05 17:04:48.865  INFO 980 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-05 17:04:48.880  INFO 980 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-05 17:04:48.904  INFO 980 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-05 17:04:49.188  INFO 980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-05 17:04:49.191  INFO 980 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 5.162 seconds (JVM running for 6.24)
+2019-09-05 17:04:54.135  INFO 980 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 17:04:54.135  INFO 980 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-05 17:04:54.145  INFO 980 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-09-05 17:13:02.756  INFO 7348 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 7348 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-05 17:13:02.759 DEBUG 7348 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-05 17:13:02.759  INFO 7348 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-05 17:13:02.796  INFO 7348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 17:13:02.797  INFO 7348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 17:13:03.569  INFO 7348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 17:13:03.625  INFO 7348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 1 repository interfaces.
+2019-09-05 17:13:03.877  INFO 7348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$22f82c46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 17:13:04.151  INFO 7348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-05 17:13:04.170  INFO 7348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-05 17:13:04.170  INFO 7348 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 17:13:04.272  INFO 7348 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-05 17:13:04.272  INFO 7348 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1475 ms
+2019-09-05 17:13:04.343  INFO 7348 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-05 17:13:04.483 ERROR 7348 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-05 17:13:04.490  INFO 7348 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-05 17:13:04.564 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:04.576 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:05.092 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:05.618 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:06.145 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:06.677 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:07.193 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:07.704 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:08.226 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:08.752 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:09.263 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:09.767 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:10.288 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:10.809 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:13:11.332 ERROR 7348 --- [Druid-ConnectionPool-Create-531396774] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 90020, state 90020
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.getPageStore(Database.java:2739) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.open(Database.java:769) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.openDatabase(Database.java:319) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Database.<init>(Database.java:313) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.openSession(Engine.java:201) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgram/H2Database/test.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.FileStore.open(FileStore.java:172) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162) ~[h2-1.4.199.jar:1.4.199]
+	... 20 common frames omitted
+
+2019-09-05 17:20:51.270  INFO 2672 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 2672 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-05 17:20:51.270 DEBUG 2672 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-05 17:20:51.270  INFO 2672 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-05 17:20:51.316  INFO 2672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 17:20:51.316  INFO 2672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 17:20:52.180  INFO 2672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 17:20:52.240  INFO 2672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 1 repository interfaces.
+2019-09-05 17:20:52.510  INFO 2672 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e50a0b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 17:20:52.820  INFO 2672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-05 17:20:52.840  INFO 2672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-05 17:20:52.840  INFO 2672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 17:20:52.940  INFO 2672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-05 17:20:52.940  INFO 2672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1624 ms
+2019-09-05 17:20:53.015  INFO 2672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-05 17:20:53.170 ERROR 2672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-05 17:20:53.180  INFO 2672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-05 17:20:53.401  INFO 2672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-05 17:20:53.490  INFO 2672 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 17:20:53.544  INFO 2672 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 17:20:53.544  INFO 2672 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-05 17:20:53.645  INFO 2672 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 17:20:53.750  INFO 2672 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-09-05 17:20:54.230  INFO 2672 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 17:20:54.650  INFO 2672 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-05 17:20:54.750  WARN 2672 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-05 17:20:54.880  WARN 2672 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-05 17:20:54.950  INFO 2672 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-05 17:20:54.960  INFO 2672 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-05 17:20:54.990  INFO 2672 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-05 17:20:55.310  INFO 2672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-05 17:20:55.310  INFO 2672 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 4.51 seconds (JVM running for 5.634)
+2019-09-05 17:21:16.514  INFO 2672 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 17:21:16.514  INFO 2672 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-05 17:21:16.526  INFO 2672 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-09-05 17:21:31.236  WARN 2672 --- [http-nio-8888-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
