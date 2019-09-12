@@ -11,4 +11,10 @@
   <select id="selectAll" resultType="com.hubu.work.mybatis.pojo.User">
     select * from user
   </select>
+  <select id="findUser" resultType="int">
+    select count(*) from user
+    <where>
+      username=#{username} and password=#{password}
+    </where>
+  </select>
 </mapper>

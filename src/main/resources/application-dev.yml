@@ -6,15 +6,6 @@ spring:
     url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1
     username: root
     password: root
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        show_sql: true
-        use_sql_comments: true
-        format_sql: true
   h2:
     console:
       enabled: true

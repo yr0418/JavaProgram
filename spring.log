@@ -948,3 +948,129 @@ select * from "user" [42102-199]
 2019-09-12 14:01:30.495  INFO 3276 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-09-12 14:01:30.513  INFO 3276 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
 2019-09-12 14:01:30.543  WARN 3276 --- [http-nio-8888-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /swagger-ui.html
+2019-09-12 14:32:06.649  INFO 16144 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 16144 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-12 14:32:06.652 DEBUG 16144 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-12 14:32:06.652  INFO 16144 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-12 14:32:06.713  INFO 16144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 14:32:06.714  INFO 16144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 14:32:07.962  INFO 16144 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$74431d6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 14:32:08.309  INFO 16144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-12 14:32:08.329  INFO 16144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 14:32:08.330  INFO 16144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-12 14:32:08.449  INFO 16144 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 14:32:08.451  INFO 16144 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1736 ms
+2019-09-12 14:32:08.529  INFO 16144 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-12 14:32:08.531  INFO 16144 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-12 14:32:08.695  INFO 16144 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-12 14:32:08.858 ERROR 16144 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-12 14:32:08.860  INFO 16144 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-12 14:32:09.043  INFO 16144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 14:32:09.437  INFO 16144 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-12 14:32:09.605  WARN 16144 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-12 14:32:09.703  WARN 16144 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-12 14:32:09.840  INFO 16144 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-12 14:32:09.857  INFO 16144 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-12 14:32:09.890  INFO 16144 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-12 14:32:10.123  INFO 16144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-12 14:32:10.126  INFO 16144 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 3.904 seconds (JVM running for 5.478)
+2019-09-12 14:32:14.592  INFO 16144 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 14:32:14.593  INFO 16144 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 14:32:14.601  INFO 16144 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-09-12 14:32:14.781  WARN 16144 --- [http-nio-8888-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /webjars/springfox-swagger-ui/favicon-32x32.png
+2019-09-12 14:32:14.855  WARN 16144 --- [http-nio-8888-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /webjars/springfox-swagger-ui/favicon-16x16.png
+2019-09-12 14:32:18.443 DEBUG 16144 --- [http-nio-8888-exec-2] c.h.w.m.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
+2019-09-12 14:32:18.471 DEBUG 16144 --- [http-nio-8888-exec-2] c.h.w.m.mapper.UserMapper.selectAll      : ==> Parameters: 
+2019-09-12 14:32:18.501 DEBUG 16144 --- [http-nio-8888-exec-2] c.h.w.m.mapper.UserMapper.selectAll      : <==      Total: 6
+2019-09-12 15:37:44.884  INFO 5384 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 5384 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-12 15:37:44.887 DEBUG 5384 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-12 15:37:44.887  INFO 5384 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-12 15:37:44.945  INFO 5384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 15:37:44.945  INFO 5384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 15:37:46.213  INFO 5384 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$88959f2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 15:37:46.577  INFO 5384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-12 15:37:46.596  INFO 5384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 15:37:46.596  INFO 5384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-12 15:37:46.715  INFO 5384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 15:37:46.715  INFO 5384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1770 ms
+2019-09-12 15:37:46.760  INFO 5384 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-12 15:37:46.763  INFO 5384 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-12 15:37:46.882  INFO 5384 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-12 15:37:47.045 ERROR 5384 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-12 15:37:47.048  INFO 5384 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-12 15:37:47.296  INFO 5384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 15:37:47.717  INFO 5384 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-12 15:37:47.908  WARN 5384 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-12 15:37:48.017  WARN 5384 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-12 15:37:48.113  INFO 5384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-12 15:37:48.126  INFO 5384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-12 15:37:48.157  INFO 5384 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-12 15:37:48.391  INFO 5384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-12 15:37:48.397  INFO 5384 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 3.969 seconds (JVM running for 5.395)
+2019-09-12 15:38:04.587  INFO 5384 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 15:38:04.587  INFO 5384 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 15:38:04.603  INFO 5384 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-09-12 15:38:28.492  INFO 12132 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 12132 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-12 15:38:28.496 DEBUG 12132 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-12 15:38:28.497  INFO 12132 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-12 15:38:28.567  INFO 12132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 15:38:28.567  INFO 12132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 15:38:30.025  INFO 12132 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b893eab7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 15:38:30.434  INFO 12132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-12 15:38:30.456  INFO 12132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 15:38:30.457  INFO 12132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-12 15:38:30.597  INFO 12132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 15:38:30.597  INFO 12132 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2029 ms
+2019-09-12 15:38:30.647  INFO 12132 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-12 15:38:30.652  INFO 12132 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-12 15:38:30.772  INFO 12132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-12 15:38:30.977 ERROR 12132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-12 15:38:30.980  INFO 12132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-12 15:38:31.235  INFO 12132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 15:38:31.643  INFO 12132 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-12 15:38:31.845  WARN 12132 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-12 15:38:31.953  WARN 12132 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-12 15:38:32.089  INFO 12132 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-12 15:38:32.115  INFO 12132 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-12 15:38:32.171  INFO 12132 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-12 15:38:32.351  INFO 12132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-12 15:38:32.356  INFO 12132 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 4.394 seconds (JVM running for 5.811)
+2019-09-12 15:38:35.139  INFO 12132 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 15:38:35.139  INFO 12132 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 15:38:35.150  INFO 12132 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-12 15:38:44.904 DEBUG 12132 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserMapper.findUser       : ==>  Preparing: select count(*) from user WHERE username=? and password=? 
+2019-09-12 15:38:44.936 DEBUG 12132 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserMapper.findUser       : ==> Parameters: 11(String), 11(String)
+2019-09-12 15:38:44.964 DEBUG 12132 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserMapper.findUser       : <==      Total: 1
+2019-09-12 15:39:17.624 DEBUG 12132 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserMapper.findUser       : ==>  Preparing: select count(*) from user WHERE username=? and password=? 
+2019-09-12 15:39:17.625 DEBUG 12132 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserMapper.findUser       : ==> Parameters: root(String), 1234(String)
+2019-09-12 15:39:17.626 DEBUG 12132 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserMapper.findUser       : <==      Total: 1
+2019-09-12 15:50:28.942  INFO 2112 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 2112 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-12 15:50:28.944 DEBUG 2112 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-12 15:50:28.945  INFO 2112 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-12 15:50:29.010  INFO 2112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 15:50:29.011  INFO 2112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 15:50:30.468  INFO 2112 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8025daf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-12 15:50:31.147  INFO 2112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-12 15:50:31.172  INFO 2112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 15:50:31.172  INFO 2112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-12 15:50:31.347  INFO 2112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 15:50:31.349  INFO 2112 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2338 ms
+2019-09-12 15:50:31.440  INFO 2112 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-12 15:50:31.446  INFO 2112 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-12 15:50:31.572  INFO 2112 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-12 15:50:31.764 ERROR 2112 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-12 15:50:31.767  INFO 2112 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-12 15:50:31.960  INFO 2112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 15:50:32.422  INFO 2112 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-12 15:50:32.585  WARN 2112 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-12 15:50:32.697  WARN 2112 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-12 15:50:32.839  INFO 2112 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-12 15:50:32.865  INFO 2112 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-12 15:50:32.914  INFO 2112 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-12 15:50:33.113  INFO 2112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-12 15:50:33.115  INFO 2112 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 4.626 seconds (JVM running for 5.822)
+2019-09-12 15:50:37.906  INFO 2112 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 15:50:37.906  INFO 2112 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 15:50:37.916  INFO 2112 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-09-12 15:51:00.943 DEBUG 2112 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserMapper.findUser       : ==>  Preparing: select count(*) from user WHERE username=? and password=? 
+2019-09-12 15:51:00.978 DEBUG 2112 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserMapper.findUser       : ==> Parameters: string(String), string(String)
+2019-09-12 15:51:01.002 DEBUG 2112 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserMapper.findUser       : <==      Total: 1

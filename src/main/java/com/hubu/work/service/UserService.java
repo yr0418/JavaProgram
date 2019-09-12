@@ -15,4 +15,8 @@ public class UserService {
   public List<User> selectAll(){
     return userMapper.selectAll();
   }
+
+  public int login(User user){
+    return userMapper.findUser(user);
+  }
 }
