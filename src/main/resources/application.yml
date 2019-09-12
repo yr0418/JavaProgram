@@ -10,6 +10,14 @@ spring:
     view:
       prefix: /templates/
       suffix: .ftl
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+
+cbs:
+  images-path: D:\JavaProgram\File\usersImages
+
 druid:
   allow: 127.0.0.1
   filters: stat,wall,log4j
@@ -34,3 +42,9 @@ logging:
         springframework: INFO
         springframework.security: INFO
       root: INFO
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.hubu.work.mybatis.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
