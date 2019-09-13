@@ -23,8 +23,9 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
   //加载静态资源
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("swagger-ui.html")
-                .addResourceLocations("classpath:/META-INF/resources/");
+      registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+      registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
+      registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 
     //解决跨域问题
