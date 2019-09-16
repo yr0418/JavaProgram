@@ -20,4 +20,12 @@ public class UserService extends BaseService<User> {
   public List<User> selectAll(){
     return userMapper.selectAll();
   }
+
+  public int updateUserImg(String path,String username){
+    return userMapper.updateImg(path,username);
+  }
+
+  public String findImgPath(String username){
+    return userMapper.findImgPath(username);
+  }
 }

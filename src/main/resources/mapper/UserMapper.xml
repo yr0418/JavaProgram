@@ -17,4 +17,16 @@
       username=#{username} and password=#{password}
     </where>
   </select>
+  <update id="updateImg">
+    update user
+    <set>
+      avatar_url=#{avatarUrl}
+    </set>
+    <where>
+      username=#{username}
+    </where>
+  </update>
+  <select id="findImgPath" resultType="java.lang.String">
+    select avatar_url from user where username=#{username}
+  </select>
 </mapper>

@@ -1,5 +1,6 @@
 package com.hubu.work.config;
 
+import com.hubu.work.utils.FileConstant;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,6 +20,8 @@ import static com.sun.deploy.util.BufferUtil.MB;
 
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurationSupport {
+  //配置存放用户头像的路径
+  private static final String userImagesPath="file:"+FileConstant.UPLOAD_PATH+FileConstant.IMG_FILE_NAME+"/";
 
   //加载静态资源
     @Override
@@ -26,6 +29,9 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
       registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
       registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
       registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+
+      //添加图片映射，将所有访问 /img/userImages/** 的请求映射到 存放用户头像的文件夹下
+      registry.addResourceHandler("img/virtual/**").addResourceLocations(userImagesPath);
     }
 
     //解决跨域问题
