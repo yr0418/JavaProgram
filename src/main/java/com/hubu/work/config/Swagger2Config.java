@@ -30,7 +30,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.hubu.work.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.hubu.work.web.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .globalOperationParameters(parameters);

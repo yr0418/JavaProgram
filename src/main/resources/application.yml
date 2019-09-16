@@ -41,9 +41,20 @@ logging:
         springframework: INFO
         springframework.security: INFO
       root: INFO
+      tk:
+        mybatis: INFO
+mapper:
+  identity: h2
+  mappers: com.hubu.work.mybatis.CustomMapper
+  not-empty: false
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.hubu.work.mybatis.pojo
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: true
+pagehelper:
+  helperDialect: h2
+  params: count=countSql
+  reasonable: true
+  supportMethodsArguments: true
