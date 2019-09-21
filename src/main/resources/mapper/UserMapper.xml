@@ -5,28 +5,17 @@
     <id column="ID" jdbcType="BIGINT" property="id" />
     <result column="USERNAME" jdbcType="VARCHAR" property="username" />
     <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
-    <result column="NICKNAME" jdbcType="VARCHAR" property="nickname" />
-    <result column="AVATAR_URL" jdbcType="VARCHAR" property="avatarUrl" />
   </resultMap>
-  <select id="selectAll" resultType="com.hubu.work.mybatis.pojo.User">
-    select * from user
-  </select>
   <select id="findUser" resultType="int">
-    select count(*) from user
+    select count (*) from user
     <where>
-      username=#{username} and password=#{password}
+      username = #{username} and password = #{password}
     </where>
   </select>
-  <update id="updateImg">
-    update user
-    <set>
-      avatar_url=#{avatarUrl}
-    </set>
+  <select id="findUsername" resultType="int">
+    select count (*) from user
     <where>
-      username=#{username}
+      username = #{username}
     </where>
-  </update>
-  <select id="findImgPath" resultType="java.lang.String">
-    select avatar_url from user where username=#{username}
   </select>
 </mapper>

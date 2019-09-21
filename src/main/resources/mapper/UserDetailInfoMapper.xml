@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hubu.work.mybatis.mapper.UserDetailInfoMapper">
+  <resultMap id="BaseResultMap" type="com.hubu.work.mybatis.pojo.UserDetailInfo">
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+    <result column="NICKNAME" jdbcType="VARCHAR" property="nickname" />
+    <result column="USER_IMG_URL" jdbcType="VARCHAR" property="userImgUrl" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+    <result column="CITY" jdbcType="VARCHAR" property="city" />
+    <result column="SCHOOL" jdbcType="VARCHAR" property="school" />
+    <result column="ACADEMY" jdbcType="VARCHAR" property="academy" />
+    <result column="MAJOR" jdbcType="VARCHAR" property="major" />
+    <result column="PERSONALIZED_SIGNATURE" jdbcType="VARCHAR" property="personalizedSignature" />
+    <result column="PERSONALIZED_LABLES" jdbcType="VARCHAR" property="personalizedLables" />
+  </resultMap>
+  <select id="findUserImg" resultType="java.lang.String">
+    select user_img_url from user_detail_info
+    <where>
+      username=#{username}
+    </where>
+  </select>
+  <update id="UpdateUserImg">
+    update user_detail_info
+    <set>
+      USER_IMG_URL = #{userImgPath}
+    </set>
+    <where>
+      username = #{username}
+    </where>
+  </update>
+</mapper>

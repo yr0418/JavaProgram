@@ -704,3 +704,239 @@ java.lang.NoSuchMethodException: tk.mybatis.mapper.provider.base.BaseDeleteProvi
 2019-09-16 16:00:07.334 DEBUG 7960 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserMapper.findImgPath    : ==>  Preparing: select avatar_url from user where username=? 
 2019-09-16 16:00:07.376 DEBUG 7960 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserMapper.findImgPath    : ==> Parameters: root(String)
 2019-09-16 16:00:07.403 DEBUG 7960 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserMapper.findImgPath    : <==      Total: 1
+2019-09-21 08:30:55.613  INFO 10208 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 10208 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-21 08:30:55.616 DEBUG 10208 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-21 08:30:55.617  INFO 10208 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-21 08:30:55.681  INFO 10208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-21 08:30:55.681  INFO 10208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-21 08:30:57.592  WARN 10208 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDetailInfoMapper' and 'com.hubu.work.mybatis.mapper.UserDetailInfoMapper' mapperInterface. Bean already defined with the same name!
+2019-09-21 08:30:57.593  WARN 10208 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-09-21 08:30:58.409  INFO 10208 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b72ae5be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 08:30:59.063  INFO 10208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-21 08:30:59.085  INFO 10208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 08:30:59.086  INFO 10208 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-21 08:30:59.303  INFO 10208 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 08:30:59.304  INFO 10208 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3622 ms
+2019-09-21 08:30:59.410  INFO 10208 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-21 08:30:59.414  INFO 10208 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-21 08:30:59.635  INFO 10208 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-21 08:30:59.849 ERROR 10208 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-21 08:30:59.855  INFO 10208 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-21 08:31:00.237  WARN 10208 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseService': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.hubu.work.mybatis.CustomMapper<?>' available: expected single matching bean but found 2: userDetailInfoMapper,userMapper
+2019-09-21 08:31:00.238  INFO 10208 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-09-21 08:31:00.242  INFO 10208 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-21 08:31:00.253  INFO 10208 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-21 08:31:00.262 ERROR 10208 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field mapper in com.hubu.work.web.common.BaseService required a single bean, but 2 were found:
+	- userDetailInfoMapper: defined in file [D:\JavaProgram\Springboot\work\target\classes\com\hubu\work\mybatis\mapper\UserDetailInfoMapper.class]
+	- userMapper: defined in file [D:\JavaProgram\Springboot\work\target\classes\com\hubu\work\mybatis\mapper\UserMapper.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2019-09-21 08:33:25.826  INFO 1832 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 1832 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-21 08:33:25.828 DEBUG 1832 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-21 08:33:25.828  INFO 1832 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-21 08:33:25.877  INFO 1832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-21 08:33:25.877  INFO 1832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-21 08:33:27.002  WARN 1832 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-09-21 08:33:27.877  INFO 1832 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$36bd769d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 08:33:28.331  INFO 1832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-21 08:33:28.361  INFO 1832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 08:33:28.362  INFO 1832 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-21 08:33:28.557  INFO 1832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 08:33:28.558  INFO 1832 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2680 ms
+2019-09-21 08:33:28.615  INFO 1832 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-21 08:33:28.618  INFO 1832 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-21 08:33:28.725  INFO 1832 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-21 08:33:28.910 ERROR 1832 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-21 08:33:28.913  INFO 1832 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-21 08:33:29.783  INFO 1832 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 08:33:29.984  INFO 1832 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-21 08:33:30.105  INFO 1832 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-09-21 08:33:30.106  INFO 1832 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-09-21 08:33:30.107  INFO 1832 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-09-21 08:33:30.107  INFO 1832 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2019-09-21 08:33:30.238  WARN 1832 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-21 08:33:30.338  WARN 1832 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-21 08:33:30.470  INFO 1832 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 08:33:30.488  INFO 1832 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 08:33:30.516  INFO 1832 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 08:33:30.654  INFO 1832 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
+2019-09-21 08:33:30.668  INFO 1832 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
+2019-09-21 08:33:30.677  INFO 1832 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-09-21 08:33:30.680  INFO 1832 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
+2019-09-21 08:33:30.682  INFO 1832 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-09-21 08:33:30.723  INFO 1832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-21 08:33:30.724  INFO 1832 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 5.368 seconds (JVM running for 7.051)
+2019-09-21 08:34:04.996  INFO 4316 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 4316 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-21 08:34:04.998 DEBUG 4316 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-21 08:34:04.999  INFO 4316 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-21 08:34:05.056  INFO 4316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-21 08:34:05.056  INFO 4316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-21 08:34:06.358  WARN 4316 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-09-21 08:34:06.920  INFO 4316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cf7e4c6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 08:34:07.469  INFO 4316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-21 08:34:07.492  INFO 4316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 08:34:07.493  INFO 4316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-21 08:34:07.689  INFO 4316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 08:34:07.690  INFO 4316 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2633 ms
+2019-09-21 08:34:07.773  INFO 4316 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-21 08:34:07.777  INFO 4316 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-21 08:34:07.983  INFO 4316 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-21 08:34:08.244 ERROR 4316 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-21 08:34:08.252  INFO 4316 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-21 08:34:08.519  WARN 4316 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.hubu.work.web.common.BaseService<?>' available: expected single matching bean but found 3: baseService,userDetailInfoService,userService
+2019-09-21 08:34:08.520  INFO 4316 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-09-21 08:34:08.525  INFO 4316 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-21 08:34:08.541  INFO 4316 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-21 08:34:08.550 ERROR 4316 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in com.hubu.work.web.common.BaseController required a single bean, but 3 were found:
+	- baseService: defined in file [D:\JavaProgram\Springboot\work\target\classes\com\hubu\work\web\common\BaseService.class]
+	- userDetailInfoService: defined in file [D:\JavaProgram\Springboot\work\target\classes\com\hubu\work\web\service\UserDetailInfoService.class]
+	- userService: defined in file [D:\JavaProgram\Springboot\work\target\classes\com\hubu\work\web\service\UserService.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2019-09-21 08:35:05.623  INFO 10712 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 10712 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-21 08:35:05.627 DEBUG 10712 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-21 08:35:05.628  INFO 10712 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-21 08:35:05.676  INFO 10712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-21 08:35:05.676  INFO 10712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-21 08:35:06.823  WARN 10712 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-09-21 08:35:07.592  INFO 10712 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$70b88281] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 08:35:08.080  INFO 10712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-21 08:35:08.101  INFO 10712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 08:35:08.102  INFO 10712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-21 08:35:08.267  INFO 10712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 08:35:08.269  INFO 10712 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2593 ms
+2019-09-21 08:35:08.361  INFO 10712 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-21 08:35:08.363  INFO 10712 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-21 08:35:08.488  INFO 10712 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-21 08:35:08.675 ERROR 10712 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-21 08:35:08.680  INFO 10712 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-21 08:35:09.612  INFO 10712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 08:35:09.756  INFO 10712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-21 08:35:09.820  INFO 10712 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-09-21 08:35:09.821  INFO 10712 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-09-21 08:35:09.822  INFO 10712 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-09-21 08:35:09.823  INFO 10712 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2019-09-21 08:35:09.983  WARN 10712 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-21 08:35:10.129  WARN 10712 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-21 08:35:10.309  INFO 10712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 08:35:10.333  INFO 10712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 08:35:10.367  INFO 10712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 08:35:10.485  INFO 10712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
+2019-09-21 08:35:10.492  INFO 10712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
+2019-09-21 08:35:10.499  INFO 10712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-09-21 08:35:10.500  INFO 10712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
+2019-09-21 08:35:10.503  INFO 10712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-09-21 08:35:10.545  INFO 10712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-21 08:35:10.547  INFO 10712 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 5.364 seconds (JVM running for 6.936)
+2019-09-21 08:35:49.898  INFO 10712 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-21 08:35:49.899  INFO 10712 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-21 08:35:49.910  INFO 10712 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-21 08:36:09.596 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.m.UserMapper.selectAll_COUNT     : ==>  Preparing: SELECT count(0) FROM user 
+2019-09-21 08:36:09.631 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.m.UserMapper.selectAll_COUNT     : ==> Parameters: 
+2019-09-21 08:36:09.659 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.m.UserMapper.selectAll_COUNT     : <==      Total: 1
+2019-09-21 08:36:09.666 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.mapper.UserMapper.selectAll      : ==>  Preparing: SELECT id,username,password FROM user LIMIT ? 
+2019-09-21 08:36:09.672 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.mapper.UserMapper.selectAll      : ==> Parameters: 30(Integer)
+2019-09-21 08:36:09.678 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.mapper.UserMapper.selectAll      : <==      Total: 9
+2019-09-21 08:36:44.054 DEBUG 10712 --- [http-nio-8888-exec-7] c.h.w.m.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: SELECT id,username,password FROM user WHERE id = ? 
+2019-09-21 08:36:44.060 DEBUG 10712 --- [http-nio-8888-exec-7] c.h.w.m.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 9(Long)
+2019-09-21 08:36:44.061 DEBUG 10712 --- [http-nio-8888-exec-7] c.h.w.m.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2019-09-21 08:36:54.580 DEBUG 10712 --- [http-nio-8888-exec-8] c.h.w.m.m.UserMapper.deleteByPrimaryKey  : ==>  Preparing: DELETE FROM user WHERE id = ? 
+2019-09-21 08:36:54.581 DEBUG 10712 --- [http-nio-8888-exec-8] c.h.w.m.m.UserMapper.deleteByPrimaryKey  : ==> Parameters: 9(Long)
+2019-09-21 08:36:54.584 DEBUG 10712 --- [http-nio-8888-exec-8] c.h.w.m.m.UserMapper.deleteByPrimaryKey  : <==    Updates: 1
+2019-09-21 08:37:03.510 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.m.UserMapper.selectAll_COUNT     : ==>  Preparing: SELECT count(0) FROM user 
+2019-09-21 08:37:03.510 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.m.UserMapper.selectAll_COUNT     : ==> Parameters: 
+2019-09-21 08:37:03.511 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.m.UserMapper.selectAll_COUNT     : <==      Total: 1
+2019-09-21 08:37:03.512 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.mapper.UserMapper.selectAll      : ==>  Preparing: SELECT id,username,password FROM user LIMIT ? 
+2019-09-21 08:37:03.513 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.mapper.UserMapper.selectAll      : ==> Parameters: 30(Integer)
+2019-09-21 08:37:03.516 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.mapper.UserMapper.selectAll      : <==      Total: 8
+2019-09-21 08:37:19.007 DEBUG 10712 --- [http-nio-8888-exec-10] c.h.w.m.m.UserMapper.updateByPrimaryKey  : ==>  Preparing: UPDATE user SET id = id,username = ?,password = ? WHERE id = ? 
+2019-09-21 08:37:19.009 DEBUG 10712 --- [http-nio-8888-exec-10] c.h.w.m.m.UserMapper.updateByPrimaryKey  : ==> Parameters: string(String), string(String), 8(Long)
+2019-09-21 08:37:19.010 DEBUG 10712 --- [http-nio-8888-exec-10] c.h.w.m.m.UserMapper.updateByPrimaryKey  : <==    Updates: 1
+2019-09-21 08:37:26.824 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.m.UserMapper.selectAll_COUNT     : ==>  Preparing: SELECT count(0) FROM user 
+2019-09-21 08:37:26.825 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.m.UserMapper.selectAll_COUNT     : ==> Parameters: 
+2019-09-21 08:37:26.825 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.m.UserMapper.selectAll_COUNT     : <==      Total: 1
+2019-09-21 08:37:26.826 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.mapper.UserMapper.selectAll      : ==>  Preparing: SELECT id,username,password FROM user LIMIT ? 
+2019-09-21 08:37:26.826 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.mapper.UserMapper.selectAll      : ==> Parameters: 30(Integer)
+2019-09-21 08:37:26.826 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.mapper.UserMapper.selectAll      : <==      Total: 8
+2019-09-21 08:37:36.259 DEBUG 10712 --- [http-nio-8888-exec-3] c.h.w.m.m.U.insertUseGeneratedKeys       : ==>  Preparing: INSERT INTO user ( username,password ) VALUES ( ?,? ) 
+2019-09-21 08:37:36.260 DEBUG 10712 --- [http-nio-8888-exec-3] c.h.w.m.m.U.insertUseGeneratedKeys       : ==> Parameters: string(String), string(String)
+2019-09-21 08:37:36.262 DEBUG 10712 --- [http-nio-8888-exec-3] c.h.w.m.m.U.insertUseGeneratedKeys       : <==    Updates: 1
+2019-09-21 08:37:41.389 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.m.UserMapper.selectAll_COUNT     : ==>  Preparing: SELECT count(0) FROM user 
+2019-09-21 08:37:41.390 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.m.UserMapper.selectAll_COUNT     : ==> Parameters: 
+2019-09-21 08:37:41.391 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.m.UserMapper.selectAll_COUNT     : <==      Total: 1
+2019-09-21 08:37:41.391 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.mapper.UserMapper.selectAll      : ==>  Preparing: SELECT id,username,password FROM user LIMIT ? 
+2019-09-21 08:37:41.391 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.mapper.UserMapper.selectAll      : ==> Parameters: 30(Integer)
+2019-09-21 08:37:41.393 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.mapper.UserMapper.selectAll      : <==      Total: 9
+2019-09-21 08:37:57.601 DEBUG 10712 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_detail_info 
+2019-09-21 08:37:57.602 DEBUG 10712 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
+2019-09-21 08:37:57.602 DEBUG 10712 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
+2019-09-21 08:37:57.603 DEBUG 10712 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll                    : ==>  Preparing: SELECT id,username,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_detail_info LIMIT ? 
+2019-09-21 08:37:57.603 DEBUG 10712 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll                    : ==> Parameters: 30(Integer)
+2019-09-21 08:37:57.605 DEBUG 10712 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll                    : <==      Total: 4
+2019-09-21 08:38:31.003 DEBUG 10712 --- [http-nio-8888-exec-2] c.h.w.m.m.U.selectByPrimaryKey           : ==>  Preparing: SELECT id,username,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_detail_info WHERE id = ? 
+2019-09-21 08:38:31.003 DEBUG 10712 --- [http-nio-8888-exec-2] c.h.w.m.m.U.selectByPrimaryKey           : ==> Parameters: 2(Long)
+2019-09-21 08:38:31.004 DEBUG 10712 --- [http-nio-8888-exec-2] c.h.w.m.m.U.selectByPrimaryKey           : <==      Total: 1
+2019-09-21 08:38:50.764 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.m.U.findUserImg                  : ==>  Preparing: select user_img_url from user_detail_info WHERE username=? 
+2019-09-21 08:38:50.766 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.m.U.findUserImg                  : ==> Parameters: 111(String)
+2019-09-21 08:38:50.768 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.m.U.findUserImg                  : <==      Total: 1
+2019-09-21 08:38:50.782 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.m.U.UpdateUserImg                : ==>  Preparing: update user_detail_info SET USER_IMG_URL = ? WHERE username = ? 
+2019-09-21 08:38:50.782 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.m.U.UpdateUserImg                : ==> Parameters: img/virtual/111.jpg(String), 111(String)
+2019-09-21 08:38:50.786 DEBUG 10712 --- [http-nio-8888-exec-4] c.h.w.m.m.U.UpdateUserImg                : <==    Updates: 1
+2019-09-21 08:38:57.156 DEBUG 10712 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectByPrimaryKey           : ==>  Preparing: SELECT id,username,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_detail_info WHERE id = ? 
+2019-09-21 08:38:57.156 DEBUG 10712 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectByPrimaryKey           : ==> Parameters: 2(Long)
+2019-09-21 08:38:57.157 DEBUG 10712 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectByPrimaryKey           : <==      Total: 1
+2019-09-21 08:39:11.780 DEBUG 10712 --- [http-nio-8888-exec-8] c.h.w.m.m.U.deleteByPrimaryKey           : ==>  Preparing: DELETE FROM user_detail_info WHERE id = ? 
+2019-09-21 08:39:11.781 DEBUG 10712 --- [http-nio-8888-exec-8] c.h.w.m.m.U.deleteByPrimaryKey           : ==> Parameters: 4(Long)
+2019-09-21 08:39:11.781 DEBUG 10712 --- [http-nio-8888-exec-8] c.h.w.m.m.U.deleteByPrimaryKey           : <==    Updates: 1
+2019-09-21 08:39:17.370 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_detail_info 
+2019-09-21 08:39:17.371 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
+2019-09-21 08:39:17.371 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
+2019-09-21 08:39:17.372 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.m.U.selectAll                    : ==>  Preparing: SELECT id,username,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_detail_info LIMIT ? 
+2019-09-21 08:39:17.373 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.m.U.selectAll                    : ==> Parameters: 30(Integer)
+2019-09-21 08:39:17.374 DEBUG 10712 --- [http-nio-8888-exec-9] c.h.w.m.m.U.selectAll                    : <==      Total: 3
+2019-09-21 08:39:34.165 DEBUG 10712 --- [http-nio-8888-exec-10] c.h.w.m.m.U.updateByPrimaryKey           : ==>  Preparing: UPDATE user_detail_info SET id = id,username = ?,nickname = ?,user_img_url = ?,sex = ?,city = ?,school = ?,academy = ?,major = ?,personalized_signature = ?,personalized_lables = ? WHERE id = ? 
+2019-09-21 08:39:34.165 DEBUG 10712 --- [http-nio-8888-exec-10] c.h.w.m.m.U.updateByPrimaryKey           : ==> Parameters: string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String), 3(Long)
+2019-09-21 08:39:34.169 DEBUG 10712 --- [http-nio-8888-exec-10] c.h.w.m.m.U.updateByPrimaryKey           : <==    Updates: 1
+2019-09-21 08:39:39.051 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_detail_info 
+2019-09-21 08:39:39.051 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
+2019-09-21 08:39:39.052 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
+2019-09-21 08:39:39.052 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.m.U.selectAll                    : ==>  Preparing: SELECT id,username,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_detail_info LIMIT ? 
+2019-09-21 08:39:39.052 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.m.U.selectAll                    : ==> Parameters: 30(Integer)
+2019-09-21 08:39:39.052 DEBUG 10712 --- [http-nio-8888-exec-1] c.h.w.m.m.U.selectAll                    : <==      Total: 3
+2019-09-21 08:39:45.833 DEBUG 10712 --- [http-nio-8888-exec-3] c.h.w.m.m.U.insertUseGeneratedKeys       : ==>  Preparing: INSERT INTO user_detail_info ( username,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables ) VALUES ( ?,?,?,?,?,?,?,?,?,? ) 
+2019-09-21 08:39:45.834 DEBUG 10712 --- [http-nio-8888-exec-3] c.h.w.m.m.U.insertUseGeneratedKeys       : ==> Parameters: string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String)
+2019-09-21 08:39:45.836 DEBUG 10712 --- [http-nio-8888-exec-3] c.h.w.m.m.U.insertUseGeneratedKeys       : <==    Updates: 1
+2019-09-21 08:39:52.672 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_detail_info 
+2019-09-21 08:39:52.672 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
+2019-09-21 08:39:52.673 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
+2019-09-21 08:39:52.673 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.m.U.selectAll                    : ==>  Preparing: SELECT id,username,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_detail_info LIMIT ? 
+2019-09-21 08:39:52.673 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.m.U.selectAll                    : ==> Parameters: 30(Integer)
+2019-09-21 08:39:52.675 DEBUG 10712 --- [http-nio-8888-exec-5] c.h.w.m.m.U.selectAll                    : <==      Total: 4

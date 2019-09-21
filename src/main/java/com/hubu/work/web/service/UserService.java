@@ -17,15 +17,8 @@ public class UserService extends BaseService<User> {
     return userMapper.findUser(user);
   }
 
-  public List<User> selectAll(){
-    return userMapper.selectAll();
+  public int findUsername(String username){
+    return userMapper.findUsername(username);
   }
 
-  public int updateUserImg(String path,String username){
-    return userMapper.updateImg(path,username);
-  }
-
-  public String findImgPath(String username){
-    return userMapper.findImgPath(username);
-  }
 }

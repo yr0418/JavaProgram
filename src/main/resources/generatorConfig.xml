@@ -16,7 +16,7 @@
 
         <!--配置数据库连接-->
         <jdbcConnection driverClass="org.h2.Driver"
-                        connectionURL="jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1"
+                        connectionURL="jdbc:h2:D:\JavaProgram\H2Database/demo;MODE=MySql;DB_CLOSE_DELAY=-1"
                         userId="root"
                         password="root">
         </jdbcConnection>
@@ -45,7 +45,7 @@
 
         <!--指定每个表的生成策略-->
 
-        <table tableName="user"
+        <table tableName="user_detail_info"
                enableCountByExample="false"
                enableDeleteByExample="false"
                enableSelectByExample="false"
