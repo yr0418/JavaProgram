@@ -9,19 +9,19 @@ public class BaseController<T> {
   @Autowired
   BaseService<T> service;
 
-  @ApiOperation(value = "新增实例")
+  @ApiOperation(value = "新增实例，返回值：1：新增成功，0：新增失败")
   @PutMapping(value = "insert")
   public int insert(@RequestBody T t){
      return service.insert(t);
   }
 
-  @ApiOperation(value = "根据id 删除实例")
+  @ApiOperation(value = "根据 id 删除实例。返回值：1：删除成功，0：删除失败")
   @DeleteMapping(value = "deleteById")
   public int deleteById(Long id){
     return service.deleteById(id);
   }
 
-  @ApiOperation(value = "修改实例")
+  @ApiOperation(value = "修改实例，直接修改全部字段，前台注意数据传入。返回值：1：修改成功，0：修改失败")
   @PostMapping
   public int update(@RequestBody T t){
     return service.update(t);

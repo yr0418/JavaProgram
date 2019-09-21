@@ -18,4 +18,8 @@ public interface UserInfoMapper extends CustomMapper<UserInfo> {
 
     //更新用户头像路径
     int UpdateUserImg(@Param("userImgPath")String userImgPath,@Param("username") String username);
+
+    String findUserCity(@Param("username") String username);
+
+    String findUserSchool(@Param("username") String username);
 }

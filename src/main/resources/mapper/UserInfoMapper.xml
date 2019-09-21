@@ -42,4 +42,13 @@
       username = #{username}
     </where>
   </select>
+  <select id="findUserCity" resultType="java.lang.String">
+    select city from user_info
+    <where>
+      username = #{username}
+    </where>
+  </select>
+  <select id="findUserSchool" resultType="java.lang.String">
+    select school from user_info where username = #{username}
+  </select>
 </mapper>

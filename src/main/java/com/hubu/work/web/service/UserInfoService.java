@@ -27,4 +27,8 @@ public class UserInfoService extends BaseService<UserInfo> {
   public int findUsername(String username){
     return userInfoMapper.findUsername(username);
   }
+
+  public String findUserCity(String username){
+    return userInfoMapper.findUserCity(username);
+  }
 }

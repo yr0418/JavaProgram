@@ -59,4 +59,5 @@ public class UserInfoController extends BaseController<UserInfo> {
     }
   }
 
+
 }

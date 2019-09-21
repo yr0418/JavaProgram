@@ -2036,3 +2036,66 @@ Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgr
 2019-09-21 09:25:06.166 DEBUG 11512 --- [http-nio-8888-exec-9] c.h.w.m.m.UserInfoMapper.findUserImg     : ==>  Preparing: select user_img_url from user_info WHERE username=? 
 2019-09-21 09:25:06.166 DEBUG 11512 --- [http-nio-8888-exec-9] c.h.w.m.m.UserInfoMapper.findUserImg     : ==> Parameters: root(String)
 2019-09-21 09:25:06.167 DEBUG 11512 --- [http-nio-8888-exec-9] c.h.w.m.m.UserInfoMapper.findUserImg     : <==      Total: 1
+2019-09-21 10:38:38.713  INFO 9556 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 9556 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-21 10:38:38.716 DEBUG 9556 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-21 10:38:38.717  INFO 9556 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-21 10:38:38.775  INFO 9556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-21 10:38:38.776  INFO 9556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-21 10:38:39.953  WARN 9556 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-09-21 10:38:40.426  INFO 9556 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$486e748d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 10:38:40.865  INFO 9556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-21 10:38:40.892  INFO 9556 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 10:38:40.893  INFO 9556 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-21 10:38:41.039  INFO 9556 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 10:38:41.040  INFO 9556 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2264 ms
+2019-09-21 10:38:41.099  INFO 9556 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-21 10:38:41.104  INFO 9556 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-21 10:38:41.232  INFO 9556 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-21 10:38:41.398 ERROR 9556 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-21 10:38:41.401  INFO 9556 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-21 10:38:42.064  INFO 9556 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 10:38:42.225  INFO 9556 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-21 10:38:42.298  INFO 9556 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-09-21 10:38:42.298  INFO 9556 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-09-21 10:38:42.300  INFO 9556 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-09-21 10:38:42.301  INFO 9556 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2019-09-21 10:38:42.577  WARN 9556 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-21 10:38:42.874  WARN 9556 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-21 10:38:43.135  INFO 9556 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 10:38:43.155  INFO 9556 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 10:38:43.188  INFO 9556 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 10:38:43.600  INFO 9556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-21 10:38:43.609  INFO 9556 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 5.524 seconds (JVM running for 7.216)
+2019-09-21 10:39:09.522  INFO 9556 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-21 10:39:09.523  INFO 9556 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-21 10:39:09.534  INFO 9556 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-21 10:39:17.998 DEBUG 9556 --- [http-nio-8888-exec-6] c.h.w.m.m.U.insertUseGeneratedKeys       : ==>  Preparing: INSERT INTO user_info ( username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables ) VALUES ( ?,?,?,?,?,?,?,?,?,?,? ) 
+2019-09-21 10:39:18.022 DEBUG 9556 --- [http-nio-8888-exec-6] c.h.w.m.m.U.insertUseGeneratedKeys       : ==> Parameters: string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String), string(String)
+2019-09-21 10:39:18.036 DEBUG 9556 --- [http-nio-8888-exec-6] c.h.w.m.m.U.insertUseGeneratedKeys       : <==    Updates: 1
+2019-09-21 10:39:24.353 DEBUG 9556 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
+2019-09-21 10:39:24.358 DEBUG 9556 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
+2019-09-21 10:39:24.371 DEBUG 9556 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
+2019-09-21 10:39:24.373 DEBUG 9556 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
+2019-09-21 10:39:24.373 DEBUG 9556 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 30(Integer)
+2019-09-21 10:39:24.380 DEBUG 9556 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
+2019-09-21 10:40:00.974 DEBUG 9556 --- [http-nio-8888-exec-8] c.h.w.m.m.U.updateByPrimaryKey           : ==>  Preparing: UPDATE user_info SET id = id,username = ?,password = ?,nickname = ?,user_img_url = ?,sex = ?,city = ?,school = ?,academy = ?,major = ?,personalized_signature = ?,personalized_lables = ? WHERE id = ? 
+2019-09-21 10:40:00.980 DEBUG 9556 --- [http-nio-8888-exec-8] c.h.w.m.m.U.updateByPrimaryKey           : ==> Parameters: string(String), string(String), string(String), string(String), string(String), (String), string(String), (String), (String), string(String), string(String), 5(Long)
+2019-09-21 10:40:00.985 DEBUG 9556 --- [http-nio-8888-exec-8] c.h.w.m.m.U.updateByPrimaryKey           : <==    Updates: 1
+2019-09-21 10:40:14.798 DEBUG 9556 --- [http-nio-8888-exec-9] c.h.w.m.m.U.selectByPrimaryKey           : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info WHERE id = ? 
+2019-09-21 10:40:14.798 DEBUG 9556 --- [http-nio-8888-exec-9] c.h.w.m.m.U.selectByPrimaryKey           : ==> Parameters: 6(Long)
+2019-09-21 10:40:14.800 DEBUG 9556 --- [http-nio-8888-exec-9] c.h.w.m.m.U.selectByPrimaryKey           : <==      Total: 0
+2019-09-21 10:40:23.981 DEBUG 9556 --- [http-nio-8888-exec-10] c.h.w.m.m.U.selectByPrimaryKey           : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info WHERE id = ? 
+2019-09-21 10:40:23.982 DEBUG 9556 --- [http-nio-8888-exec-10] c.h.w.m.m.U.selectByPrimaryKey           : ==> Parameters: 5(Long)
+2019-09-21 10:40:23.982 DEBUG 9556 --- [http-nio-8888-exec-10] c.h.w.m.m.U.selectByPrimaryKey           : <==      Total: 1
+2019-09-21 10:47:56.310 DEBUG 9556 --- [http-nio-8888-exec-2] c.h.w.m.m.U.updateByPrimaryKey           : ==>  Preparing: UPDATE user_info SET id = id,username = ?,password = ?,nickname = ?,user_img_url = ?,sex = ?,city = ?,school = ?,academy = ?,major = ?,personalized_signature = ?,personalized_lables = ? WHERE id = ? 
+2019-09-21 10:47:56.311 DEBUG 9556 --- [http-nio-8888-exec-2] c.h.w.m.m.U.updateByPrimaryKey           : ==> Parameters: string(String), string(String), string(String), (String), (String), (String), string(String), (String), (String), string(String), string(String), 5(Long)
+2019-09-21 10:47:56.313 DEBUG 9556 --- [http-nio-8888-exec-2] c.h.w.m.m.U.updateByPrimaryKey           : <==    Updates: 1
+2019-09-21 10:48:02.516 DEBUG 9556 --- [http-nio-8888-exec-3] c.h.w.m.m.U.selectByPrimaryKey           : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info WHERE id = ? 
+2019-09-21 10:48:02.517 DEBUG 9556 --- [http-nio-8888-exec-3] c.h.w.m.m.U.selectByPrimaryKey           : ==> Parameters: 5(Long)
+2019-09-21 10:48:02.518 DEBUG 9556 --- [http-nio-8888-exec-3] c.h.w.m.m.U.selectByPrimaryKey           : <==      Total: 1
+2019-09-21 10:48:25.592 DEBUG 9556 --- [http-nio-8888-exec-6] c.h.w.m.m.U.updateByPrimaryKey           : ==>  Preparing: UPDATE user_info SET id = id,username = ?,password = ?,nickname = ?,user_img_url = ?,sex = ?,city = ?,school = ?,academy = ?,major = ?,personalized_signature = ?,personalized_lables = ? WHERE id = ? 
+2019-09-21 10:48:25.592 DEBUG 9556 --- [http-nio-8888-exec-6] c.h.w.m.m.U.updateByPrimaryKey           : ==> Parameters: string(String), string(String), (String), (String), (String), (String), string(String), (String), (String), string(String), string(String), 5(Long)
+2019-09-21 10:48:25.593 DEBUG 9556 --- [http-nio-8888-exec-6] c.h.w.m.m.U.updateByPrimaryKey           : <==    Updates: 1
+2019-09-21 10:48:31.255 DEBUG 9556 --- [http-nio-8888-exec-4] c.h.w.m.m.U.selectByPrimaryKey           : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info WHERE id = ? 
+2019-09-21 10:48:31.256 DEBUG 9556 --- [http-nio-8888-exec-4] c.h.w.m.m.U.selectByPrimaryKey           : ==> Parameters: 5(Long)
+2019-09-21 10:48:31.258 DEBUG 9556 --- [http-nio-8888-exec-4] c.h.w.m.m.U.selectByPrimaryKey           : <==      Total: 1
