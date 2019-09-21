@@ -9,6 +9,11 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 应用模块名称: DruidAutoConfig
+ * 代码描述:druid 配置类
+ * @author：杨睿
+ */
 @Configuration
 @EnableConfigurationProperties(DruidProperties.class)
 public class DruidAutoConfig {
@@ -17,8 +22,9 @@ public class DruidAutoConfig {
     private DruidProperties properties;
 
     @Bean
-    public ServletRegistrationBean DruidStatViewServlet() {
-        ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
+    public ServletRegistrationBean druidStatViewServlet() {
+        ServletRegistrationBean servletRegistrationBean =
+            new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
         // 白名单：
         servletRegistrationBean.addInitParameter("allow", properties.getAllow());
         // 登录查看信息的账号密码.

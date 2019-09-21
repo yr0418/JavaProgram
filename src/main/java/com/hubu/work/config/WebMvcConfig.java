@@ -17,29 +17,40 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 import javax.servlet.MultipartConfigElement;
 
 import static com.sun.deploy.util.BufferUtil.MB;
-
+/**
+ * 应用模块名称: WebMvcConfig
+ * 代码描述:web 配置类，
+ * @author：杨睿
+ */
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurationSupport {
-  //配置存放用户头像的路径
-  private static final String userImagesPath="file:"+FileConstant.UPLOAD_PATH+FileConstant.IMG_FILE_NAME+"/";
+  /**
+   * 配置存放用户头像的路径
+   * 绝对路径
+   */
+  private static final String USER_IMAGES_PATH = "file:" + FileConstant.UPLOAD_PATH + FileConstant.IMG_FILE_NAME + "/";
 
-  //加载静态资源
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-      registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
-      registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
-      registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+  /**
+   * 加载静态资源
+   */
+  @Override
+  public void addResourceHandlers(ResourceHandlerRegistry registry) {
+    registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+    registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
+    registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
 
-      //添加图片映射，将所有访问 /img/userImages/** 的请求映射到 存放用户头像的文件夹下
-      registry.addResourceHandler("img/virtual/**").addResourceLocations(userImagesPath);
-    }
+    //添加图片映射，将所有访问 /img/userImages/** 的请求映射到 存放用户头像的文件夹下
+    registry.addResourceHandler("img/virtual/**").addResourceLocations(USER_IMAGES_PATH);
+  }
 
-    //解决跨域问题
-    @Override
-    protected void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedMethods("*")
-                .allowedOrigins("*")
-                .allowedHeaders("*");
-    }
+  /**
+   * 解决跨域问题
+   */
+  @Override
+  protected void addCorsMappings(CorsRegistry registry) {
+    registry.addMapping("/**")
+        .allowedMethods("*")
+        .allowedOrigins("*")
+        .allowedHeaders("*");
+  }
 }

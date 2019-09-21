@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hubu.work.mybatis.mapper.UserMessageMapper">
+  <resultMap id="BaseResultMap" type="com.hubu.work.mybatis.pojo.UserMessage">
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="SENDER" jdbcType="VARCHAR" property="sender" />
+    <result column="RECEIVER" jdbcType="VARCHAR" property="receiver" />
+    <result column="CONTEXT" jdbcType="VARCHAR" property="context" />
+    <result column="READ" jdbcType="INTEGER" property="read" />
+  </resultMap>
+  <update id="readMessage"></update>
+</mapper>

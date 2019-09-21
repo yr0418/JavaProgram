@@ -4,18 +4,44 @@ import com.github.pagehelper.Page;
 
 import java.io.Serializable;
 import java.util.List;
-
+/**
+ * 应用模块名称: PageBean
+ * 代码描述: PageHelper，自定义分页查询的返回值，
+ * @author：杨睿
+ */
 public class PageBean<T> implements Serializable {
   private static final long serialVersionUID = -9202109574544652243L;
+  /**
+   * 数据总数
+   */
+  private long total;
 
-  private long total;        // 总行数
-  private List<T> list;      // 存放需要显示的实体类数据
-  private int pageNum;       // 当前页码数（默认给1）
-  private int pageSize;      // 每页显示的行数
-  private int pages;         // 总页数
-  private int size;          // 当前页的数量 <= pageSize，该属性来自ArrayList的size属性
+  /**
+   * 存放需要显示的实体类数据
+   */
+  private List<T> list;
 
-  public PageBean(List<T> list){
+  /**
+   * 当前页码数（默认给1）
+   */
+  private int pageNum;
+
+  /**
+   * 总页数
+   */
+  private int pages;
+
+  /**
+   * 每页显示的行数
+   */
+  private int pageSize;
+
+  /**
+   * 当前页的数量 <= pageSize，该属性来自ArrayList的size属性
+   */
+  private int size;
+
+  public PageBean(List<T> list) {
     if (list instanceof Page) {
       Page<T> page = (Page<T>) list;
       this.pageNum = page.getPageNum();

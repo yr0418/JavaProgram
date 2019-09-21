@@ -2,13 +2,16 @@ package com.hubu.work.mybatis.pojo;
 
 import javax.persistence.Id;
 
+/**
+ * 应用模块名称: UserInfo
+ * 代码描述:对应数据库 user_info 表，保存用户信息
+ * @author：杨睿
+ */
 public class UserInfo {
     @Id
     private Long id;
 
     private String username;
-
-
 
     private String password;
 

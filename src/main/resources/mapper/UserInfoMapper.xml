@@ -21,7 +21,7 @@
       username=#{username}
     </where>
   </select>
-  <update id="UpdateUserImg">
+  <update id="updateUserImg">
     update user_info
     <set>
       USER_IMG_URL = #{userImgPath}
@@ -50,5 +50,19 @@
   </select>
   <select id="findUserSchool" resultType="java.lang.String">
     select school from user_info where username = #{username}
+  </select>
+  <update id="updateUserpersonalizedSignature">
+    update user_info
+    <set>
+      <if test="personalizedSignature != null and personalizedSignature != ''">
+        personalized_signature = #{personalizedSignature}
+      </if>
+    </set>
+    <where>
+      username = #{username}
+    </where>
+  </update>
+  <select id="findUserNickname" resultType="int">
+    select count (*) from user_info where nickname = #{nickname}
   </select>
 </mapper>

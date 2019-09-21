@@ -45,7 +45,7 @@
 
         <!--指定每个表的生成策略-->
 
-        <table tableName="user_detail_info"
+        <table tableName="user_message"
                enableCountByExample="false"
                enableDeleteByExample="false"
                enableSelectByExample="false"

@@ -6,29 +6,41 @@ import com.hubu.work.mybatis.pojo.UserInfo;
 import com.hubu.work.web.common.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+/**
+ * 应用模块名称: UserInfoService
+ * 代码描述: UserInfo 的 Service 层
+ * @author：杨睿
+ */
 @Service
 public class UserInfoService extends BaseService<UserInfo> {
   @Autowired
   UserInfoMapper userInfoMapper;
 
-  public String findUserImg(String username){
+  public String findUserImg(String username) {
     return userInfoMapper.findUserImg(username);
   }
 
-  public int UpdateUserImg(String userImgPath,  String username){
-    return userInfoMapper.UpdateUserImg(userImgPath,username);
+  public int updateUserImg(String userImgPath, String username) {
+    return userInfoMapper.updateUserImg(userImgPath, username);
   }
 
-  public int findUser(User user){
+  public int findUser(User user) {
     return userInfoMapper.findUser(user);
   }
 
-  public int findUsername(String username){
+  public int findUsername(String username) {
     return userInfoMapper.findUsername(username);
   }
 
-  public String findUserCity(String username){
+  public String findUserCity(String username) {
     return userInfoMapper.findUserCity(username);
+  }
+
+  public int findUserNickname(String nickname) {
+    return userInfoMapper.findUserNickname(nickname);
+  }
+
+  public int updateUserpersonalizedSignature(String personalizedSignature, String username) {
+    return userInfoMapper.updateUserpersonalizedSignature(personalizedSignature, username);
   }
 }
