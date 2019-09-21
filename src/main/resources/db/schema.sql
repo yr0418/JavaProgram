@@ -76,19 +76,12 @@ CREATE TABLE `team_info`  (
 );
 
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user`  (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-);
 
-
-DROP TABLE IF EXISTS `user_detail_info`;
-CREATE TABLE `user_detail_info`  (
+DROP TABLE IF EXISTS `user_info`;
+CREATE TABLE `user_info`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `username` varchar(255)  DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
   `nickname` varchar(255) DEFAULT NULL,
   `user_img_url` varchar(255) DEFAULT NULL,
   `sex` varchar(255)  DEFAULT NULL,

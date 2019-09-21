@@ -1,7 +1,6 @@
 package com.hubu.work.utils;
 
-import com.hubu.work.mybatis.mapper.UserDetailInfoMapper;
-import com.hubu.work.mybatis.pojo.UserDetailInfo;
+import com.hubu.work.mybatis.mapper.UserInfoMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ import java.io.IOException;
 @Component
 public class ImagesUtil {
   @Autowired
-  UserDetailInfoMapper userDetailInfoMapper;
+  UserInfoMapper userInfoMapper;
 
   private static final Logger logger = LoggerFactory.getLogger(ImagesUtil.class);
   //文件上传的根目录
@@ -32,7 +31,7 @@ public class ImagesUtil {
         /**
          * 删除用户历史头像
          */
-        String userImgSuffix=getFileSuffix(userDetailInfoMapper.findUserImg(username));
+        String userImgSuffix=getFileSuffix(userInfoMapper.findUserImg(username));
         File file1=new File(imagesPath+"/"+username+"."+userImgSuffix);
         if (file1.exists()|| file1.isFile()){
           file1.delete();
