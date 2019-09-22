@@ -1,7 +1,10 @@
 package com.hubu.work.web.service;
 
+import com.github.pagehelper.Page;
+import com.hubu.work.mybatis.mapper.UserMessageMapper;
 import com.hubu.work.mybatis.pojo.UserMessage;
 import com.hubu.work.web.common.BaseService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,4 +15,18 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserMessageService extends BaseService<UserMessage> {
+  @Autowired
+  UserMessageMapper userMessageMapper;
+
+  public int readMessage(Long id){
+    return userMessageMapper.readMessage(id);
+  }
+
+  public Page<UserMessage> selectUserMessageAccepted(String username){
+    return userMessageMapper.selectUserMessageAccepted(username);
+  }
+
+  public int getUserMessageNotReadCount(String username){
+    return userMessageMapper.getUserMessageNotReadCount(username);
+  }
 }

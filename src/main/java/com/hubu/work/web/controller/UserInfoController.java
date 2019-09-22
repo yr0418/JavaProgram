@@ -7,10 +7,7 @@ import com.hubu.work.web.common.BaseController;
 import com.hubu.work.web.service.UserInfoService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -64,6 +61,7 @@ public class UserInfoController extends BaseController<UserInfo> {
   }
 
   @Override
+  @ApiOperation(value = "插入用户信息，用于注册，需保证用户名与昵称均一致。返回值：1：注册成功，0：用户名已被使用，2：昵称已被使用")
   public int insert(UserInfo userInfo) {
     int usernameCount = userInfoService.findUsername(userInfo.getUsername());
     int nicknameCount = userInfoService.findUserNickname(userInfo.getNickname());
@@ -76,5 +74,16 @@ public class UserInfoController extends BaseController<UserInfo> {
     }
   }
 
+  @Override
+  @ApiOperation(value = "修改数据，只会修改传入的属性值对应的字段")
+  public int update(UserInfo userInfo){
+    return userInfoService.update(userInfo);
+  }
+
+  @ApiOperation(value = "获取用户信息")
+  @GetMapping(value = "getUserInfo")
+  public UserInfo getUserInfo(String username){
+    return userInfoService.getUserInfo(username);
+  }
 
 }

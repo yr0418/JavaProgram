@@ -40,7 +40,16 @@ public class UserInfoService extends BaseService<UserInfo> {
     return userInfoMapper.findUserNickname(nickname);
   }
 
-  public int updateUserpersonalizedSignature(String personalizedSignature, String username) {
-    return userInfoMapper.updateUserpersonalizedSignature(personalizedSignature, username);
+  public int updateUserPersonalizedSignature(String personalizedSignature, String username) {
+    return userInfoMapper.updateUserPersonalizedSignature(personalizedSignature, username);
+  }
+
+  @Override
+  public int update(UserInfo userInfo){
+    return userInfoMapper.update(userInfo);
+  }
+
+  public UserInfo getUserInfo(String username){
+    return userInfoMapper.getUserInfo(username);
   }
 }

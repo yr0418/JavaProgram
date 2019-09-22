@@ -63,7 +63,6 @@ public class ImagesUtil {
 
   /**
    * 返回截取的文件后缀
-   *
    * @param path
    * @return
    */

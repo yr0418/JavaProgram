@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @author：杨睿
  */
 @Component
-public class FileConstant {
+public final class FileConstant {
   /**
    * 文件上传/图片   根目录
    */
