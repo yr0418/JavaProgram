@@ -1,5 +1,7 @@
 package com.hubu.work.web.common;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.hubu.work.utils.PageBean;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,7 +51,9 @@ public class BaseController<T> {
     @GetMapping(value = "selectAll")
     public PageBean<T> selectAll(@RequestParam(defaultValue = CURRENT_PAGE) int pageNum,
         @RequestParam(defaultValue = PAGE_SIZE) int pageSize) {
-        return service.selectAll(pageNum, pageSize);
+        PageHelper.startPage(pageNum, pageSize, true);
+        Page<T> page = service.selectAll();
+        return new PageBean<>(page);
     }
 
 }

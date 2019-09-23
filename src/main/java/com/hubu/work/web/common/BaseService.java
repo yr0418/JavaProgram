@@ -70,15 +70,10 @@ public class BaseService<T> {
 
   /**
    * 分页查询实例
-   * @param pageNum：页数
-   * @param pageSize：每一页的数量
-   * @return PageBean对象
-   * 返回一个PageBean对象
+   * @return Page<T>
    */
-  public PageBean<T> selectAll(int pageNum, int pageSize) {
-    PageHelper.startPage(pageNum, pageSize, true);
-    Page<T> page = (Page<T>) mapper.selectAll();
-    return new PageBean<>(page);
+  public Page<T> selectAll() {
+    return (Page<T>) mapper.selectAll();
   }
 
 }

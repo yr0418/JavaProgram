@@ -6,6 +6,7 @@ import com.hubu.work.utils.ImagesUtil;
 import com.hubu.work.web.common.BaseController;
 import com.hubu.work.web.service.UserInfoService;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
