@@ -1,5 +1,7 @@
 package com.hubu.work.mybatis.pojo;
 
+import lombok.Data;
+
 import javax.persistence.Id;
 
 /**
@@ -7,6 +9,7 @@ import javax.persistence.Id;
  * 代码描述:对应数据库 user_message 表，保存用户收到，发布的消息
  * @author：杨睿
  */
+@Data
 public class UserMessage {
     @Id
     private Long id;
@@ -14,6 +17,8 @@ public class UserMessage {
     private String sender;
 
     private String receiver;
+
+    private int type;
 
     private String context;
 

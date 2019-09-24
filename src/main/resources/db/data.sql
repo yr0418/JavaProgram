@@ -5,6 +5,12 @@ INSERT INTO `action_type` VALUES (1, '线下学习');
 INSERT INTO `action_type` VALUES (2, '线上学习');
 INSERT INTO `action_type` VALUES (3, '吃喝玩乐');
 
+-- ----------------------------
+-- Records of message_type
+-- ----------------------------
+INSERT INTO `message_type` VALUES (1, '好友申请');
+INSERT INTO `message_type` VALUES (2, '入队申请');
+
 
 -- ----------------------------
 -- Records of user_detail_info

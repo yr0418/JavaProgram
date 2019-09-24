@@ -5,6 +5,7 @@
     <id column="ID" jdbcType="BIGINT" property="id"/>
     <result column="SENDER" jdbcType="VARCHAR" property="sender"/>
     <result column="RECEIVER" jdbcType="VARCHAR" property="receiver"/>
+    <result column="TYPE" jdbcType="VARCHAR" property="type"/>
     <result column="CONTEXT" jdbcType="VARCHAR" property="context"/>
     <result column="READ" jdbcType="INTEGER" property="read"/>
   </resultMap>
@@ -17,16 +18,16 @@
       id = #{id}
     </where>
   </update>
-  <select id="selectUserMessageAccepted" resultMap="BaseResultMap">
+  <select id="selectUserMessageAcceptedWithType" resultMap="BaseResultMap">
     select * from user_message
     <where>
-      username = #{username}
+      username = #{username} and type = #{type}
     </where>
   </select>
-  <select id="getUserMessageNotReadCount" resultType="int">
+  <select id="getUserMessageNotReadCountWithType" resultType="int">
     select count (*) from user_message
     <where>
-      username = #{username} and read = 0
+      username = #{username} and read = 0 and type = #{type}
     </where>
   </select>
 </mapper>

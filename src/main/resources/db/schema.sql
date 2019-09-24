@@ -100,8 +100,16 @@ CREATE TABLE `user_message`  (
   `id` bigint(10) NOT NULL AUTO_INCREMENT,
   `sender` varchar(255)  DEFAULT NULL,
   `receiver` varchar(255) DEFAULT NULL,
+  `type` int(10) DEFAULT NULL ,
   `context` varchar(255)  DEFAULT NULL,
   `read` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+
+DROP TABLE IF EXISTS `message_type`;
+CREATE TABLE `message_type`  (
+  `id` bigint(10) NOT NULL ,
+  `type` varchar(50) DEFAULT NULL ,
   PRIMARY KEY (`id`)
 )
 

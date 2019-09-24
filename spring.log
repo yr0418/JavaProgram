@@ -1,487 +1,95 @@
-2019-09-23 10:02:49.301  INFO 9940 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 9940 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:02:49.307 DEBUG 9940 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:02:49.307  INFO 9940 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:02:49.359  INFO 9940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:02:49.360  INFO 9940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:02:50.654  WARN 9940 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:02:51.213  INFO 9940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$60f2542f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:02:51.975  INFO 9940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:02:52.045  INFO 9940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:02:52.046  INFO 9940 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:02:52.466  INFO 9940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:02:52.466  INFO 9940 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3106 ms
-2019-09-23 10:02:52.547  INFO 9940 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:02:52.551  INFO 9940 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:02:52.704  INFO 9940 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:02:52.882 ERROR 9940 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:02:52.886  INFO 9940 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:02:53.987  INFO 9940 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:02:54.204  INFO 9940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:02:54.286  INFO 9940 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:02:54.289  INFO 9940 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:02:54.290  INFO 9940 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:02:54.291  INFO 9940 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:02:54.551  WARN 9940 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:02:54.794  WARN 9940 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:02:54.955  INFO 9940 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:02:54.980  INFO 9940 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:02:55.031  INFO 9940 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:02:55.288  INFO 9940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:02:55.299  INFO 9940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:02:55.315  INFO 9940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:02:55.319  INFO 9940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:02:55.328  INFO 9940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:02:55.385  INFO 9940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:02:55.387  INFO 9940 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.602 seconds (JVM running for 8.498)
-2019-09-23 10:03:04.991  INFO 9940 --- [http-nio-8888-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:03:04.992  INFO 9940 --- [http-nio-8888-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:03:05.002  INFO 9940 --- [http-nio-8888-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2019-09-23 10:03:13.483 DEBUG 9940 --- [http-nio-8888-exec-1] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
-2019-09-23 10:03:13.526 DEBUG 9940 --- [http-nio-8888-exec-1] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
-2019-09-23 10:03:13.563 DEBUG 9940 --- [http-nio-8888-exec-1] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
-2019-09-23 10:03:13.568 DEBUG 9940 --- [http-nio-8888-exec-1] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
-2019-09-23 10:03:13.573 DEBUG 9940 --- [http-nio-8888-exec-1] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
-2019-09-23 10:03:13.582 DEBUG 9940 --- [http-nio-8888-exec-1] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
-2019-09-23 10:08:01.137  INFO 6868 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 6868 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:08:01.141 DEBUG 6868 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:08:01.141  INFO 6868 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:08:01.187  INFO 6868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:08:01.187  INFO 6868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:08:02.234  WARN 6868 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:08:02.732  INFO 6868 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c189abf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:08:03.411  INFO 6868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:08:03.429  INFO 6868 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:08:03.429  INFO 6868 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:08:03.553  INFO 6868 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:08:03.553  INFO 6868 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2366 ms
-2019-09-23 10:08:03.667  INFO 6868 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:08:03.672  INFO 6868 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:08:03.803  INFO 6868 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:08:03.922 ERROR 6868 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:08:03.929  INFO 6868 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:08:04.489  INFO 6868 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:08:04.572  INFO 6868 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:08:04.609  INFO 6868 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:08:04.610  INFO 6868 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:08:04.610  INFO 6868 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:08:04.611  INFO 6868 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:08:04.738  WARN 6868 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:08:04.862  WARN 6868 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:08:05.079  INFO 6868 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:08:05.114  INFO 6868 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:08:05.181  INFO 6868 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:08:05.390  INFO 6868 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:08:05.394  INFO 6868 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:08:05.401  INFO 6868 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:08:05.402  INFO 6868 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:08:05.407  INFO 6868 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:08:05.444  INFO 6868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:08:05.448  INFO 6868 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 4.796 seconds (JVM running for 6.396)
-2019-09-23 10:08:10.736  INFO 6868 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:08:10.736  INFO 6868 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:08:10.751  INFO 6868 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2019-09-23 10:08:15.555 DEBUG 6868 --- [http-nio-8888-exec-4] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
-2019-09-23 10:08:15.592 DEBUG 6868 --- [http-nio-8888-exec-4] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
-2019-09-23 10:08:15.622 DEBUG 6868 --- [http-nio-8888-exec-4] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
-2019-09-23 10:08:15.626 DEBUG 6868 --- [http-nio-8888-exec-4] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
-2019-09-23 10:08:15.634 DEBUG 6868 --- [http-nio-8888-exec-4] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
-2019-09-23 10:08:15.641 DEBUG 6868 --- [http-nio-8888-exec-4] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
-2019-09-23 10:13:56.866  INFO 11700 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 11700 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:13:56.870 DEBUG 11700 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:13:56.870  INFO 11700 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:13:56.919  INFO 11700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:13:56.919  INFO 11700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:13:58.052  WARN 11700 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:13:58.648  INFO 11700 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cfc34f46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:13:59.144  INFO 11700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:13:59.203  INFO 11700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:13:59.206  INFO 11700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:13:59.432  INFO 11700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:13:59.432  INFO 11700 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2512 ms
-2019-09-23 10:13:59.639  INFO 11700 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:13:59.648  INFO 11700 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:13:59.887  INFO 11700 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:14:00.172 ERROR 11700 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:14:00.179  INFO 11700 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:14:01.331  INFO 11700 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:14:01.435  INFO 11700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:14:01.477  INFO 11700 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:14:01.478  INFO 11700 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:14:01.478  INFO 11700 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:14:01.478  INFO 11700 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:14:01.636  WARN 11700 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:14:01.757  WARN 11700 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:14:01.863  INFO 11700 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:14:01.880  INFO 11700 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:14:01.916  INFO 11700 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:14:02.170  INFO 11700 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:14:02.178  INFO 11700 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:14:02.191  INFO 11700 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:14:02.194  INFO 11700 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:14:02.202  INFO 11700 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:14:02.277  INFO 11700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:14:02.283  INFO 11700 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 5.964 seconds (JVM running for 7.391)
-2019-09-23 10:14:06.871  INFO 11700 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:14:06.871  INFO 11700 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:14:06.884  INFO 11700 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-09-23 10:14:11.142 DEBUG 11700 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
-2019-09-23 10:14:11.180 DEBUG 11700 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
-2019-09-23 10:14:11.213 DEBUG 11700 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
-2019-09-23 10:14:11.220 DEBUG 11700 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
-2019-09-23 10:14:11.225 DEBUG 11700 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
-2019-09-23 10:14:11.231 DEBUG 11700 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
-2019-09-23 10:16:36.634  INFO 14932 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 14932 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:16:36.638 DEBUG 14932 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:16:36.638  INFO 14932 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:16:36.686  INFO 14932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:16:36.687  INFO 14932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:16:37.741  WARN 14932 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:16:38.146  INFO 14932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67b94689] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:16:38.802  INFO 14932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:16:38.843  INFO 14932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:16:38.843  INFO 14932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:16:38.990  INFO 14932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:16:38.990  INFO 14932 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2303 ms
-2019-09-23 10:16:39.108  INFO 14932 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:16:39.112  INFO 14932 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:16:39.263  INFO 14932 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:16:39.442 ERROR 14932 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:16:39.448  INFO 14932 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:16:40.165  INFO 14932 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:16:40.297  INFO 14932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:16:40.364  INFO 14932 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:16:40.366  INFO 14932 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:16:40.366  INFO 14932 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:16:40.367  INFO 14932 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:16:40.514  WARN 14932 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:16:40.636  WARN 14932 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:16:40.744  INFO 14932 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:16:40.768  INFO 14932 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:16:40.813  INFO 14932 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:16:41.055  INFO 14932 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:16:41.064  INFO 14932 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:16:41.077  INFO 14932 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:16:41.080  INFO 14932 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:16:41.089  INFO 14932 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:16:41.161  INFO 14932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:16:41.164  INFO 14932 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 5.019 seconds (JVM running for 6.544)
-2019-09-23 10:16:48.035  INFO 14932 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:16:48.036  INFO 14932 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:16:48.045  INFO 14932 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2019-09-23 10:16:54.044 DEBUG 14932 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
-2019-09-23 10:16:54.085 DEBUG 14932 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
-2019-09-23 10:16:54.116 DEBUG 14932 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
-2019-09-23 10:16:54.122 DEBUG 14932 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
-2019-09-23 10:16:54.126 DEBUG 14932 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
-2019-09-23 10:16:54.132 DEBUG 14932 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
-2019-09-23 10:20:50.959  INFO 9624 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 9624 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:20:50.963 DEBUG 9624 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:20:50.963  INFO 9624 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:20:51.007  INFO 9624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:20:51.007  INFO 9624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:20:52.038  WARN 9624 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:20:52.491  INFO 9624 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9acc9595] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:20:53.029  INFO 9624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:20:53.058  INFO 9624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:20:53.059  INFO 9624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:20:53.246  INFO 9624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:20:53.251  INFO 9624 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2244 ms
-2019-09-23 10:20:53.441  INFO 9624 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:20:53.445  INFO 9624 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:20:53.630  INFO 9624 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:20:53.792 ERROR 9624 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:20:53.801  INFO 9624 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:20:54.534  INFO 9624 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:20:54.688  INFO 9624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:20:54.756  INFO 9624 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:20:54.758  INFO 9624 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:20:54.758  INFO 9624 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:20:54.759  INFO 9624 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:20:54.981  WARN 9624 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:20:55.103  WARN 9624 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:20:55.232  INFO 9624 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:20:55.255  INFO 9624 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:20:55.302  INFO 9624 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:20:55.535  INFO 9624 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:20:55.544  INFO 9624 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:20:55.558  INFO 9624 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:20:55.561  INFO 9624 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:20:55.569  INFO 9624 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:20:55.644  INFO 9624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:20:55.650  INFO 9624 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 5.152 seconds (JVM running for 6.759)
-2019-09-23 10:22:09.113  INFO 9624 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:22:09.114  INFO 9624 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:22:09.132  INFO 9624 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
-2019-09-23 10:22:20.531 DEBUG 9624 --- [http-nio-8888-exec-8] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
-2019-09-23 10:22:20.555 DEBUG 9624 --- [http-nio-8888-exec-8] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
-2019-09-23 10:22:20.576 DEBUG 9624 --- [http-nio-8888-exec-8] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
-2019-09-23 10:22:20.580 DEBUG 9624 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
-2019-09-23 10:22:20.583 DEBUG 9624 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
-2019-09-23 10:22:20.587 DEBUG 9624 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
-2019-09-23 10:23:07.733  INFO 11548 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 11548 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:23:07.733 DEBUG 11548 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:23:07.733  INFO 11548 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:23:07.786  INFO 11548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:23:07.787  INFO 11548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:23:08.807  WARN 11548 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:23:09.647  INFO 11548 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d8cb752] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:23:10.872  INFO 11548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:23:10.945  INFO 11548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:23:10.945  INFO 11548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:23:11.165  INFO 11548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:23:11.165  INFO 11548 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3378 ms
-2019-09-23 10:23:11.228  INFO 11548 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:23:11.232  INFO 11548 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:23:11.339  INFO 11548 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:23:11.501 ERROR 11548 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:23:11.505  INFO 11548 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:23:12.248  INFO 11548 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:23:12.364  INFO 11548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:23:12.413  INFO 11548 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:23:12.413  INFO 11548 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:23:12.414  INFO 11548 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:23:12.414  INFO 11548 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:23:12.616  WARN 11548 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:23:12.789  WARN 11548 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:23:12.918  INFO 11548 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:23:12.941  INFO 11548 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:23:12.985  INFO 11548 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:23:13.291  INFO 11548 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:23:13.304  INFO 11548 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:23:13.320  INFO 11548 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:23:13.324  INFO 11548 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:23:13.336  INFO 11548 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:23:13.423  INFO 11548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:23:13.430  INFO 11548 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.18 seconds (JVM running for 7.583)
-2019-09-23 10:23:21.612  INFO 11548 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:23:21.612  INFO 11548 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:23:21.623  INFO 11548 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2019-09-23 10:23:37.881 DEBUG 11548 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.findUser   : ==>  Preparing: select count (*) from user_info WHERE username = ? and password = ? 
-2019-09-23 10:23:37.923 DEBUG 11548 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.findUser   : ==> Parameters: root(String), root(String)
-2019-09-23 10:23:37.957 DEBUG 11548 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.findUser   : <==      Total: 1
-2019-09-23 10:23:37.961 DEBUG 11548 --- [http-nio-8888-exec-7] com.hubu.work.utils.ControllerTimer      : method: int com.hubu.work.web.controller.UserInfoController.login(User) cost:314ms
-2019-09-23 10:25:41.326  INFO 10844 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 10844 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:25:41.328 DEBUG 10844 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:25:41.328  INFO 10844 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:25:41.385  INFO 10844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:25:41.385  INFO 10844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:25:42.640  WARN 10844 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:25:43.221  INFO 10844 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3bd1705a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:25:44.232  INFO 10844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:25:44.302  INFO 10844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:25:44.302  INFO 10844 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:25:44.784  INFO 10844 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:25:44.784  INFO 10844 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3399 ms
-2019-09-23 10:25:44.933  INFO 10844 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:25:44.946  INFO 10844 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:25:45.318  INFO 10844 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:25:45.780 ERROR 10844 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:25:45.790  INFO 10844 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:25:47.944  INFO 10844 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:25:48.273  INFO 10844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:25:48.405  INFO 10844 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:25:48.407  INFO 10844 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:25:48.408  INFO 10844 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:25:48.409  INFO 10844 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:25:48.756  WARN 10844 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:25:48.944  WARN 10844 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:25:49.270  INFO 10844 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:25:49.312  INFO 10844 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:25:49.392  INFO 10844 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:25:49.808  INFO 10844 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:25:49.825  INFO 10844 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:25:49.848  INFO 10844 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:25:49.853  INFO 10844 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:25:49.868  INFO 10844 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:25:50.004  INFO 10844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:25:50.017  INFO 10844 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 9.308 seconds (JVM running for 10.84)
-2019-09-23 10:25:53.229  INFO 10844 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:25:53.229  INFO 10844 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:25:53.257  INFO 10844 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
-2019-09-23 10:26:06.148 DEBUG 10844 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.findUser   : ==>  Preparing: select count (*) from user_info WHERE username = ? and password = ? 
-2019-09-23 10:26:06.191 DEBUG 10844 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.findUser   : ==> Parameters: root(String), root(String)
-2019-09-23 10:26:06.223 DEBUG 10844 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.findUser   : <==      Total: 1
-2019-09-23 10:26:06.231  INFO 10844 --- [http-nio-8888-exec-7] com.hubu.work.utils.ControllerTimer      : method: int com.hubu.work.web.controller.UserInfoController.login(User) cost:306ms
-2019-09-23 10:27:18.193  INFO 10652 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 10652 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:27:18.196 DEBUG 10652 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:27:18.196  INFO 10652 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:27:18.242  INFO 10652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:27:18.243  INFO 10652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:27:19.315  WARN 10652 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:27:20.090  INFO 10652 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67a7a10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:27:20.647  INFO 10652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:27:20.696  INFO 10652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:27:20.698  INFO 10652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:27:21.133  INFO 10652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:27:21.133  INFO 10652 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2890 ms
-2019-09-23 10:27:21.280  INFO 10652 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:27:21.283  INFO 10652 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:27:21.584  INFO 10652 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:27:21.924 ERROR 10652 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:27:21.935  INFO 10652 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:27:22.921  INFO 10652 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:27:23.098  INFO 10652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:27:23.163  INFO 10652 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:27:23.163  INFO 10652 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:27:23.168  INFO 10652 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:27:23.169  INFO 10652 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:27:23.434  WARN 10652 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:27:23.795  WARN 10652 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:27:24.052  INFO 10652 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:27:24.074  INFO 10652 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:27:24.101  INFO 10652 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:27:24.225  INFO 10652 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:27:24.230  INFO 10652 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:27:24.242  INFO 10652 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:27:24.246  INFO 10652 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:27:24.251  INFO 10652 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:27:24.295  INFO 10652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:27:24.299  INFO 10652 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.566 seconds (JVM running for 8.004)
-2019-09-23 10:27:31.588  INFO 10652 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:27:31.590  INFO 10652 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:27:31.613  INFO 10652 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
-2019-09-23 10:27:38.468 DEBUG 10652 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
-2019-09-23 10:27:38.507 DEBUG 10652 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
-2019-09-23 10:27:38.532 DEBUG 10652 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
-2019-09-23 10:27:38.536 DEBUG 10652 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
-2019-09-23 10:27:38.542 DEBUG 10652 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
-2019-09-23 10:27:38.549 DEBUG 10652 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
-2019-09-23 10:27:38.551  INFO 10652 --- [http-nio-8888-exec-6] com.hubu.work.utils.ControllerTimer      : method: PageBean com.hubu.work.web.common.BaseService.selectAll(int,int) cost:358ms
-2019-09-23 10:27:38.551  INFO 10652 --- [http-nio-8888-exec-6] com.hubu.work.utils.ControllerTimer      : method: PageBean com.hubu.work.web.common.BaseController.selectAll(int,int) cost:361ms
-2019-09-23 10:34:46.259  INFO 8236 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 8236 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:34:46.261 DEBUG 8236 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:34:46.261  INFO 8236 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:34:46.311  INFO 8236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:34:46.312  INFO 8236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:34:47.430  WARN 8236 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:34:48.423  INFO 8236 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8ec17dfd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:34:49.237  INFO 8236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:34:49.297  INFO 8236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:34:49.297  INFO 8236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:34:49.694  INFO 8236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:34:49.695  INFO 8236 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3383 ms
-2019-09-23 10:34:49.797  INFO 8236 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:34:49.801  INFO 8236 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:34:50.006  INFO 8236 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:34:50.290 ERROR 8236 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:34:50.294  INFO 8236 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:34:51.295  INFO 8236 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:34:51.480  INFO 8236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:34:51.593  INFO 8236 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:34:51.595  INFO 8236 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:34:51.596  INFO 8236 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:34:51.597  INFO 8236 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:34:51.932  WARN 8236 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:34:52.227  WARN 8236 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:34:52.393  INFO 8236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:34:52.421  INFO 8236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:34:52.469  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:34:52.644  INFO 8236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:34:52.649  INFO 8236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:34:52.655  INFO 8236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:34:52.658  INFO 8236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:34:52.662  INFO 8236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:34:52.718  INFO 8236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:34:52.721  INFO 8236 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.946 seconds (JVM running for 9.181)
-2019-09-23 10:34:56.124  INFO 8236 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:34:56.125  INFO 8236 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:34:56.136  INFO 8236 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2019-09-23 10:35:01.805 DEBUG 8236 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
-2019-09-23 10:35:01.841 DEBUG 8236 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
-2019-09-23 10:35:01.875 DEBUG 8236 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
-2019-09-23 10:35:01.880 DEBUG 8236 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
-2019-09-23 10:35:01.885 DEBUG 8236 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
-2019-09-23 10:35:01.893 DEBUG 8236 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
-2019-09-23 10:37:44.941  INFO 4692 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 4692 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:37:44.945 DEBUG 4692 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:37:44.945  INFO 4692 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:37:45.004  INFO 4692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:37:45.004  INFO 4692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:37:46.057  WARN 4692 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:37:46.964  INFO 4692 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$515383f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:37:47.877  INFO 4692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:37:47.899  INFO 4692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:37:47.899  INFO 4692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:37:48.130  INFO 4692 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:37:48.131  INFO 4692 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3127 ms
-2019-09-23 10:37:48.192  INFO 4692 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:37:48.195  INFO 4692 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:37:48.341  INFO 4692 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:37:48.663 ERROR 4692 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:37:48.668  INFO 4692 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:37:49.593  INFO 4692 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:37:49.797  INFO 4692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:37:49.851  INFO 4692 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:37:49.855  INFO 4692 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:37:49.855  INFO 4692 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:37:49.856  INFO 4692 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:37:50.047  WARN 4692 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:37:50.331  WARN 4692 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:37:50.530  INFO 4692 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:37:50.557  INFO 4692 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:37:50.593  INFO 4692 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:37:50.824  INFO 4692 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:37:50.833  INFO 4692 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:37:50.845  INFO 4692 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:37:50.849  INFO 4692 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:37:50.856  INFO 4692 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:37:50.928  INFO 4692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:37:50.931  INFO 4692 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.521 seconds (JVM running for 8.237)
-2019-09-23 10:37:56.304  INFO 4692 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:37:56.305  INFO 4692 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:37:56.339  INFO 4692 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 33 ms
-2019-09-23 10:38:02.401 DEBUG 4692 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
-2019-09-23 10:38:02.436 DEBUG 4692 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
-2019-09-23 10:38:02.471 DEBUG 4692 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
-2019-09-23 10:38:02.475 DEBUG 4692 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
-2019-09-23 10:38:02.480 DEBUG 4692 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
-2019-09-23 10:38:02.485 DEBUG 4692 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
-2019-09-23 10:38:30.653 DEBUG 4692 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserInfoMapper.findUser   : ==>  Preparing: select count (*) from user_info WHERE username = ? and password = ? 
-2019-09-23 10:38:30.655 DEBUG 4692 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserInfoMapper.findUser   : ==> Parameters: root(String), root(String)
-2019-09-23 10:38:30.658 DEBUG 4692 --- [http-nio-8888-exec-8] c.h.w.m.mapper.UserInfoMapper.findUser   : <==      Total: 1
-2019-09-23 10:38:30.661  INFO 4692 --- [http-nio-8888-exec-8] com.hubu.work.utils.ControllerTimer      : method: int com.hubu.work.web.controller.UserInfoController.login(User) cost:7ms
-2019-09-23 10:39:36.405  INFO 10500 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 10500 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
-2019-09-23 10:39:36.408 DEBUG 10500 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-23 10:39:36.410  INFO 10500 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-23 10:39:36.462  INFO 10500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-23 10:39:36.462  INFO 10500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-23 10:39:37.600  WARN 10500 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
-2019-09-23 10:39:38.314  INFO 10500 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4dba537a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-23 10:39:39.806  INFO 10500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
-2019-09-23 10:39:39.875  INFO 10500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-23 10:39:39.877  INFO 10500 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-23 10:39:40.370  INFO 10500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-23 10:39:40.370  INFO 10500 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3908 ms
-2019-09-23 10:39:40.449  INFO 10500 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-23 10:39:40.454  INFO 10500 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-23 10:39:40.676  INFO 10500 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-23 10:39:41.083 ERROR 10500 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-23 10:39:41.093  INFO 10500 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-23 10:39:43.277  INFO 10500 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-23 10:39:43.612  INFO 10500 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-23 10:39:43.744  INFO 10500 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-09-23 10:39:43.746  INFO 10500 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-09-23 10:39:43.748  INFO 10500 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-09-23 10:39:43.750  INFO 10500 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2019-09-23 10:39:44.077  WARN 10500 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-23 10:39:44.523  WARN 10500 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-09-23 10:39:44.880  INFO 10500 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-23 10:39:44.924  INFO 10500 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-23 10:39:45.008  INFO 10500 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-23 10:39:45.427  INFO 10500 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
-2019-09-23 10:39:45.444  INFO 10500 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
-2019-09-23 10:39:45.470  INFO 10500 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-09-23 10:39:45.475  INFO 10500 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
-2019-09-23 10:39:45.492  INFO 10500 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-09-23 10:39:45.612  INFO 10500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
-2019-09-23 10:39:45.622  INFO 10500 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 9.769 seconds (JVM running for 11.691)
-2019-09-23 10:39:48.461  INFO 10500 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-23 10:39:48.462  INFO 10500 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-23 10:39:48.483  INFO 10500 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
-2019-09-23 10:39:56.047 DEBUG 10500 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
-2019-09-23 10:39:56.083 DEBUG 10500 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
-2019-09-23 10:39:56.111 DEBUG 10500 --- [http-nio-8888-exec-7] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
-2019-09-23 10:39:56.117 DEBUG 10500 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
-2019-09-23 10:39:56.120 DEBUG 10500 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
-2019-09-23 10:39:56.126 DEBUG 10500 --- [http-nio-8888-exec-7] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
-2019-09-23 10:39:56.130  INFO 10500 --- [http-nio-8888-exec-7] com.hubu.work.utils.ControllerTimer      : method: PageBean com.hubu.work.web.common.BaseController.selectAll(int,int) cost:325ms
+2019-09-24 10:17:35.175  INFO 3644 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 3644 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-24 10:17:35.181 DEBUG 3644 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-24 10:17:35.182  INFO 3644 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-24 10:17:35.227  INFO 3644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-24 10:17:35.227  INFO 3644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-24 10:17:36.447  WARN 3644 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-09-24 10:17:36.927  INFO 3644 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6856365e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-24 10:17:37.609  INFO 3644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-24 10:17:37.654  INFO 3644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-24 10:17:37.655  INFO 3644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-24 10:17:38.025  INFO 3644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-24 10:17:38.025  INFO 3644 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2798 ms
+2019-09-24 10:17:38.093  INFO 3644 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-24 10:17:38.095  INFO 3644 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-24 10:17:38.274  INFO 3644 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-24 10:17:38.625 ERROR 3644 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-24 10:17:38.630  INFO 3644 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-24 10:17:39.678  INFO 3644 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-24 10:17:39.862  INFO 3644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-24 10:17:39.924  INFO 3644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-09-24 10:17:39.924  INFO 3644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-09-24 10:17:39.924  INFO 3644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-09-24 10:17:39.925  INFO 3644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2019-09-24 10:17:40.152  WARN 3644 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-24 10:17:40.269  INFO 3644 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-24 10:17:40.287  INFO 3644 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-24 10:17:40.319  INFO 3644 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-24 10:17:40.469  INFO 3644 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
+2019-09-24 10:17:40.474  INFO 3644 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
+2019-09-24 10:17:40.481  INFO 3644 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-09-24 10:17:40.483  INFO 3644 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
+2019-09-24 10:17:40.488  INFO 3644 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-09-24 10:17:40.528  INFO 3644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-24 10:17:40.534  INFO 3644 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 5.908 seconds (JVM running for 7.832)
+2019-09-24 10:17:47.849  INFO 3644 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-24 10:17:47.849  INFO 3644 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-24 10:17:47.861  INFO 3644 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-24 10:17:54.893 DEBUG 3644 --- [http-nio-8888-exec-5] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_message 
+2019-09-24 10:17:54.933 DEBUG 3644 --- [http-nio-8888-exec-5] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
+2019-09-24 10:17:54.965 DEBUG 3644 --- [http-nio-8888-exec-5] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
+2019-09-24 10:17:54.971 DEBUG 3644 --- [http-nio-8888-exec-5] c.h.w.m.m.UserMessageMapper.selectAll    : ==>  Preparing: SELECT id,sender,receiver,context,read FROM user_message LIMIT ? 
+2019-09-24 10:17:54.975 DEBUG 3644 --- [http-nio-8888-exec-5] c.h.w.m.m.UserMessageMapper.selectAll    : ==> Parameters: 20(Integer)
+2019-09-24 10:17:54.979 DEBUG 3644 --- [http-nio-8888-exec-5] c.h.w.m.m.UserMessageMapper.selectAll    : <==      Total: 1
+2019-09-24 10:17:54.981  INFO 3644 --- [http-nio-8888-exec-5] com.hubu.work.utils.ControllerTimer      : method: PageBean com.hubu.work.web.common.BaseController.selectAll(int,int) cost:392ms
+2019-09-24 10:18:08.052 DEBUG 3644 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
+2019-09-24 10:18:08.053 DEBUG 3644 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
+2019-09-24 10:18:08.053 DEBUG 3644 --- [http-nio-8888-exec-6] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
+2019-09-24 10:18:08.053 DEBUG 3644 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
+2019-09-24 10:18:08.053 DEBUG 3644 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
+2019-09-24 10:18:08.058 DEBUG 3644 --- [http-nio-8888-exec-6] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
+2019-09-24 10:18:08.058  INFO 3644 --- [http-nio-8888-exec-6] com.hubu.work.utils.ControllerTimer      : method: PageBean com.hubu.work.web.common.BaseController.selectAll(int,int) cost:10ms
+2019-09-24 10:24:00.318  INFO 12172 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-KFML1MRR with PID 12172 (D:\JavaProgram\Springboot\work\target\classes started by Alone Wolf in D:\JavaProgram\Springboot\work)
+2019-09-24 10:24:00.320 DEBUG 12172 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-24 10:24:00.320  INFO 12172 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-24 10:24:00.384  INFO 12172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-24 10:24:00.384  INFO 12172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-24 10:24:01.769  WARN 12172 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-09-24 10:24:02.715  INFO 12172 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$651cb3e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-24 10:24:03.845  INFO 12172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-09-24 10:24:03.882  INFO 12172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-24 10:24:03.883  INFO 12172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-24 10:24:04.185  INFO 12172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-24 10:24:04.185  INFO 12172 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3800 ms
+2019-09-24 10:24:04.251  INFO 12172 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-24 10:24:04.253  INFO 12172 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-24 10:24:04.420  INFO 12172 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-24 10:24:04.565 ERROR 12172 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-24 10:24:04.568  INFO 12172 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-24 10:24:05.467  INFO 12172 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-24 10:24:05.568  INFO 12172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-24 10:24:05.614  INFO 12172 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-09-24 10:24:05.615  INFO 12172 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-09-24 10:24:05.615  INFO 12172 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-09-24 10:24:05.616  INFO 12172 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2019-09-24 10:24:05.899  WARN 12172 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-24 10:24:06.009  INFO 12172 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-24 10:24:06.021  INFO 12172 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-24 10:24:06.058  INFO 12172 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-24 10:24:06.194  INFO 12172 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
+2019-09-24 10:24:06.200  INFO 12172 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
+2019-09-24 10:24:06.210  INFO 12172 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-09-24 10:24:06.213  INFO 12172 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
+2019-09-24 10:24:06.219  INFO 12172 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-09-24 10:24:06.260  INFO 12172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-24 10:24:06.263  INFO 12172 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.426 seconds (JVM running for 8.147)
+2019-09-24 10:24:13.026  INFO 12172 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-24 10:24:13.026  INFO 12172 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-24 10:24:13.038  INFO 12172 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-24 10:24:18.743 DEBUG 12172 --- [http-nio-8888-exec-4] c.h.w.m.m.U.selectAll_COUNT              : ==>  Preparing: SELECT count(0) FROM user_info 
+2019-09-24 10:24:18.766 DEBUG 12172 --- [http-nio-8888-exec-4] c.h.w.m.m.U.selectAll_COUNT              : ==> Parameters: 
+2019-09-24 10:24:18.791 DEBUG 12172 --- [http-nio-8888-exec-4] c.h.w.m.m.U.selectAll_COUNT              : <==      Total: 1
+2019-09-24 10:24:18.796 DEBUG 12172 --- [http-nio-8888-exec-4] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_lables FROM user_info LIMIT ? 
+2019-09-24 10:24:18.800 DEBUG 12172 --- [http-nio-8888-exec-4] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 20(Integer)
+2019-09-24 10:24:18.803 DEBUG 12172 --- [http-nio-8888-exec-4] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 5
+2019-09-24 10:24:18.808  INFO 12172 --- [http-nio-8888-exec-4] com.hubu.work.utils.ControllerTimer      : method: PageBean com.hubu.work.web.common.BaseController.selectAll(int,int) cost:246ms

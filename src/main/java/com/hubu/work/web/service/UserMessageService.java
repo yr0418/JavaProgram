@@ -22,11 +22,11 @@ public class UserMessageService extends BaseService<UserMessage> {
     return userMessageMapper.readMessage(id);
   }
 
-  public Page<UserMessage> selectUserMessageAccepted(String username){
-    return userMessageMapper.selectUserMessageAccepted(username);
+  public Page<UserMessage> selectUserMessageAcceptedWithType(String username,int type){
+    return userMessageMapper.selectUserMessageAcceptedWithType(username, type);
   }
 
-  public int getUserMessageNotReadCount(String username){
-    return userMessageMapper.getUserMessageNotReadCount(username);
+  public int getUserMessageNotReadCountWithType(String username,int type){
+    return userMessageMapper.getUserMessageNotReadCountWithType(username,type);
   }
 }

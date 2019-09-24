@@ -32,12 +32,12 @@ public class PageBean<T> implements Serializable {
   private int pages;
 
   /**
-   * 每页显示的行数
+   * 每页显示的实例总数（默认为20）
    */
   private int pageSize;
 
   /**
-   * 当前页的数量 <= pageSize，该属性来自ArrayList的size属性
+   * 当前页的实例数量 <= pageSize，该属性来自ArrayList的size属性
    */
   private int size;
 

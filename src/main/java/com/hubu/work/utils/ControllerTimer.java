@@ -10,10 +10,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-
 /**
- * 代码模块：切面
- * 代码描述：日志打印接口被调用的时间与结果，
+ * 代码模块：切面 代码描述：日志打印接口被调用的时间与结果，
+ * 
  * @author 吴笛老师
  */
 @Aspect
@@ -25,15 +24,13 @@ public class ControllerTimer {
      * 将 所有 controller 层中的方法织入界面
      */
     @Pointcut("execution(public * com.hubu.work.web.controller.*.*(..))")
-    public void controllerPointCut() {
-    }
+    public void controllerPointCut() {}
 
     /**
-     * 将  baseController 层中的方法织入界面
+     * 将 baseController 层中的方法织入界面
      */
     @Pointcut("execution(public * com.hubu.work.web.common.BaseController.*(..))")
-    public void baseControllerPointCut(){
-    }
+    public void baseControllerPointCut() {}
 
     @Around("controllerPointCut()")
     public Object aroundController(ProceedingJoinPoint point) throws Throwable {
@@ -45,7 +42,7 @@ public class ControllerTimer {
     }
 
     @Around("baseControllerPointCut()")
-    public Object aroundBaseController(ProceedingJoinPoint point) throws Throwable{
+    public Object aroundBaseController(ProceedingJoinPoint point) throws Throwable {
         long beginTime = System.currentTimeMillis();
         Object result = point.proceed();
         long time = System.currentTimeMillis() - beginTime;

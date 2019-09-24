@@ -23,14 +23,16 @@ public interface UserMessageMapper extends CustomMapper<UserMessage> {
     /**
      * 查询用户接受到的消息
      * @param username：用户名
+     * @param type：消息类型，好友申请，入队申请。
      * @return Page<UserMessage>
      */
-    Page<UserMessage> selectUserMessageAccepted(String username);
+    Page<UserMessage> selectUserMessageAcceptedWithType(@Param("username") String username,@Param("type") int type);
 
     /**
      * 查询用户未读信息的数量
      * @param username：用户名
+     * @param type: 消息类型：好友申请，入队申请
      * @return int
      */
-    int getUserMessageNotReadCount(String username);
+    int getUserMessageNotReadCountWithType(@Param("username") String username,@Param("type") int type);
 }
