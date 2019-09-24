@@ -112,4 +112,11 @@ CREATE TABLE `message_type`  (
   `type` varchar(50) DEFAULT NULL ,
   PRIMARY KEY (`id`)
 )
+DROP TABLE IF EXISTS `user_friends`;
+CREATE TABLE `user_friends`(
+  `id` bigint(20) not null AUTO_INCREMENT,
+  `username` varchar (255) default null ,
+  `friend` varchar (255) default null ,
+  primary key(`id`)
+)
 

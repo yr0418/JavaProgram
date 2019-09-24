@@ -21,6 +21,14 @@
   </properties>
 
   <dependencies>
+
+    <!--JsonObject依赖-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.41</version>
+    </dependency>
+
     <!--swagger2-->
     <dependency>
       <groupId>io.springfox</groupId>

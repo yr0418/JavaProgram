@@ -42,9 +42,16 @@ public class UserInfoController extends BaseController<UserInfo> {
     public String findImgPath(String username, HttpServletRequest request) {
         String path = userInfoService.findUserImg(username);
         // 获取服务器地址，类似 http:localhost:8888
-        String serverBasePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-            + request.getContextPath();
+        String serverBasePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
         return serverBasePath + "/" + path;
+    }
+
+    @ApiOperation(value = "获取 WebSocket 的路径")
+    @GetMapping(value = "getWebSocketPath")
+    public String getWebSocketPath(HttpServletRequest request){
+        String serverBasePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
+        serverBasePath= serverBasePath.replace("https","ws").replace("http","ws");
+        return serverBasePath+"/webSocket";
     }
 
     @ApiOperation(value = "登陆接口，1：登陆成功，0：登陆失败，2：该用户名未注册")
