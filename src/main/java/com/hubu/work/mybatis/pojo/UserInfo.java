@@ -1,12 +1,15 @@
 package com.hubu.work.mybatis.pojo;
 
+import lombok.Data;
+
 import javax.persistence.Id;
 
 /**
  * 应用模块名称: UserInfo
  * 代码描述:对应数据库 user_info 表，保存用户信息
- * @author：杨睿
+ * @author 杨睿
  */
+@Data
 public class UserInfo {
     @Id
     private Long id;
@@ -32,6 +35,8 @@ public class UserInfo {
     private String personalizedSignature;
 
     private String personalizedLables;
+
+    private String online;
 
     public Long getId() {
         return id;

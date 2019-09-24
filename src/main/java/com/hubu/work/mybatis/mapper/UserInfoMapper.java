@@ -98,4 +98,18 @@ public interface UserInfoMapper extends CustomMapper<UserInfo> {
    * @return UserInfo实例化对象
    */
   UserInfo getUserInfo(@Param("username") String username);
+
+  /**
+   * 修改用户状态为 在线： online = 1
+   * @param username
+   * @return 影响的行数
+   */
+  int online(String username);
+
+  /**
+   * 修改用户状态为 不在线： online = 0
+   * @param username
+   * @return
+   */
+  int outline(String username);
 }

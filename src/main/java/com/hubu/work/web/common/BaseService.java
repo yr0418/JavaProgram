@@ -37,6 +37,15 @@ public class BaseService<T> {
   }
 
   /**
+   * 根据实例，删除实例
+   * @param t
+   * @return
+   */
+  public int delete(T t){
+    return mapper.delete(t);
+  }
+
+  /**
    * 插入实例
    * @param t：实体类对象
    * @return int

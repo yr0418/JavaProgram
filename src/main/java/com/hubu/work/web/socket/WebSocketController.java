@@ -3,9 +3,11 @@ package com.hubu.work.web.socket;
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hubu.work.mybatis.bean.SocketMsg;
+import com.hubu.work.mybatis.mapper.UserInfoMapper;
 import lombok.extern.java.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -28,6 +30,8 @@ import java.util.concurrent.ConcurrentHashMap;
 @ServerEndpoint("/webSocket/{username}")
 @Component
 public class WebSocketController {
+    @Autowired
+    UserInfoMapper userInfoMapper;
     private static Logger logger = LoggerFactory.getLogger(WebSocketController.class);
 
     /**
@@ -57,6 +61,7 @@ public class WebSocketController {
         this.session = session;
         this.username = username;
         websocketMap.put(username, session);
+        userInfoMapper.online(username);
         logger.info("有新的窗口加入WebSocket，username：" + username);
         sendMessageByBackground(JSON.toJSONString("连接成功"));
     }
@@ -70,6 +75,7 @@ public class WebSocketController {
     public void onClose(@PathParam("username") String username) {
         if (websocketMap.get(username) != null) {
             websocketMap.remove(username);
+            userInfoMapper.outline(username);
             logger.info("有用户关闭连接：" + username);
         }
     }

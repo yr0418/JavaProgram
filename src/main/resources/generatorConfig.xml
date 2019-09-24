@@ -45,7 +45,7 @@
 
         <!--指定每个表的生成策略-->
 
-        <table tableName="user_message"
+        <table tableName="user_friends"
                enableCountByExample="false"
                enableDeleteByExample="false"
                enableSelectByExample="false"

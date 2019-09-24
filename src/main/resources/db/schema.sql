@@ -1,13 +1,10 @@
 
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
-
 DROP TABLE IF EXISTS `action_type`;
 CREATE TABLE `action_type`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `action_type` varchar(255),
   PRIMARY KEY (`id`)
-)
+);
 
 DROP TABLE IF EXISTS `audit_info`;
 CREATE TABLE `audit_info`  (
@@ -18,7 +15,7 @@ CREATE TABLE `audit_info`  (
   `audit_status` int(10),
   `audit_result` int(10),
   PRIMARY KEY (`id`)
-)
+);
 
 
 DROP TABLE IF EXISTS `enjoy`;
@@ -50,7 +47,7 @@ CREATE TABLE `offline_study`  (
   `ps` varchar(255) DEFAULT NULL,
   `valid` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-)
+);
 
 DROP TABLE IF EXISTS `online_study`;
 CREATE TABLE `online_study`  (
@@ -63,7 +60,7 @@ CREATE TABLE `online_study`  (
   `ps` varchar(255)  DEFAULT NULL,
   `valid` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-)
+);
 
 
 DROP TABLE IF EXISTS `team_info`;
@@ -91,6 +88,7 @@ CREATE TABLE `user_info`  (
   `major` varchar(255)  DEFAULT NULL,
   `personalized_signature` varchar(255)  DEFAULT NULL,
   `personalized_lables` varchar(255)  DEFAULT NULL,
+  `online` int(10) default null,
   PRIMARY KEY (`id`)
 );
 
@@ -104,14 +102,14 @@ CREATE TABLE `user_message`  (
   `context` varchar(255)  DEFAULT NULL,
   `read` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-)
+);
 
 DROP TABLE IF EXISTS `message_type`;
 CREATE TABLE `message_type`  (
   `id` bigint(10) NOT NULL ,
   `type` varchar(50) DEFAULT NULL ,
   PRIMARY KEY (`id`)
-)
+);
 DROP TABLE IF EXISTS `user_friends`;
 CREATE TABLE `user_friends`(
   `id` bigint(20) not null AUTO_INCREMENT,

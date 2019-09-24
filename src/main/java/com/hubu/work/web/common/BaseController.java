@@ -35,6 +35,12 @@ public class BaseController<T> {
         return service.deleteById(id);
     }
 
+    @ApiOperation(value = "根据实例删除实例")
+    @DeleteMapping(value = "delete")
+    public int delete(@RequestBody T t){
+        return service.delete(t);
+    }
+
     @ApiOperation(value = "修改实例，直接修改全部字段，前台注意数据传入。返回值：1：修改成功，0：修改失败")
     @PostMapping
     public int update(@RequestBody T t) {

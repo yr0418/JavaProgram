@@ -14,6 +14,7 @@
     <result column="MAJOR" jdbcType="VARCHAR" property="major"/>
     <result column="PERSONALIZED_SIGNATURE" jdbcType="VARCHAR" property="personalizedSignature"/>
     <result column="PERSONALIZED_LABLES" jdbcType="VARCHAR" property="personalizedLables"/>
+    <result column="ONLINE" jdbcType="INTEGER" property="online"/>
   </resultMap>
   <select id="findUserImg" resultType="java.lang.String">
     select user_img_url from user_info
@@ -104,4 +105,10 @@
   <select id="getUserInfo" resultMap="BaseResultMap">
     select * from user_info where username = #{username}
   </select>
+  <update id="online">
+    update user_info set online = 1 where username = #{username}
+  </update>
+  <update id="outline">
+    update user_info set online = 0 where username = #{username};
+  </update>
 </mapper>
