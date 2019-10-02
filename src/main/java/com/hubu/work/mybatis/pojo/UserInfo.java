@@ -34,7 +34,7 @@ public class UserInfo {
 
     private String personalizedSignature;
 
-    private String personalizedLables;
+    private String personalizedLabels;
 
     private String online;
 
@@ -126,10 +126,10 @@ public class UserInfo {
     }
 
     public String getPersonalizedLables() {
-        return personalizedLables;
+        return personalizedLabels;
     }
 
     public void setPersonalizedLables(String personalizedLables) {
-        this.personalizedLables = personalizedLables == null ? null : personalizedLables.trim();
+        this.personalizedLabels = personalizedLables == null ? null : personalizedLables.trim();
     }
 }

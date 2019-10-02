@@ -32,6 +32,20 @@ public class UserInfoService extends BaseService<UserInfo> {
     return userInfoMapper.findUsername(username);
   }
 
+  /**
+   * 查询用户所在的学校
+   * @param username 用户名
+   * @return 用户所在的学校
+   */
+  public String findUserSchool(String username){
+    return userInfoMapper.findUserSchool(username);
+  }
+
+  /**
+   *查询用户所在的城市
+   * @param username
+   * @return
+   */
   public String findUserCity(String username) {
     return userInfoMapper.findUserCity(username);
   }

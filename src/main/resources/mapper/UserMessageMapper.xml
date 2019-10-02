@@ -8,6 +8,7 @@
     <result column="TYPE" jdbcType="VARCHAR" property="type"/>
     <result column="CONTEXT" jdbcType="VARCHAR" property="context"/>
     <result column="READ" jdbcType="INTEGER" property="read"/>
+    <result column="DATE" jdbcType="VARCHAR" property="date"/>
   </resultMap>
   <update id="readMessage">
     update user_message
@@ -23,11 +24,13 @@
     <where>
       username = #{username} and type = #{type}
     </where>
+    order by id desc
   </select>
   <select id="getUserMessageNotReadCountWithType" resultType="int">
     select count (*) from user_message
     <where>
       username = #{username} and read = 0 and type = #{type}
     </where>
+    order by id desc
   </select>
 </mapper>

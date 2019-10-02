@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 应用模块名称: UserInfoController 代码描述:提供操作用户信息的控制器
  * 
- * @author：杨睿
+ * @author 杨睿
  */
 @RestController
 @RequestMapping(value = "userInfo")
@@ -54,7 +54,7 @@ public class UserInfoController extends BaseController<UserInfo> {
         return serverBasePath+"/webSocket";
     }
 
-    @ApiOperation(value = "登陆接口，1：登陆成功，0：登陆失败，2：该用户名未注册")
+    @ApiOperation(value = "登陆接口，1：登陆成功，2：该用户名未注册，3：密码错误")
     @PostMapping(value = "login")
     public int login(@RequestBody User user) {
         int count = userInfoService.findUser(user);
@@ -63,20 +63,20 @@ public class UserInfoController extends BaseController<UserInfo> {
         } else {
             int username = userInfoService.findUsername(user.getUsername());
             if (username == 1) {
-                return 2;
+                return 3;
             } else {
-                return 0;
+                return 2;
             }
         }
     }
 
     @Override
-    @ApiOperation(value = "插入用户信息，用于注册，需保证用户名与昵称均一致。返回值：1：注册成功，0：用户名已被使用，2：昵称已被使用")
+    @ApiOperation(value = "插入用户信息，用于注册，需保证用户名与昵称是唯一值。返回值：1：注册成功，3：用户名已被使用，2：昵称已被使用")
     public int insert(UserInfo userInfo) {
         int usernameCount = userInfoService.findUsername(userInfo.getUsername());
         int nicknameCount = userInfoService.findUserNickname(userInfo.getNickname());
         if (usernameCount == 1) {
-            return 0;
+            return 3;
         } else if (usernameCount == 0 && nicknameCount == 1) {
             return 2;
         } else {
@@ -96,4 +96,9 @@ public class UserInfoController extends BaseController<UserInfo> {
         return userInfoService.getUserInfo(username);
     }
 
+    @ApiOperation(value = "修改用户个性签名")
+    @PostMapping(value = "updateUserPersonalizedSignature")
+    public int updateUserPersonalizedSignature(@RequestParam("username") String username,@RequestParam("personalizeSignature") String personalizeSignature){
+        return userInfoService.updateUserPersonalizedSignature(username,personalizeSignature);
+    }
 }

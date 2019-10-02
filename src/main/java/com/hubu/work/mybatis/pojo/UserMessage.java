@@ -20,6 +20,8 @@ public class UserMessage {
 
     private int type;
 
+    private String date;
+
     private String context;
 
     private Integer read;

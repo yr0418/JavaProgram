@@ -10,6 +10,7 @@ INSERT INTO `action_type` VALUES (3, '吃喝玩乐');
 -- ----------------------------
 INSERT INTO `message_type` VALUES (1, '好友申请');
 INSERT INTO `message_type` VALUES (2, '入队申请');
+insert into `message_type` values (3, '入队申请结果');
 
 
 -- ----------------------------

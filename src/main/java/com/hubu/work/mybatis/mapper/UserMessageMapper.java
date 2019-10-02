@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface UserMessageMapper extends CustomMapper<UserMessage> {
     /**
-     * 修改字段值：read=1
+     * 修改字段值：read=1，消息已读
      * @param id
      * @return int
      * 1：修改成功
@@ -21,7 +21,7 @@ public interface UserMessageMapper extends CustomMapper<UserMessage> {
     int readMessage(@Param("id") Long id);
 
     /**
-     * 查询用户接受到的消息
+     * 查询用户接受到的消息,从后向前查询
      * @param username：用户名
      * @param type：消息类型，好友申请，入队申请。
      * @return Page<UserMessage>

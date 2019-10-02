@@ -22,7 +22,7 @@ import static com.hubu.work.utils.Constant.PAGE_SIZE;
 /**
  * 应用模块名称：UserMessageController 代码描述： 操作用户消息的控制器
  * 
- * @author：杨睿
+ * @author 杨睿
  * @since 2019/9/21 17:30
  */
 @RestController
@@ -37,7 +37,7 @@ public class UserMessageController extends BaseController<UserMessage> {
         return userMessageService.readMessage(id);
     }
 
-    @ApiOperation(value = "查询用户收到的信息，包括已读，未读信息")
+    @ApiOperation(value = "查询用户收到的信息，包括已读，未读信息，注意消息的类型")
     @GetMapping(value = "selectUserMessagesWithType")
     public PageBean<UserMessage> selectUserMessagesWithType(@RequestParam String username,@RequestParam int type,
         @RequestParam(defaultValue = CURRENT_PAGE) int pageNum, @RequestParam(defaultValue = PAGE_SIZE) int pageSize) {

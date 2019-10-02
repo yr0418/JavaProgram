@@ -18,16 +18,16 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 @Log
-public class ControllerTimer {
+public class ControllerTimerAspect {
 
     /**
-     * 将 所有 controller 层中的方法织入界面
+     * 将 所有 controller 层中的方法织入流程
      */
     @Pointcut("execution(public * com.hubu.work.web.controller.*.*(..))")
     public void controllerPointCut() {}
 
     /**
-     * 将 baseController 层中的方法织入界面
+     * 将 baseController 层中的方法织入流程
      */
     @Pointcut("execution(public * com.hubu.work.web.common.BaseController.*(..))")
     public void baseControllerPointCut() {}
