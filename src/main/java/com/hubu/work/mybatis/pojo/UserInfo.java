@@ -5,12 +5,15 @@ import lombok.Data;
 import javax.persistence.Id;
 
 /**
- * 应用模块名称: UserInfo
- * 代码描述:对应数据库 user_info 表，保存用户信息
+ * @moduleName UserInfo
+ * @description 对应数据库 user_info 表，保存用户信息
+ *
  * @author 杨睿
  */
 @Data
 public class UserInfo {
+
+
     @Id
     private Long id;
 

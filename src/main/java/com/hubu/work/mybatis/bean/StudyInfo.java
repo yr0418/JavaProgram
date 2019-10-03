@@ -3,8 +3,8 @@ package com.hubu.work.mybatis.bean;
 import lombok.Data;
 
 /**
- * @模块名称 StudyInfo
- * @模块描述 封装用户发布的组队信息，方便前台传入数据
+ * @moduleName StudyInfo
+ * @description 封装用户发布的组队信息，方便前台传入数据
  *
  * @author 杨睿
  * @since 2019/9/26 15:46

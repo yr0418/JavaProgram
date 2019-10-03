@@ -5,9 +5,10 @@ import com.hubu.work.mybatis.bean.User;
 import com.hubu.work.mybatis.pojo.UserInfo;
 import org.apache.ibatis.annotations.Param;
 /**
- * 应用模块名称: UserInfoMapper
- * 代码描述: UserInfo 的 mapper层
- * @author：杨睿
+ * @moduleName UserInfoMapper
+ * @description UserInfo 的 mapper层
+ *
+ * @author 杨睿
  */
 public interface UserInfoMapper extends CustomMapper<UserInfo> {
 

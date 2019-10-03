@@ -21,8 +21,8 @@ import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 应用模块名称：
- * 代码描述：因为WebSocket是类似客户端服务端的形式(采用ws协议)，那么这里的WebSocketServer其实就相当于一个ws协议的Controller，直接 @ServerEndpoint("/websocket") @Component启用即可，然后在里面实现@OnOpen,@onClose,@onMessage等方法
+ * @moduleName WebSocketController
+ * @description 因为WebSocket是类似客户端服务端的形式(采用ws协议)，那么这里的WebSocketServer其实就相当于一个ws协议的Controller，直接 @ServerEndpoint("/websocket") @Component启用即可，然后在里面实现@OnOpen,@onClose,@onMessage等方法
  *
  * @author 杨睿
  * @since 2019/9/24 11:04

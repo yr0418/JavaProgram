@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * 应用模块名称：UserFriendsController 代码描述： userFriends 对应的 控制器
+ * @moduleName UserFriendsController
+ * @description userFriends 对应的 控制器
  *
  * @author 杨睿
  * @since 2019/9/24 19:06

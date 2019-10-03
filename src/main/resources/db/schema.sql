@@ -143,4 +143,13 @@ CREATE TABLE `test`
     `id`   integer(20) not null,
     `time` date default null,
     primary key (`id`)
-)
+);
+
+DROP TABLE IF EXISTS `demo`;
+CREATE TABLE `demo`
+(
+    `id`   integer(20) not null,
+    `username` varchar(255) default null,
+    `password` varchar(255) default null,
+    primary key (`id`)
+);

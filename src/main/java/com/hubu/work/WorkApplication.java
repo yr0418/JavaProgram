@@ -10,9 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
- * 应用模块名称: WorkApplication
- * 代码描述: Springboot 启动类
- * @author：杨睿
+ * @moduleName WorkApplication
+ * @description Springboot 启动类
+ * 
+ * @author 杨睿
  */
 @SpringBootApplication
 @MapperScan(value = "com.hubu.work.mybatis.mapper")

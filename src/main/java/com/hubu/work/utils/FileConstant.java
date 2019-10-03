@@ -3,8 +3,9 @@ package com.hubu.work.utils;
 import org.springframework.stereotype.Component;
 
 /**
- * 应用模块名称: FileConstant
- * 代码描述: 文件保存的目录
+ * @moduleName FileConstant
+ * @description 文件保存的目录
+ *
  * @author 杨睿
  */
 @Component

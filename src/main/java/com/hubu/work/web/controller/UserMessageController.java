@@ -20,7 +20,8 @@ import static com.hubu.work.utils.Constant.CURRENT_PAGE;
 import static com.hubu.work.utils.Constant.PAGE_SIZE;
 
 /**
- * 应用模块名称：UserMessageController 代码描述： 操作用户消息的控制器
+ * @moduleName UserMessageController
+ * @description 操作用户消息的控制器
  * 
  * @author 杨睿
  * @since 2019/9/21 17:30

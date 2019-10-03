@@ -7,9 +7,10 @@ import com.hubu.work.web.common.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**
- * 应用模块名称: UserInfoService
- * 代码描述: UserInfo 的 Service 层
- * @author：杨睿
+ * @moduleName UserInfoService
+ * @description UserInfo 的 Service 层
+ *
+ * @author 杨睿
  */
 @Service
 public class UserInfoService extends BaseService<UserInfo> {

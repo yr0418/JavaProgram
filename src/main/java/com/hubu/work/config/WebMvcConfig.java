@@ -18,9 +18,10 @@ import javax.servlet.MultipartConfigElement;
 
 import static com.sun.deploy.util.BufferUtil.MB;
 /**
- * 应用模块名称: WebMvcConfig
- * 代码描述:web 配置类，
- * @author：杨睿
+ * @moduleName WebMvcConfig
+ * @description web 配置类
+ *
+ * @author 杨睿
  */
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurationSupport {

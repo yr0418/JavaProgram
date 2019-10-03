@@ -14,7 +14,8 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * 应用模块名称: UserInfoController 代码描述:提供操作用户信息的控制器
+ * @moduleName UserInfoController
+ * @description 提供操作用户信息的控制器
  * 
  * @author 杨睿
  */

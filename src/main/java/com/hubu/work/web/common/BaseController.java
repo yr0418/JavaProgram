@@ -14,10 +14,11 @@ import java.util.Arrays;
 import static com.hubu.work.utils.Constant.*;
 
 /**
- * 代码描述：底层 Controller
- * 
- * @author：杨睿
+ * @moduleName BaseController
+ * @description 底层 Controller
  * @param <T>
+ *
+ * @author 杨睿
  */
 public class BaseController<T> {
     @Autowired

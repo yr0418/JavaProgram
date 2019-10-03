@@ -3,8 +3,8 @@ package com.hubu.work.mybatis.bean;
 import lombok.Data;
 
 /**
- * 应用模块名称：SocketMsg
- * 代码描述：在 WebSocket 中，封装用户发送的消息。使用json格式进行消息的发送
+ * @moduleName SocketMsg
+ * @description 在 WebSocket 中，封装用户发送的消息。使用json格式进行消息的发送
  *
  * @author 杨睿
  * @since 2019/9/24 11:10

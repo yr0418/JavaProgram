@@ -3,8 +3,9 @@ package com.hubu.work.mybatis.pojo;
 import javax.persistence.Id;
 
 /**
- * 应用模块名称: UserFriends
- * 代码描述:对应数据库 user_friends 表，保存用户好友信息
+ * @moduleName UserFriends
+ * @description 对应数据库 user_friends 表，保存用户好友信息
+ *
  * @author 杨睿
  */
 public class UserFriends {

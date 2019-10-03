@@ -10,6 +10,7 @@
     <result column="READ" jdbcType="INTEGER" property="read"/>
     <result column="DATE" jdbcType="VARCHAR" property="date"/>
   </resultMap>
+
   <update id="readMessage">
     update user_message
     <set>
@@ -19,13 +20,15 @@
       id = #{id}
     </where>
   </update>
-  <select id="selectUserMessageAcceptedWithType" resultMap="BaseResultMap">
+
+  <select id="selectUserMessageAcceptedWithType" resultType="com.hubu.work.mybatis.pojo.UserMessage">
     select * from user_message
     <where>
       username = #{username} and type = #{type}
     </where>
     order by id desc
   </select>
+
   <select id="getUserMessageNotReadCountWithType" resultType="int">
     select count (*) from user_message
     <where>
@@ -33,4 +36,5 @@
     </where>
     order by id desc
   </select>
+
 </mapper>

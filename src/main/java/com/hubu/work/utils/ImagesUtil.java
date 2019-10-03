@@ -10,9 +10,9 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 /**
- * 应用模块名称: ImagesUtil
- * 代码描述:图片保存到本地具体方法
- * @author：杨睿
+ * @moduleName ImagesUtil
+ * @description 图片保存到本地具体方法
+ * @author 杨睿
  */
 @Component
 public class ImagesUtil {

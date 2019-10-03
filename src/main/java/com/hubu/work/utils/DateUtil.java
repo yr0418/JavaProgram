@@ -17,14 +17,12 @@ import java.util.Date;
 public class DateUtil {
   private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-  public Date setTime(String time) throws ParseException {
-    Date date = simpleDateFormat.parse(time);
-    return date;
-  }
-
-  public Date getTime() throws ParseException {
-    String time = simpleDateFormat.format(new Date());
-    Date date = simpleDateFormat.parse(time);
-    return date;
+  /**
+   * 将从数据库拿到的时间转换为标准形式
+   * @param date 从数据库提取到的 date 数据
+   * @return String，时间的标准表示形式
+   */
+  public String getTime(Date date){
+    return simpleDateFormat.format(date);
   }
 }

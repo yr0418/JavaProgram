@@ -17,9 +17,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * 代码描述：底层 Service
- * @author: 杨睿
+ * @moduleName BaseService
+ * @description 底层 Service
  * @param <T>
+ *
+ * @author 杨睿
  */
 public class BaseService<T> {
   @Autowired

@@ -6,9 +6,10 @@ import com.hubu.work.mybatis.pojo.UserMessage;
 import org.apache.ibatis.annotations.Param;
 
 /**
- * 应用模块名称: UserMessageMapper
- * 代码描述:UserMessage 的 mapper 层
- * @author：杨睿
+ * @moduleName UserMessageMapper
+ * @description UserMessage 的 mapper 层
+ *
+ * @author 杨睿
  */
 public interface UserMessageMapper extends CustomMapper<UserMessage> {
     /**
@@ -35,4 +36,5 @@ public interface UserMessageMapper extends CustomMapper<UserMessage> {
      * @return int
      */
     int getUserMessageNotReadCountWithType(@Param("username") String username,@Param("type") int type);
+
 }

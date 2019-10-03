@@ -10,7 +10,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * 应用模块名称：UserFriendsService 代码描述：UserFriends 对应的 Service层
+ * @moduleName UserFriendsService
+ * @description UserFriends 对应的 Service层
  *
  * @author 杨睿
  * @since 2019/9/24 19:03

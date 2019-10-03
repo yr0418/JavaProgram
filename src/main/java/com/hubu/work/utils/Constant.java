@@ -3,7 +3,9 @@ package com.hubu.work.utils;
 import org.springframework.stereotype.Component;
 
 /**
- * 代码描述：用于规范分页查询
+ * @moduleName Constant
+ * @description 用于规范分页查询
+ *
  * @author 吴笛老师
  */
 @Component

@@ -5,12 +5,14 @@ import lombok.Data;
 import javax.persistence.Id;
 
 /**
- * 应用模块名称: UserMessage
- * 代码描述:对应数据库 user_message 表，保存用户收到，发布的消息
+ * @moduleName UserMessage
+ * @description 对应数据库 user_message 表，保存用户收到，发布的消息
+ *
  * @author 杨睿
  */
 @Data
 public class UserMessage {
+
     @Id
     private Long id;
 
