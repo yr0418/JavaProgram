@@ -1,6 +1,8 @@
 package com.hubu.work;
 
+import com.hubu.work.mybatis.mapper.LplMapper;
 import com.hubu.work.mybatis.mapper.UserInfoMapper;
+import com.hubu.work.mybatis.pojo.Lpl;
 import com.hubu.work.utils.DateUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,5 +29,13 @@ public class WorkApplicationTests {
 		String city = userInfoMapper.findUserCity("111");
 		System.out.println(city);
 	}
-
+	@Autowired
+	LplMapper lplMapper;
+@Test
+	public void t2(){
+	Lpl lpl =new Lpl();
+	lpl.setUsername("333");
+	lpl.setPassword("333");
+	lplMapper.insert(lpl);
+	}
 }
