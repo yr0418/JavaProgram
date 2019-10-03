@@ -145,10 +145,10 @@ CREATE TABLE `test`
     primary key (`id`)
 );
 
-DROP TABLE IF EXISTS `demo`;
-CREATE TABLE `demo`
+DROP TABLE IF EXISTS `skt`;
+CREATE TABLE `skt`
 (
-    `id`   integer(20) not null,
+    `id`   integer(20) not null AUTO_INCREMENT,
     `username` varchar(255) default null,
     `password` varchar(255) default null,
     primary key (`id`)

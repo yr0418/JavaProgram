@@ -1,6 +1,8 @@
 package com.hubu.work;
 
+import com.hubu.work.mybatis.mapper.SktMapper;
 import com.hubu.work.mybatis.mapper.UserInfoMapper;
+import com.hubu.work.mybatis.pojo.Skt;
 import com.hubu.work.utils.DateUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,17 +17,15 @@ import java.util.Date;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class WorkApplicationTests {
-	@Autowired
-	UserInfoMapper userInfoMapper;
-
-	@Autowired
-	DateUtil dateUtil;
-
-
-		@Test
-	public void t1() throws ParseException {
-		String city = userInfoMapper.findUserCity("111");
-		System.out.println(city);
-	}
+@Autowired
+SktMapper sktMapper;
+@Test
+	public void t1(){
+	Skt skt = new Skt();
+	skt.setUsername("111");
+	skt.setPassword("111");
+	sktMapper.insert(skt);
 
 }
+
+	}
