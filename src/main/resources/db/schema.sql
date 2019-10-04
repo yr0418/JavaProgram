@@ -21,8 +21,8 @@ CREATE TABLE `audit_info`
 );
 
 
-DROP TABLE IF EXISTS `enjoy`;
-CREATE TABLE `enjoy`
+DROP TABLE IF EXISTS `enjoy_info`;
+CREATE TABLE `enjoy_info`
 (
     `id`           bigint(20) NOT NULL AUTO_INCREMENT,
     `username`     varchar(255) DEFAULT NULL,
@@ -40,13 +40,14 @@ CREATE TABLE `enjoy`
     PRIMARY KEY (`id`)
 );
 
-DROP TABLE IF EXISTS `offline_study`;
-CREATE TABLE `offline_study`
+DROP TABLE IF EXISTS `study_info`;
+CREATE TABLE `study_info`
 (
     `id`           bigint(20) NOT NULL AUTO_INCREMENT,
     `username`     varchar(255) DEFAULT NULL,
     `user_img_url` varchar(255) DEFAULT NULL,
     `user_school`  varchar(255) DEFAULT NULL,
+    `type`         int(10)      default null ,
     `label`        varchar(255) DEFAULT NULL,
     `time`         varchar(255) DEFAULT NULL,
     `site`         varchar(255) DEFAULT NULL,
@@ -58,21 +59,6 @@ CREATE TABLE `offline_study`
     PRIMARY KEY (`id`)
 );
 
-DROP TABLE IF EXISTS `online_study`;
-CREATE TABLE `online_study`
-(
-    `id`           bigint(20) NOT NULL AUTO_INCREMENT,
-    `username`     varchar(255) DEFAULT NULL,
-    `user_img_url` varchar(255) DEFAULT NULL,
-    `label`        varchar(255) DEFAULT NULL,
-    `time`         varchar(255) DEFAULT NULL,
-    `max_member`   int(255)     DEFAULT NULL,
-    `left_member`  int(255)     DEFAULT NULL,
-    `date`         date         default null,
-    `ps`           varchar(255) DEFAULT NULL,
-    `valid`        int(11)      DEFAULT NULL,
-    PRIMARY KEY (`id`)
-);
 
 
 DROP TABLE IF EXISTS `team_info`;
@@ -147,6 +133,15 @@ CREATE TABLE `test`
 
 DROP TABLE IF EXISTS `lpl`;
 CREATE TABLE `lpl`
+(
+    `id`   integer(20) not null AUTO_INCREMENT,
+    `username` varchar(255) default null,
+    `password` varchar(255) default null,
+    primary key (`id`)
+);
+
+DROP TABLE IF EXISTS `skt`;
+CREATE TABLE `skt`
 (
     `id`   integer(20) not null AUTO_INCREMENT,
     `username` varchar(255) default null,

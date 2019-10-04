@@ -9,7 +9,7 @@ import lombok.Data;
  * @since 2019/9/30 15:14
  */
 @Data
-public class QueryStudyInfo {
+public class QueryInfo {
   /**
    * 组队学习模式，1：线下，2：线上
    */
@@ -21,9 +21,14 @@ public class QueryStudyInfo {
   private String username;
 
   /**
-   * 组队学习标签
+   * 标签
    */
   private String label;
+
+  /**
+   * 性别限制，使用数字标注不同的性别限制，1：只限异性，2：只限同性，3：无限制。
+   */
+  private  int sexSpecific;
 
   /**
    * 最大组队人数

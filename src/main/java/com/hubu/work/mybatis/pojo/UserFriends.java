@@ -6,7 +6,7 @@ import javax.persistence.Id;
  * @moduleName UserFriends
  * @description 对应数据库 user_friends 表，保存用户好友信息
  *
- * @author 杨睿
+ * @Author 杨睿
  */
 public class UserFriends {
     @Id
