@@ -12,6 +12,11 @@ import java.util.List;
  */
 public interface TestMapper {
 
+    /**
+     * 插入数据
+     * @param record
+     * @return int，返回影响的行数
+     */
     int insert(Test record);
     List<Test> selectAll();
 
