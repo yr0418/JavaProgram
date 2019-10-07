@@ -1,6 +1,7 @@
 package com.hubu.work.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.web.socket.server.standard.ServerEndpointExporter;
  * @author 杨睿
  * @since 2019/9/24 10:25
  */
+@Configuration
 public class WebSocketConfig {
   @Bean
   public ServerEndpointExporter serverEndpointExporter(){

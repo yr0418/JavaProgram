@@ -67,4 +67,13 @@ public class UserInfoService extends BaseService<UserInfo> {
   public UserInfo getUserInfo(String username){
     return userInfoMapper.getUserInfo(username);
   }
+
+  public int online(String username){
+    return userInfoMapper.online(username);
+  }
+
+  public int outline(String username){
+    return userInfoMapper.outline(username);
+  }
+
 }

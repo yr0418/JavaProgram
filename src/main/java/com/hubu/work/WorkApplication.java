@@ -5,8 +5,10 @@ package com.hubu.work;
  *  org.mybatis.spring.annotation.MapperScan;
  */
 
+import com.hubu.work.web.socket.WebSocketController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
@@ -20,7 +22,10 @@ import tk.mybatis.spring.annotation.MapperScan;
 public class WorkApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(WorkApplication.class, args);
+    SpringApplication springApplication = new SpringApplication(WorkApplication.class);
+    ConfigurableApplicationContext configurableApplicationContext = springApplication.run(args);
+    //解决WebSocket不能注入的问题
+    WebSocketController.setApplicationContext(configurableApplicationContext);
   }
 
 }
