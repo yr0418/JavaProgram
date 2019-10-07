@@ -1,5 +1,6 @@
 package com.hubu.work.mybatis.bean;
 
+
 import lombok.Data;
 
 /**
@@ -21,6 +22,11 @@ public class SocketMsg {
    */
   private String receiver;
 
+  public String getSender() {
+    return sender;
+  }
+
+
   /**
    * 消息的类型：1：单聊，2：群发
    */
@@ -30,4 +36,32 @@ public class SocketMsg {
    * 封装消息
    */
   private String msg;
+
+  public void setSender(String sender) {
+    this.sender = sender;
+  }
+
+  public String getReceiver() {
+    return receiver;
+  }
+
+  public void setReceiver(String receiver) {
+    this.receiver = receiver;
+  }
+
+  public int getType() {
+    return type;
+  }
+
+  public void setType(int type) {
+    this.type = type;
+  }
+
+  public String getMsg() {
+    return msg;
+  }
+
+  public void setMsg(String msg) {
+    this.msg = msg;
+  }
 }
