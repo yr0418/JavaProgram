@@ -21,11 +21,21 @@ public class WorkApplicationTests {
 SktMapper sktMapper;
 @Test
 	public void t1(){
-	Skt skt = new Skt();
-	skt.setUsername("111");
-	skt.setPassword("111");
-	sktMapper.insert(skt);
+		Skt skt = new Skt();
+		skt.setUsername("111");
+		skt.setPassword("111");
+		sktMapper.insert(skt);
 
-}
+	}
+
+
+	@Test
+	public void t2(){
+		Skt skt = new Skt();
+		skt.setUsername("111");
+		skt.setPassword("111");
+		sktMapper.insert(skt);
+
+	}
 
 	}
