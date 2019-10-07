@@ -131,14 +131,14 @@ CREATE TABLE `test`
     primary key (`id`)
 );
 
-DROP TABLE IF EXISTS `lpl`;
-CREATE TABLE `lpl`
-(
-    `id`   integer(20) not null AUTO_INCREMENT,
-    `username` varchar(255) default null,
-    `password` varchar(255) default null,
-    primary key (`id`)
-);
+-- DROP TABLE IF EXISTS `lpl`;
+-- CREATE TABLE `lpl`
+-- (
+--     `id`   integer(20) not null AUTO_INCREMENT,
+--     `username` varchar(255) default null,
+--     `password` varchar(255) default null,
+--     primary key (`id`)
+-- );
 
 DROP TABLE IF EXISTS `skt`;
 CREATE TABLE `skt`
