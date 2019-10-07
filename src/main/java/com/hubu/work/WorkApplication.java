@@ -26,6 +26,7 @@ public class WorkApplication {
     ConfigurableApplicationContext configurableApplicationContext = springApplication.run(args);
     //解决WebSocket不能注入的问题
     WebSocketController.setApplicationContext(configurableApplicationContext);
+
   }
 
 }
