@@ -27,3 +27,5 @@ INSERT INTO `user_info` VALUES (4, 'abc', 'abc', 'abc', NULL, '女', '武汉', '
 insert into `user_friends` values (1,'root','111');
 insert into `user_friends` values (2,'root','222');
 insert into `user_friends` values (3,'222','111');
+
+commit;

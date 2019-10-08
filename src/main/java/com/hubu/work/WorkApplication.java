@@ -21,10 +21,6 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan(value = "com.hubu.work.mybatis.mapper")
 public class WorkApplication {
   public static void main(String[] args) {
-//    SpringApplication springApplication = new SpringApplication(WorkApplication.class);
-//    ConfigurableApplicationContext configurableApplicationContext = springApplication.run(args);
-//    //解决WebSocket不能注入的问题
-//    WebSocketController.setApplicationContext(configurableApplicationContext);
     SpringApplication.run(WorkApplication.class, args);
   }
 

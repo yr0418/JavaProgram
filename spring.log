@@ -3376,3 +3376,47 @@ Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/JavaProgr
 2019-10-08 19:30:10.371 DEBUG 2412 --- [main] c.h.w.m.mapper.SktMapper.selectAll       : ==> Parameters: 
 2019-10-08 19:30:10.396 DEBUG 2412 --- [main] c.h.w.m.mapper.SktMapper.selectAll       : <==      Total: 1
 2019-10-08 19:30:10.420  INFO 2412 --- [Thread-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-08 19:57:17.181  INFO 20600 --- [main] com.hubu.work.WorkApplicationTests       : Starting WorkApplicationTests on LAPTOP-KFML1MRR with PID 20600 (started by Alone Wolf in D:\JavaProgram\Springboot\JavaProgram)
+2019-10-08 19:57:17.182 DEBUG 20600 --- [main] com.hubu.work.WorkApplicationTests       : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-08 19:57:17.183  INFO 20600 --- [main] com.hubu.work.WorkApplicationTests       : The following profiles are active: dev
+2019-10-08 19:57:18.614  WARN 20600 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-10-08 19:57:18.635  WARN 20600 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-10-08 19:57:19.176  INFO 20600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7a744b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 19:57:20.852  INFO 20600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-10-08 19:57:20.891  INFO 20600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 19:57:20.892  INFO 20600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-08 19:57:21.089  INFO 20600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 19:57:21.090  INFO 20600 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3875 ms
+2019-10-08 19:57:21.262  INFO 20600 --- [main] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-10-08 19:57:21.266  INFO 20600 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-10-08 19:57:21.481  INFO 20600 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-08 19:57:21.727 ERROR 20600 --- [main] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-10-08 19:57:21.732  INFO 20600 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-08 19:57:23.077  INFO 20600 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-08 19:57:23.410  INFO 20600 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-10-08 19:57:23.411  INFO 20600 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-10-08 19:57:23.412  INFO 20600 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-10-08 19:57:23.412  INFO 20600 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2019-10-08 19:57:23.856  WARN 20600 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-08 19:57:24.072  INFO 20600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-08 19:57:24.097  INFO 20600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-10-08 19:57:24.136  INFO 20600 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-08 19:57:24.298  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
+2019-10-08 19:57:24.334  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2019-10-08 19:57:24.336  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
+2019-10-08 19:57:24.354  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_2
+2019-10-08 19:57:24.365  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-10-08 19:57:24.367  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
+2019-10-08 19:57:24.369  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-10-08 19:57:24.382  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2019-10-08 19:57:24.384  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_2
+2019-10-08 19:57:24.389  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_3
+2019-10-08 19:57:24.396  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_2
+2019-10-08 19:57:24.398  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_2
+2019-10-08 19:57:24.402  INFO 20600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2019-10-08 19:57:24.455  INFO 20600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55089 (http) with context path ''
+2019-10-08 19:57:24.460  INFO 20600 --- [main] com.hubu.work.WorkApplicationTests       : Started WorkApplicationTests in 7.854 seconds (JVM running for 9.105)
+2019-10-08 19:57:24.975 DEBUG 20600 --- [main] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==>  Preparing: SELECT id,username,password,nickname,user_img_url,sex,city,school,academy,major,personalized_signature,personalized_labels,online FROM user_info 
+2019-10-08 19:57:25.007 DEBUG 20600 --- [main] c.h.w.m.mapper.UserInfoMapper.selectAll  : ==> Parameters: 
+2019-10-08 19:57:25.038 DEBUG 20600 --- [main] c.h.w.m.mapper.UserInfoMapper.selectAll  : <==      Total: 4
+2019-10-08 19:57:25.062  INFO 20600 --- [Thread-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

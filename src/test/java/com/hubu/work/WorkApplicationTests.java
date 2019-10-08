@@ -1,7 +1,9 @@
 package com.hubu.work;
 
 import com.hubu.work.mybatis.mapper.SktMapper;
+import com.hubu.work.mybatis.mapper.UserInfoMapper;
 import com.hubu.work.mybatis.pojo.Skt;
+import com.hubu.work.mybatis.pojo.UserInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,18 @@ public class WorkApplicationTests {
 
 	@Autowired
 	SktMapper sktMapper;
+
+	@Autowired
+	UserInfoMapper userInfoMapper;
+
+	@Test
+	public void t3(){
+		List<UserInfo> list = userInfoMapper.selectAll();
+		for (UserInfo user:list
+				 ) {
+			System.out.println(user);
+		}
+	}
 	@Test
 	public void t1(){
 		Skt skt = new Skt();

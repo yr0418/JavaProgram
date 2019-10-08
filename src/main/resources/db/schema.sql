@@ -1,3 +1,5 @@
+SET NAMES utf8;
+
 DROP TABLE IF EXISTS `action_type`;
 CREATE TABLE `action_type`
 (
