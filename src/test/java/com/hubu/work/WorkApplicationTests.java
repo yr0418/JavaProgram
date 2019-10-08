@@ -1,41 +1,37 @@
 package com.hubu.work;
 
 import com.hubu.work.mybatis.mapper.SktMapper;
-import com.hubu.work.mybatis.mapper.UserInfoMapper;
 import com.hubu.work.mybatis.pojo.Skt;
-import com.hubu.work.utils.DateUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.TestPropertySource;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.text.ParseException;
-import java.util.Date;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class WorkApplicationTests {
-@Autowired
-SktMapper sktMapper;
-@Test
+
+	@Autowired
+	SktMapper sktMapper;
+	@Test
 	public void t1(){
 		Skt skt = new Skt();
-		skt.setUsername("111");
 		skt.setPassword("111");
+		skt.setUsername("111");
 		sktMapper.insert(skt);
-
 	}
-
 
 	@Test
 	public void t2(){
-		Skt skt = new Skt();
-		skt.setUsername("111");
-		skt.setPassword("111");
-		sktMapper.insert(skt);
-
+		List<Skt> sktList= sktMapper.selectAll();
+		for (Skt skt:sktList
+				 ) {
+			System.out.println(skt);
+		}
 	}
-
-	}
+}

@@ -9,5 +9,8 @@
   <insert id="insert">
     insert into skt(username,password) values (#{username},#{password})
   </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select * from skt
+  </select>
 
 </mapper>

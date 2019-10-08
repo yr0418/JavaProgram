@@ -29,23 +29,21 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author 杨睿
  * @since 2019/9/24 11:04
  */
-@ServerEndpoint("/webSocket/{username}")
+@ServerEndpoint(value = "/webSocket/{username}")
 @Component
 public class WebSocketController {
-    /**
-     * 此处是解决无法注入的关键
-     */
-    private static ApplicationContext applicationContext;
+
+    private static Logger logger = LoggerFactory.getLogger(WebSocketController.class);
+
     /**
      * 要注入的service或者dao
      */
-    private  UserInfoService userInfoService;
+    private static UserInfoService userInfoService;
 
-    public static void setApplicationContext(ApplicationContext applicationContext) {
-        WebSocketController.applicationContext = applicationContext;
+    @Autowired
+    public void setUserInfoService(UserInfoService userInfoService){
+        WebSocketController.userInfoService=userInfoService;
     }
-
-    private static Logger logger = LoggerFactory.getLogger(WebSocketController.class);
 
     /**
      * 将 username 与 Session 进行绑定，便于获取指定的 session ，建立连接，发送消息
@@ -65,8 +63,7 @@ public class WebSocketController {
     /**
      * 连接成功调用方法
      * 
-     * @param session：Session
-     *            对象
+     * @param session：Session对象
      * @param username：连接的用户的用户名
      */
     @OnOpen
@@ -74,8 +71,6 @@ public class WebSocketController {
         this.session = session;
         this.username = username;
         websocketMap.put(username, session);
-        //调用 UserInfoService
-        userInfoService=applicationContext.getBean(UserInfoService.class);
         userInfoService.online(username);
         logger.info("有新的窗口加入WebSocket，username：" + username);
         sendMessageByBackground(JSON.toJSONString("连接成功"));
@@ -90,7 +85,6 @@ public class WebSocketController {
     public void onClose(@PathParam("username") String username) {
         if (websocketMap.get(username) != null) {
             websocketMap.remove(username);
-            userInfoService=applicationContext.getBean(UserInfoService.class);
             userInfoService.outline(username);
             logger.info("有用户关闭连接：" + username);
         }
