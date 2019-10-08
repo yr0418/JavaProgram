@@ -48,7 +48,7 @@ public class UserMessageController extends BaseController<UserMessage> {
     }
 
     @ApiOperation(value = "获取用户未读消息的数量，第一个是 好友申请消息的数量，第二个是入队申请消息的数量")
-    @GetMapping(value = "getMessageNotReadCount")
+    @GetMapping(value = "getMessageCountWithNotRead")
     public List<Integer> getMessageNotReadCount(String username) {
         /**
          * 使用 list 保存 两种消息类型的数量
