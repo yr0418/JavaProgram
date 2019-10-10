@@ -7,8 +7,8 @@
     <result column="FRIEND" jdbcType="VARCHAR" property="friend"/>
   </resultMap>
 
-  <select id="selectUserFriends" resultType="com.hubu.work.mybatis.bean.UserFriend">
-    select s1.username,s1.nickname,s1.online from user_info as s1
+  <select id="selectUserFriends" resultType="com.hubu.work.mybatis.bean.UserSimpleInfo">
+    select s1.username,s1.nickname,s1.user_img_url,s1.online from user_info as s1
     <where>
       s1.username in ((select s2.friend from user_friends as s2 where s2.username = #{username}) union (select
       s2.username from user_friends as s2 where s2.friend = #{username}))

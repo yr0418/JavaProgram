@@ -1,6 +1,6 @@
 package com.hubu.work.web.service;
 
-import com.hubu.work.mybatis.bean.UserFriend;
+import com.hubu.work.mybatis.bean.UserSimpleInfo;
 import com.hubu.work.mybatis.mapper.UserFriendsMapper;
 import com.hubu.work.mybatis.pojo.UserFriends;
 import com.hubu.work.web.common.BaseService;
@@ -21,7 +21,7 @@ public class UserFriendsService extends BaseService<UserFriends> {
     @Autowired
     UserFriendsMapper userFriendsMapper;
 
-    public List<UserFriend> selectUserFriends(String username) {
+    public List<UserSimpleInfo> selectUserFriends(String username) {
         return userFriendsMapper.selectUserFriends(username);
     }
 

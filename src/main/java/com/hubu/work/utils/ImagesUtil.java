@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
 /**
@@ -44,6 +45,9 @@ public class ImagesUtil {
          * 删除用户历史头像
          */
         String userImgSuffix = getFileSuffix(userInfoMapper.findUserImg(username));
+        if (userImgSuffix==null){
+          userImgSuffix="*";
+        }
         File file1 = new File(IMAGES_PATH + "/" + username + "." + userImgSuffix);
         if (file1.exists() || file1.isFile()) {
           file1.delete();
@@ -59,6 +63,11 @@ public class ImagesUtil {
     //返回文件相对路径
     String filePath = FileConstant.VIRTUAL_IMG_PATH + "/" + saveName;
     return filePath;
+  }
+
+  public String getImagesPath(HttpServletRequest request,String path){
+    String serverBasePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
+    return serverBasePath+"/"+path;
   }
 
   /**

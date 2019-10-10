@@ -1,7 +1,8 @@
 package com.hubu.work.web.controller;
 
-import com.hubu.work.mybatis.bean.UserFriend;
+import com.hubu.work.mybatis.bean.UserSimpleInfo;
 import com.hubu.work.mybatis.pojo.UserFriends;
+import com.hubu.work.utils.ImagesUtil;
 import com.hubu.work.web.common.BaseController;
 import com.hubu.work.web.service.UserFriendsService;
 import io.swagger.annotations.ApiOperation;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -20,16 +22,25 @@ import java.util.List;
  * @author 杨睿
  * @since 2019/9/24 19:06
  */
-@RestController
-@RequestMapping(value = "userFriends")
+//@RestController
+//@RequestMapping(value = "userFriends")
+
 public class UserFriendsController extends BaseController<UserFriends> {
     @Autowired
     UserFriendsService userFriendsService;
 
+    @Autowired
+    ImagesUtil imagesUtil;
+
     @ApiOperation(value = "获取用户的好友信息")
     @GetMapping(value = "getUserFriends")
-    public List<UserFriend> selectUserFriends(String username) {
-        return userFriendsService.selectUserFriends(username);
+    public List<UserSimpleInfo> selectUserFriends(String username, HttpServletRequest request) {
+        List<UserSimpleInfo> list = userFriendsService.selectUserFriends(username);
+        for (UserSimpleInfo user:list) {
+            String path = user.getUserImgUrl();
+            user.setUserImgUrl(imagesUtil.getImagesPath(request,path));
+        }
+        return list;
     }
 
     /**

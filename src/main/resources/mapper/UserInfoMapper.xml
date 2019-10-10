@@ -111,4 +111,8 @@
   <update id="outline">
     update user_info set online = 0 where username = #{username};
   </update>
+
+  <select id="getUserSimpleInfo" resultType="com.hubu.work.mybatis.bean.UserSimpleInfo">
+    select s1.username,s1.nickname,s1.user_img_url from user_info as s1 where username = #{username}
+  </select>
 </mapper>

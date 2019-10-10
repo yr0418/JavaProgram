@@ -5,15 +5,26 @@ import com.hubu.work.mybatis.CustomMapper;
 import com.hubu.work.mybatis.pojo.UserMessage;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 /**
+ * @author 杨睿
  * @moduleName UserMessageMapper
  * @description UserMessage 的 mapper 层
- *
- * @author 杨睿
  */
 public interface UserMessageMapper extends CustomMapper<UserMessage> {
     /**
+     * 插入数据
+     *
+     * @param userMessage UserMessage对象
+     * @return int
+     */
+    @Override
+    int insert(UserMessage userMessage);
+
+    /**
      * 修改字段值：read=1，消息已读
+     *
      * @param id
      * @return int
      * 1：修改成功
@@ -22,19 +33,50 @@ public interface UserMessageMapper extends CustomMapper<UserMessage> {
     int readMessage(@Param("id") Long id);
 
     /**
-     * 查询用户接受到的消息,从后向前查询
-     * @param username：用户名
-     * @param type：消息类型，好友申请，入队申请。
-     * @return Page<UserMessage>
-     */
-    Page<UserMessage> selectUserMessageAcceptedWithType(@Param("username") String username,@Param("type") int type);
-
-    /**
-     * 查询用户未读信息的数量
-     * @param username：用户名
-     * @param type: 消息类型：好友申请，入队申请
+     * 查询用户接受到的申请审核结果信息的总数
+     *
+     * @param username 用户名
      * @return int
      */
-    int getUserMessageNotReadCountWithType(@Param("username") String username,@Param("type") int type);
+    int getMessageReceiveCountWithType2AndType3(@Param("username") String username);
+
+    /**
+     * 查询用户接受到的申请审核结果消息其未读的消息的总数
+     *
+     * @param username 用户名
+     * @return int
+     */
+    int getMessageReceiveCountWithType2AndType3AndUnread(String username);
+
+    /**
+     * 查询用户接受到的申请审核失败且未读的消息
+     *
+     * @param username 用户名
+     * @return List
+     */
+    List<UserMessage> selectMessageReceiveWithType2AndUnread(@Param("username") String username);
+
+    /**
+     * 查询用户接受到的申请审核失败且已读的消息
+     * @param username 用户名
+     * @return List
+     */
+    List<UserMessage> selectMessageReceiveWithType2AndRead(@Param("username") String username);
+
+    /**
+     * 查询用户接受到的申请审核成功且未读的消息
+     *
+     * @param username 用户名
+     * @return List
+     */
+    List<UserMessage> selectMessageReceiveWithType3AndUnread(@Param("username") String username);
+
+    /**
+     * 查询用户接受到的申请审核成功且已读的消息
+     * @param username 用户名
+     * @return List
+     */
+    List<UserMessage> selectMessageReceiveWithType3AndRead(@Param("username") String username);
+
 
 }

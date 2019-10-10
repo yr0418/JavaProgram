@@ -25,4 +25,12 @@ public class DateUtil {
   public String getTime(Date date){
     return simpleDateFormat.format(date);
   }
+
+  /**
+   * 获取当前系统时间
+   * @return String
+   */
+  public String setTime(){
+    return simpleDateFormat.format(new Date());
+  }
 }

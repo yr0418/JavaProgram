@@ -21,20 +21,53 @@
     </where>
   </update>
 
-  <select id="selectUserMessageAcceptedWithType" resultType="com.hubu.work.mybatis.pojo.UserMessage">
+  <select id="getMessageReceiveCountWithType2AndType3" resultType="int">
+    select count (*) from user_message
+    <where>
+      receiver = #{username} and type = 2 or type = 3
+    </where>
+  </select>
+  <insert id="insert">
+    insert into user_message (sender,type ,receiver,date,context,read) values (#{sender},#{type},#{receiver},#{date},#{context},#{read});
+  </insert>
+  <select id="getMessageReceiveCountWithType2AndType3AndUnread" resultType="int">
+    select count(*) from user_message
+    <where>
+      receiver = #{username} and read = 0 and type = 2 or type = 3
+    </where>
+  </select>
+
+  <select id="selectMessageReceiveWithType2AndUnread" resultMap="BaseResultMap">
     select * from user_message
     <where>
-      username = #{username} and type = #{type}
+      receiver = #{username} and type = 2 and read = 0
     </where>
     order by id desc
   </select>
 
-  <select id="getUserMessageNotReadCountWithType" resultType="int">
-    select count (*) from user_message
+  <select id="selectMessageReceiveWithType2AndRead" resultMap="BaseResultMap">
+    select * from user_message
     <where>
-      username = #{username} and read = 0 and type = #{type}
+      receiver = #{username} and type = 2 and read = 1
     </where>
     order by id desc
   </select>
+
+  <select id="selectMessageReceiveWithType3AndUnread" resultMap="BaseResultMap">
+    select * from user_message
+    <where>
+      receiver = #{username} and type = 3 and read = 0
+    </where>
+    order by id desc
+  </select>
+
+  <select id="selectMessageReceiveWithType3AndRead" resultMap="BaseResultMap">
+    select * from user_message
+    <where>
+      receiver = #{username} and type = 3 and read = 1
+    </where>
+    order by id desc
+  </select>
+
 
 </mapper>

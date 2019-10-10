@@ -1,6 +1,7 @@
 package com.hubu.work.web.service;
 
 import com.hubu.work.mybatis.bean.User;
+import com.hubu.work.mybatis.bean.UserSimpleInfo;
 import com.hubu.work.mybatis.mapper.UserInfoMapper;
 import com.hubu.work.mybatis.pojo.UserInfo;
 import com.hubu.work.web.common.BaseService;
@@ -74,6 +75,10 @@ public class UserInfoService extends BaseService<UserInfo> {
 
   public int outline(String username){
     return userInfoMapper.outline(username);
+  }
+
+  public UserSimpleInfo getUserSimpleInfo(String username){
+    return userInfoMapper.getUserSimpleInfo(username);
   }
 
 }

@@ -7,6 +7,8 @@ import com.hubu.work.web.common.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @moduleName UserMessageService
  * @description UserMessage Service 层
@@ -19,15 +21,35 @@ public class UserMessageService extends BaseService<UserMessage> {
   @Autowired
   UserMessageMapper userMessageMapper;
 
+  @Override
+  public int insert(UserMessage userMessage){
+    return userMessageMapper.insert(userMessage);
+  }
+
   public int readMessage(Long id){
     return userMessageMapper.readMessage(id);
   }
 
-  public Page<UserMessage> selectUserMessageAcceptedWithType(String username,int type){
-    return userMessageMapper.selectUserMessageAcceptedWithType(username, type);
+  public int getMessageReceiveCountWithType2AndType3(String username){
+    return userMessageMapper.getMessageReceiveCountWithType2AndType3(username);
   }
 
-  public int getUserMessageNotReadCountWithType(String username,int type){
-    return userMessageMapper.getUserMessageNotReadCountWithType(username,type);
+  public int getMessageReceiveCountWithType2AndType3AndUnread(String username){
+    return userMessageMapper.getMessageReceiveCountWithType2AndType3AndUnread(username);
+  }
+  public List<UserMessage> selectMessageReceiveWithType2AndRead(String username){
+    return userMessageMapper.selectMessageReceiveWithType2AndRead(username);
+  }
+
+  public List<UserMessage> selectMessageReceiveWithType2AndUnread(String username){
+    return userMessageMapper.selectMessageReceiveWithType2AndUnread(username);
+  }
+
+  public List<UserMessage> selectMessageReceiveWithType3AndRead(String username){
+    return userMessageMapper.selectMessageReceiveWithType3AndRead(username);
+  }
+
+  public List<UserMessage> selectMessageReceiveWithType3AndUnread(String username){
+    return userMessageMapper.selectMessageReceiveWithType3AndUnread(username);
   }
 }

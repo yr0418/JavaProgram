@@ -28,6 +28,24 @@ public class UserMessage {
 
     private Integer read;
 
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+
+
     public Long getId() {
         return id;
     }

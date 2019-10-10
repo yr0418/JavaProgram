@@ -2,8 +2,12 @@ package com.hubu.work.mybatis.mapper;
 
 import com.hubu.work.mybatis.CustomMapper;
 import com.hubu.work.mybatis.bean.User;
+import com.hubu.work.mybatis.bean.UserSimpleInfo;
 import com.hubu.work.mybatis.pojo.UserInfo;
 import org.apache.ibatis.annotations.Param;
+
+import javax.annotation.security.PermitAll;
+
 /**
  * @moduleName UserInfoMapper
  * @description UserInfo 的 mapper层
@@ -113,4 +117,11 @@ public interface UserInfoMapper extends CustomMapper<UserInfo> {
    * @return
    */
   int outline(String username);
+
+  /**
+   * 查询用户的简要信息，包括：用户昵称，用户头像地址
+   * @param username
+   * @return
+   */
+  UserSimpleInfo getUserSimpleInfo(@Param("username") String username);
 }

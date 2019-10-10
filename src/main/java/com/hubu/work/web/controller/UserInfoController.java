@@ -1,6 +1,7 @@
 package com.hubu.work.web.controller;
 
 import com.hubu.work.mybatis.bean.User;
+import com.hubu.work.mybatis.bean.UserSimpleInfo;
 import com.hubu.work.mybatis.pojo.UserInfo;
 import com.hubu.work.utils.ImagesUtil;
 import com.hubu.work.web.common.BaseController;
@@ -93,8 +94,20 @@ public class UserInfoController extends BaseController<UserInfo> {
 
     @ApiOperation(value = "获取用户信息")
     @GetMapping(value = "getUserInfo")
-    public UserInfo getUserInfo(String username) {
-        return userInfoService.getUserInfo(username);
+    public UserInfo getUserInfo(String username,HttpServletRequest request) {
+        UserInfo  userInfo = userInfoService.getUserInfo(username);
+        String path = userInfo.getUserImgUrl();
+        userInfo.setUserImgUrl(imagesUtil.getImagesPath(request,path));
+        return userInfo;
+    }
+
+    @ApiOperation(value = "获取用户简单信息，包括用户名，头像地址")
+    @GetMapping(value = "getUserSimpleInfo")
+    public UserSimpleInfo getUserSimpleInfo(String username,HttpServletRequest request){
+        UserSimpleInfo userSimpleInfo = userInfoService.getUserSimpleInfo(username);
+        String path = userSimpleInfo.getUserImgUrl();
+        userSimpleInfo.setUserImgUrl(imagesUtil.getImagesPath(request,path));
+        return userSimpleInfo;
     }
 
     @ApiOperation(value = "修改用户个性签名")
