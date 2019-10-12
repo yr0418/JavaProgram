@@ -44,6 +44,7 @@ public class UserMessageController extends BaseController<UserMessage> {
     @Override
     public int insert(@RequestBody UserMessage userMessage){
         userMessage.setDate(dateUtil.setTime());
+        userMessage.setRead(0);
         return userMessageService.insert(userMessage);
     }
 

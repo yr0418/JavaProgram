@@ -6,6 +6,8 @@ import com.hubu.work.web.common.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @moduleName AuditInfoService
  * @description audit_info 对应的Service层
@@ -34,4 +36,23 @@ public class AuditInfoService extends BaseService<AuditInfo> {
   public int getAuditInfoCountWithSendAndUnread(String username){
     return auditInfoMapper.getAuditInfoCountWithSendAndUnread(username);
   }
+
+  public List<AuditInfo> selectAuditInfoWithReceiveAndUnread(String username){
+    return auditInfoMapper.selectAuditInfoWithReceiveAndUnread(username);
+  }
+
+  public List<AuditInfo> selectAuditInfoWithReceiveAndRead(String username){
+    return auditInfoMapper.selectAuditInfoWithReceiveAndRead(username);
+  }
+
+  public List<AuditInfo> selectAuditInfoWithSendAndUnread(String username){
+    return auditInfoMapper.selectAuditInfoWithSendAndUnread(username);
+  }
+
+  public List<AuditInfo> selectAuditInfoWithSendAndRead(String username){
+    return auditInfoMapper.selectAuditInfoWithSendAndRead(username);
+  }
+
+
+
 }
