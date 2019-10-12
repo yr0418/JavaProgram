@@ -15,7 +15,7 @@ import java.util.Date;
  **/
 @Component
 public class DateUtil {
-  private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+  private static final String DATA_FORMAT = "yyyy-MM-dd";
 
   /**
    * 将从数据库拿到的时间转换为标准形式
@@ -23,6 +23,7 @@ public class DateUtil {
    * @return String，时间的标准表示形式
    */
   public String getTime(Date date){
+    SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATA_FORMAT);
     return simpleDateFormat.format(date);
   }
 
@@ -31,6 +32,7 @@ public class DateUtil {
    * @return String
    */
   public String setTime(){
+    SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATA_FORMAT);
     return simpleDateFormat.format(new Date());
   }
 }
