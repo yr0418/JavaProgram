@@ -65,6 +65,12 @@ public class ImagesUtil {
     return filePath;
   }
 
+  /**
+   * 获取图片的完整路径
+   * @param request request
+   * @param path 图片在数据库中的路径
+   * @return String
+   */
   public String getImagesPath(HttpServletRequest request,String path){
     String serverBasePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
     return serverBasePath+"/"+path;
