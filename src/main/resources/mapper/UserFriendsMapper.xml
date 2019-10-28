@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hubu.work.mybatis.mapper.UserFriendsMapper">
-  <resultMap id="BaseResultMap" type="com.hubu.work.mybatis.pojo.UserFriends">
-    <id column="ID" jdbcType="BIGINT" property="id"/>
-    <result column="USERNAME" jdbcType="VARCHAR" property="username"/>
-    <result column="FRIEND" jdbcType="VARCHAR" property="friend"/>
-  </resultMap>
+    <resultMap id="BaseResultMap" type="com.hubu.work.mybatis.pojo.UserFriends">
+        <id column="ID" jdbcType="BIGINT" property="id"/>
+        <result column="USERNAME" jdbcType="VARCHAR" property="username"/>
+        <result column="FRIEND" jdbcType="VARCHAR" property="friend"/>
+    </resultMap>
 
-  <select id="selectUserFriends" resultType="com.hubu.work.mybatis.bean.UserSimpleInfo">
-    select s1.username,s1.nickname,s1.user_img_url,s1.online from user_info as s1
-    <where>
-      s1.username in ((select s2.friend from user_friends as s2 where s2.username = #{username}) union (select
-      s2.username from user_friends as s2 where s2.friend = #{username}))
-    </where>
-  </select>
-  <delete id="delete">
-    delete from user_friends where username = #{username} and friend = #{friend}
+    <select id="selectUserFriends" resultType="com.hubu.work.mybatis.bean.UserSimpleInfo">
+        select s1.username,s1.nickname,s1.user_img_url,s1.online from user_info as s1
+        <where>
+            s1.username in ((select s2.friend from user_friends as s2 where s2.username = #{username}) union (select
+            s2.username from user_friends as s2 where s2.friend = #{username}))
+        </where>
+    </select>
+    <delete id="delete">
+      delete from user_friends where username = #{username} and friend = #{friend}
   </delete>
 </mapper>

@@ -21,6 +21,21 @@ public class QueryInfo {
   private String username;
 
   /**
+   * 用户所在的学校
+   */
+  private String userSchool;
+
+  /**
+   * 用户所在的城市
+   */
+  private String userCity;
+
+  /**
+   * 用户性别
+   */
+  private String userSex;
+
+  /**
    * 标签
    */
   private String label;
@@ -34,4 +49,9 @@ public class QueryInfo {
    * 最大组队人数
    */
   private int maxMember;
+
+  /**
+   * 是否有效
+   */
+  private int valid;
 }

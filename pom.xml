@@ -21,7 +21,6 @@
   </properties>
 
   <dependencies>
-
     <!--JsonObject依赖-->
     <dependency>
       <groupId>com.alibaba</groupId>

@@ -1,18 +1,14 @@
 package com.hubu.work.mybatis.pojo;
 
-import lombok.Data;
-
 import javax.persistence.Id;
 
 /**
- * @moduleName UserMessage
- * @description 对应数据库 user_message 表，保存用户收到，发布的消息
+ * @moduleName: UserMessage
+ * @description: 封装用户接受发送的消息
  *
- * @author 杨睿
+ * @author: 杨睿
  */
-@Data
 public class UserMessage {
-
     @Id
     private Long id;
 
@@ -20,31 +16,13 @@ public class UserMessage {
 
     private String receiver;
 
-    private int type;
-
-    private String date;
+    private Integer type;
 
     private String context;
 
+    private String date;
+
     private Integer read;
-
-    public int getType() {
-        return type;
-    }
-
-    public void setType(int type) {
-        this.type = type;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-
 
     public Long getId() {
         return id;
@@ -70,12 +48,28 @@ public class UserMessage {
         this.receiver = receiver == null ? null : receiver.trim();
     }
 
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
     public String getContext() {
         return context;
     }
 
     public void setContext(String context) {
         this.context = context == null ? null : context.trim();
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date == null ? null : date.trim();
     }
 
     public Integer getRead() {

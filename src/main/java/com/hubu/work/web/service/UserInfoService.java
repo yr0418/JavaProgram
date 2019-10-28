@@ -60,11 +60,6 @@ public class UserInfoService extends BaseService<UserInfo> {
     return userInfoMapper.updateUserPersonalizedSignature(personalizedSignature, username);
   }
 
-  @Override
-  public int update(UserInfo userInfo){
-    return userInfoMapper.update(userInfo);
-  }
-
   public UserInfo getUserInfo(String username){
     return userInfoMapper.getUserInfo(username);
   }
@@ -79,6 +74,10 @@ public class UserInfoService extends BaseService<UserInfo> {
 
   public UserSimpleInfo getUserSimpleInfo(String username){
     return userInfoMapper.getUserSimpleInfo(username);
+  }
+
+  public String getUserSex(String username){
+    return userInfoMapper.getUserSex(username);
   }
 
 }

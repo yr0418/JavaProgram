@@ -17,6 +17,7 @@ spring:
       enabled: true
 #      location: D:\JavaProgram\File\usersImages
 
+
 druid:
   allow: 127.0.0.1
   filters: stat,wall,log4j

@@ -29,6 +29,7 @@ CREATE TABLE `enjoy_info`
     `id`           bigint(20) NOT NULL AUTO_INCREMENT,
     `username`     varchar(255) DEFAULT NULL,
     `user_city`    varchar(255) DEFAULT NULL,
+    `user_sex`     varchar (255) default null ,
     `action_name`  varchar(255) default null,
     `label`        varchar(255) DEFAULT NULL,
     `sex_specific` int(10)      DEFAULT NULL,
@@ -128,24 +129,17 @@ DROP TABLE IF EXISTS `test`;
 CREATE TABLE `test`
 (
     `id`   integer(20) not null,
-    `time` date default null,
+    `type` integer (20),
     primary key (`id`)
 );
 
-DROP TABLE IF EXISTS `lpl`;
-CREATE TABLE `lpl`
+DROP TABLE IF EXISTS `key_value`;
+CREATE TABLE `key_value`
 (
     `id`   integer(20) not null AUTO_INCREMENT,
-    `username` varchar(255) default null,
-    `password` varchar(255) default null,
-    primary key (`id`)
-);
-
-DROP TABLE IF EXISTS `skt`;
-CREATE TABLE `skt`
-(
-    `id`   integer(20) not null AUTO_INCREMENT,
-    `username` varchar(255) default null,
-    `password` varchar(255) default null,
+    `table` varchar (50),
+    `key` varchar (50),
+    `value` integer (50),
+    `comment` varchar (50),
     primary key (`id`)
 );

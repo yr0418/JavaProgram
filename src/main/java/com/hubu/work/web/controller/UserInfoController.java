@@ -74,7 +74,7 @@ public class UserInfoController extends BaseController<UserInfo> {
 
     @Override
     @ApiOperation(value = "插入用户信息，用于注册，需保证用户名与昵称是唯一值。返回值：1：注册成功，3：用户名已被使用，2：昵称已被使用")
-    public int insert(UserInfo userInfo) {
+    public int insert(@RequestBody UserInfo userInfo) {
         int usernameCount = userInfoService.findUsername(userInfo.getUsername());
         int nicknameCount = userInfoService.findUserNickname(userInfo.getNickname());
         if (usernameCount == 1) {
@@ -82,20 +82,17 @@ public class UserInfoController extends BaseController<UserInfo> {
         } else if (usernameCount == 0 && nicknameCount == 1) {
             return 2;
         } else {
+            userInfo.setOnline(1);
             return userInfoService.insert(userInfo);
         }
     }
 
-    @Override
-    @ApiOperation(value = "修改数据，只会修改传入的属性值对应的字段")
-    public int update(UserInfo userInfo) {
-        return userInfoService.update(userInfo);
-    }
 
-    @ApiOperation(value = "获取用户信息")
+    @ApiOperation(value = "获取用户全部信息")
     @GetMapping(value = "getUserInfo")
     public UserInfo getUserInfo(String username,HttpServletRequest request) {
         UserInfo  userInfo = userInfoService.getUserInfo(username);
+        userInfo.setPassword("***");
         String path = userInfo.getUserImgUrl();
         userInfo.setUserImgUrl(imagesUtil.getImagesPath(request,path));
         return userInfo;
@@ -113,6 +110,6 @@ public class UserInfoController extends BaseController<UserInfo> {
     @ApiOperation(value = "修改用户个性签名")
     @PostMapping(value = "updateUserPersonalizedSignature")
     public int updateUserPersonalizedSignature(@RequestParam("username") String username,@RequestParam("personalizeSignature") String personalizeSignature){
-        return userInfoService.updateUserPersonalizedSignature(username,personalizeSignature);
+        return userInfoService.updateUserPersonalizedSignature(personalizeSignature,username);
     }
 }

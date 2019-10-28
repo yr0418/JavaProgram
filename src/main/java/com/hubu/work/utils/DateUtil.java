@@ -18,16 +18,6 @@ public class DateUtil {
   private static final String DATA_FORMAT = "yyyy-MM-dd";
 
   /**
-   * 将从数据库拿到的时间转换为标准形式
-   * @param date 从数据库提取到的 date 数据
-   * @return String，时间的标准表示形式
-   */
-  public String getTime(Date date){
-    SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATA_FORMAT);
-    return simpleDateFormat.format(date);
-  }
-
-  /**
    * 获取当前系统时间
    * @return String
    */

@@ -1,19 +1,14 @@
 package com.hubu.work.mybatis.pojo;
 
-import lombok.Data;
-
 import javax.persistence.Id;
 
 /**
- * @moduleName UserInfo
- * @description 对应数据库 user_info 表，保存用户信息
+ * @moduleName: UserInfo
+ * @description: 封装用户信息
  *
- * @author 杨睿
+ * @author: 杨睿
  */
-@Data
 public class UserInfo {
-
-
     @Id
     private Long id;
 
@@ -39,7 +34,7 @@ public class UserInfo {
 
     private String personalizedLabels;
 
-    private String online;
+    private Integer online;
 
     public Long getId() {
         return id;
@@ -62,8 +57,9 @@ public class UserInfo {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = password == null ? null : password.trim();
     }
+
     public String getNickname() {
         return nickname;
     }
@@ -128,11 +124,19 @@ public class UserInfo {
         this.personalizedSignature = personalizedSignature == null ? null : personalizedSignature.trim();
     }
 
-    public String getPersonalizedLables() {
+    public String getPersonalizedLabels() {
         return personalizedLabels;
     }
 
-    public void setPersonalizedLables(String personalizedLables) {
-        this.personalizedLabels = personalizedLables == null ? null : personalizedLables.trim();
+    public void setPersonalizedLabels(String personalizedLabels) {
+        this.personalizedLabels = personalizedLabels == null ? null : personalizedLabels.trim();
+    }
+
+    public Integer getOnline() {
+        return online;
+    }
+
+    public void setOnline(Integer online) {
+        this.online = online;
     }
 }

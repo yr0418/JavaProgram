@@ -66,7 +66,7 @@ public class BaseService<T> {
    * 0：修改失败
    */
   public int update(T t) {
-    return mapper.updateByPrimaryKey(t);
+    return mapper.updateByPrimaryKeySelective(t);
   }
 
   /**
@@ -75,7 +75,7 @@ public class BaseService<T> {
    * @return Object
    * 返回一个具体的实体类对象
    */
-  public Object selectById(Long id) {
+  public T selectById(Long id) {
     return mapper.selectByPrimaryKey(id);
   }
 

@@ -1,22 +1,23 @@
 package com.hubu.work.config;
 
+
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hubu.work.utils.FileConstant;
-import org.aspectj.lang.annotation.Before;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.web.servlet.MultipartConfigFactory;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.util.unit.DataSize;
-import org.springframework.web.multipart.MultipartFile;
+
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
+
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
-import javax.servlet.MultipartConfigElement;
+import java.text.SimpleDateFormat;
+import java.util.List;
 
-import static com.sun.deploy.util.BufferUtil.MB;
 /**
  * @moduleName WebMvcConfig
  * @description web 配置类
@@ -25,7 +26,7 @@ import static com.sun.deploy.util.BufferUtil.MB;
  */
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurationSupport {
-  /**
+    /**
    * 配置存放用户头像的路径
    * 绝对路径
    */
@@ -53,5 +54,28 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
         .allowedMethods("*")
         .allowedOrigins("*")
         .allowedHeaders("*");
+  }
+
+  /**
+   * 定义时间格式转换器
+   */
+  @Bean
+  public MappingJackson2HttpMessageConverter jackson2HttpMessageConverter() {
+    MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
+    ObjectMapper mapper = new ObjectMapper();
+    mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd"));
+    converter.setObjectMapper(mapper);
+    return converter;
+  }
+
+  /**
+   * 添加转换器
+   */
+  @Override
+  public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+    //将我们定义的时间格式转换器添加到转换器列表中,
+    //这样jackson格式化时候但凡遇到Date类型就会转换成我们定义的格式
+    converters.add(jackson2HttpMessageConverter());
   }
 }

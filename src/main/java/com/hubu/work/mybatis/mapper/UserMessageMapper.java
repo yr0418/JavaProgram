@@ -13,14 +13,6 @@ import java.util.List;
  * @description UserMessage 的 mapper 层
  */
 public interface UserMessageMapper extends CustomMapper<UserMessage> {
-    /**
-     * 插入数据
-     *
-     * @param userMessage UserMessage对象
-     * @return int
-     */
-    @Override
-    int insert(UserMessage userMessage);
 
     /**
      * 修改字段值：read=1，消息已读
@@ -31,6 +23,13 @@ public interface UserMessageMapper extends CustomMapper<UserMessage> {
      * 0：修改失败
      */
     int readMessage(@Param("id") Long id);
+
+    /**
+     * 获取用户未读消息的总数
+     * @param username 用户名
+     * @return 未读消息的总数
+     */
+    int getMessageCountWithNotRead(String username);
 
     /**
      * 查询用户接受到的申请审核结果信息的总数

@@ -19,7 +19,7 @@ public interface UserInfoMapper extends CustomMapper<UserInfo> {
   /**
    * 查询用户名与密码是否配对
    * @param user：User 对象
-   * @return: int
+   * @return int
    * 1：配对
    * 0：不配对
    */
@@ -28,7 +28,7 @@ public interface UserInfoMapper extends CustomMapper<UserInfo> {
   /**
    * 查询该用户是否存在
    * @param username：用户名
-   * @return： int
+   * @return int
    * 1：该用户已存在
    * 0：该用户不存在
    */
@@ -85,17 +85,7 @@ public interface UserInfoMapper extends CustomMapper<UserInfo> {
    * 1：修改成功
    * 0：修改失败
    */
-  int updateUserPersonalizedSignature(@Param("personalizedSignature") String personalizedSignature,
-                                      @Param("username") String username);
-
-  /**
-   * 修改用户信息，当传入的字段对应的属性值为 null 时，不会修改数据库中的数据
-   * @param userInfo
-   * @return int
-   * 1：修改成功
-   * 0：修改失败
-   */
-  int update(UserInfo userInfo);
+  int updateUserPersonalizedSignature(@Param("personalizedSignature") String personalizedSignature, @Param("username") String username);
 
   /**
    * 查询用户基本信息
@@ -124,4 +114,11 @@ public interface UserInfoMapper extends CustomMapper<UserInfo> {
    * @return
    */
   UserSimpleInfo getUserSimpleInfo(@Param("username") String username);
+
+  /**
+   * 获取用户的性别
+   * @param username 用户名
+   * @return 返回用户的性别
+   */
+  String getUserSex(@Param("username") String username);
 }

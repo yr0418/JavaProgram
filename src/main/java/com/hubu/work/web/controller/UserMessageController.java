@@ -48,6 +48,13 @@ public class UserMessageController extends BaseController<UserMessage> {
         return userMessageService.insert(userMessage);
     }
 
+    @ApiOperation(value = "查询该用户是否有未读消息，包括接受到的消息和申请信息")
+    @GetMapping(value = "getMessageCountWithNotRead")
+    public boolean getMessageCountWithNotRead(String username){
+        int count = userMessageService.getMessageCountWithNotRead(username) + auditInfoService.getAuditInfoCountWithReceiveAndUnread(username);
+        return count > 0;
+    }
+
     @ApiOperation(value = "设置信息阅读状态为：已读")
     @PostMapping(value = "readMessage")
     public int readMessage(Long id) {

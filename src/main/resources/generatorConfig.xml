@@ -45,7 +45,7 @@
 
         <!--指定每个表的生成策略-->
 
-        <table tableName="audit_info"
+        <table tableName="user_info"
                enableCountByExample="false"
                enableDeleteByExample="false"
                enableSelectByExample="false"

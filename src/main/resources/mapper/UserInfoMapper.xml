@@ -1,118 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hubu.work.mybatis.mapper.UserInfoMapper">
-  <resultMap id="BaseResultMap" type="com.hubu.work.mybatis.pojo.UserInfo">
-    <id column="ID" jdbcType="BIGINT" property="id"/>
-    <result column="USERNAME" jdbcType="VARCHAR" property="username"/>
-    <result column="PASSWORD" jdbcType="VARCHAR" property="password"/>
-    <result column="NICKNAME" jdbcType="VARCHAR" property="nickname"/>
-    <result column="USER_IMG_URL" jdbcType="VARCHAR" property="userImgUrl"/>
-    <result column="SEX" jdbcType="VARCHAR" property="sex"/>
-    <result column="CITY" jdbcType="VARCHAR" property="city"/>
-    <result column="SCHOOL" jdbcType="VARCHAR" property="school"/>
-    <result column="ACADEMY" jdbcType="VARCHAR" property="academy"/>
-    <result column="MAJOR" jdbcType="VARCHAR" property="major"/>
-    <result column="PERSONALIZED_SIGNATURE" jdbcType="VARCHAR" property="personalizedSignature"/>
-    <result column="PERSONALIZED_LABLES" jdbcType="VARCHAR" property="personalizedLables"/>
-    <result column="ONLINE" jdbcType="INTEGER" property="online"/>
-  </resultMap>
-  <select id="findUserImg" resultType="java.lang.String">
-    select user_img_url from user_info
-    <where>
-      username=#{username}
-    </where>
-  </select>
-  <update id="updateUserImg">
-    update user_info
-    <set>
-      USER_IMG_URL = #{userImgPath}
-    </set>
-    <where>
-      username = #{username}
-    </where>
-  </update>
-  <select id="findUser" resultType="int">
-    select count (*) from user_info
-    <where>
-      username = #{username} and password = #{password}
-    </where>
-  </select>
-  <select id="findUsername" resultType="int">
-    select count (*) from user_info
-    <where>
-      username = #{username}
-    </where>
-  </select>
-  <select id="findUserCity" resultType="java.lang.String">
-    select city from user_info
-    <where>
-      username = #{username}
-    </where>
-  </select>
-  <select id="findUserSchool" resultType="java.lang.String">
+    <resultMap id="BaseResultMap" type="com.hubu.work.mybatis.pojo.UserInfo">
+        <id column="ID" jdbcType="BIGINT" property="id"/>
+        <result column="USERNAME" jdbcType="VARCHAR" property="username"/>
+        <result column="PASSWORD" jdbcType="VARCHAR" property="password"/>
+        <result column="NICKNAME" jdbcType="VARCHAR" property="nickname"/>
+        <result column="USER_IMG_URL" jdbcType="VARCHAR" property="userImgUrl"/>
+        <result column="SEX" jdbcType="VARCHAR" property="sex"/>
+        <result column="CITY" jdbcType="VARCHAR" property="city"/>
+        <result column="SCHOOL" jdbcType="VARCHAR" property="school"/>
+        <result column="ACADEMY" jdbcType="VARCHAR" property="academy"/>
+        <result column="MAJOR" jdbcType="VARCHAR" property="major"/>
+        <result column="PERSONALIZED_SIGNATURE" jdbcType="VARCHAR" property="personalizedSignature"/>
+        <result column="PERSONALIZED_LABELS" jdbcType="VARCHAR" property="personalizedLabels"/>
+        <result column="ONLINE" jdbcType="INTEGER" property="online"/>
+    </resultMap>
+    <select id="findUserImg" resultType="java.lang.String">
+        select user_img_url from user_info
+        <where>
+            username=#{username}
+        </where>
+    </select>
+
+    <update id="updateUserImg">
+        update user_info
+        <set>
+            USER_IMG_URL = #{userImgPath}
+        </set>
+        <where>
+            username = #{username}
+        </where>
+    </update>
+
+    <select id="findUser" resultType="int">
+        select count (*) from user_info
+        <where>
+            username = #{username} and password = #{password}
+        </where>
+    </select>
+
+    <select id="findUsername" resultType="int">
+        select count (*) from user_info
+        <where>
+            username = #{username}
+        </where>
+    </select>
+
+    <select id="findUserCity" resultType="java.lang.String">
+        select city from user_info
+        <where>
+            username = #{username}
+        </where>
+    </select>
+
+    <select id="findUserSchool" resultType="java.lang.String">
     select school from user_info where username = #{username}
   </select>
-  <update id="updateUserPersonalizedSignature">
-    update user_info
-    <set>
-      username = #{username},
-      <if test="personalizedSignature != null and personalizedSignature != ''">
-        personalized_signature = #{personalizedSignature}
-      </if>
-    </set>
-    <where>
-      username = #{username}
-    </where>
-  </update>
-  <select id="findUserNickname" resultType="int">
+
+    <update id="updateUserPersonalizedSignature">
+        update user_info set personalized_signature = #{personalizedSignature} where username = #{username}
+    </update>
+
+    <select id="findUserNickname" resultType="int">
     select count (*) from user_info where nickname = #{nickname}
-  </select>
-  <update id="update">
-    update user_info
-    <set>
-      <if test="password != null and password != ''">
-        password = #{password},
-      </if>
-      <if test="nickname != null and nikname != ''">
-        nickname = #{nickname},
-      </if>
-      <if test="sex != null and sex != ''">
-        sex = #{sex},
-      </if>
-      <if test="city != null and city != ''">
-        city = #{city},
-      </if>
-      <if test="school != null and school != ''">
-        school = #{school},
-      </if>
-      <if test="academy != null and academy != ''">
-        academy = #{academy},
-      </if>
-      <if test="major != null and major != ''">
-        major != #{major},
-      </if>
-      <if test="personalizedSignature != null and personalizedSignature != ''">
-        personalized_signature != #{personalizedSignature},
-      </if>
-      <if test="personalizedLables != null and personalizedLables = ''">
-        personalized_lables = #{personalizedLables}
-      </if>
-    </set>
-    <where>
-      username = #{username}
-    </where>
-  </update>
-  <select id="getUserInfo" resultMap="BaseResultMap">
+</select>
+
+    <select id="getUserInfo" resultMap="BaseResultMap">
     select * from user_info where username = #{username}
   </select>
-  <update id="online">
+
+    <update id="online">
     update user_info set online = 1 where username = #{username}
   </update>
-  <update id="outline">
+
+    <update id="outline">
     update user_info set online = 0 where username = #{username};
   </update>
 
-  <select id="getUserSimpleInfo" resultType="com.hubu.work.mybatis.bean.UserSimpleInfo">
+    <select id="getUserSimpleInfo" resultType="com.hubu.work.mybatis.bean.UserSimpleInfo">
     select s1.username,s1.nickname,s1.user_img_url from user_info as s1 where username = #{username}
   </select>
+
+    <select id="getUserSex" resultType="java.lang.String">
+        select sex from user_info where username = #{username}
+    </select>
 </mapper>

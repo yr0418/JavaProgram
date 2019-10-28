@@ -42,7 +42,7 @@ public class BaseController<T> {
         return service.delete(t);
     }
 
-    @ApiOperation(value = "修改实例，直接修改全部字段，前台注意数据传入。返回值：1：修改成功，0：修改失败")
+    @ApiOperation(value = "修改实例，根据主键更新属性不为null的值，前台注意数据传入。返回值：1：修改成功，0：修改失败")
     @PostMapping
     public int update(@RequestBody T t) {
         return service.update(t);
@@ -50,7 +50,7 @@ public class BaseController<T> {
 
     @ApiOperation(value = "根据 id 查询实例")
     @PostMapping(value = "selectById")
-    public Object selectById(Long id) {
+    public T selectById(Long id) {
         return service.selectById(id);
     }
 
