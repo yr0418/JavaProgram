@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hubu.work.mybatis.mapper.FieldValueMapper">
+  <resultMap id="BaseResultMap" type="com.hubu.work.mybatis.pojo.FieldValue">
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="TABLE_NAME" jdbcType="VARCHAR" property="tableName" />
+    <result column="FIELD" jdbcType="VARCHAR" property="field" />
+    <result column="VALUE" jdbcType="VARCHAR" property="value" />
+    <result column="COMMENT" jdbcType="VARCHAR" property="comment" />
+  </resultMap>
+</mapper>

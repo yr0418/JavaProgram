@@ -1,4 +1,4 @@
-SET NAMES utf8;
+-- SET NAMES utf8;
 
 DROP TABLE IF EXISTS `action_type`;
 CREATE TABLE `action_type`
@@ -133,13 +133,13 @@ CREATE TABLE `test`
     primary key (`id`)
 );
 
-DROP TABLE IF EXISTS `key_value`;
-CREATE TABLE `key_value`
+DROP TABLE IF EXISTS `field_value`;
+CREATE TABLE `field_value`
 (
-    `id`   integer(20) not null AUTO_INCREMENT,
-    `table` varchar (50),
-    `key` varchar (50),
-    `value` integer (50),
-    `comment` varchar (50),
+    `id` bigint(20) not null AUTO_INCREMENT,
+    `table_name` varchar(255) default null,
+    `field` varchar(255) default null,
+    `value` varchar(255) default null,
+    `comment` varchar(255) default null,
     primary key (`id`)
 );
