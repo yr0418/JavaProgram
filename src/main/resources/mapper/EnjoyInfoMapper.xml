@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hubu.work.mybatis.mapper.EnjoyInfoMapper">
+  <resultMap id="BaseResultMap" type="com.hubu.work.mybatis.pojo.EnjoyInfo">
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+    <result column="USER_CITY" jdbcType="VARCHAR" property="userCity" />
+    <result column="USER_SEX" jdbcType="VARCHAR" property="userSex" />
+    <result column="ACTION_NAME" jdbcType="VARCHAR" property="actionName" />
+    <result column="LABEL" jdbcType="VARCHAR" property="label" />
+    <result column="SEX_SPECIFIC" jdbcType="INTEGER" property="sexSpecific" />
+    <result column="TIME" jdbcType="TIMESTAMP" property="time" />
+    <result column="SITE" jdbcType="VARCHAR" property="site" />
+    <result column="MAX_MEMBER" jdbcType="INTEGER" property="maxMember" />
+    <result column="LEFT_SIZE" jdbcType="INTEGER" property="leftSize" />
+    <result column="DATE" jdbcType="DATE" property="date" />
+    <result column="PS" jdbcType="VARCHAR" property="ps" />
+    <result column="VALID" jdbcType="INTEGER" property="valid" />
+  </resultMap>
+  <update id="unValid">
+    update study_info
+    <set>
+      valid = 0
+    </set>
+    where id = #{id}
+  </update>
+</mapper>
