@@ -11,40 +11,12 @@
     <result column="AUDIT_RESULT" jdbcType="INTEGER" property="auditResult" />
     <result column="DATE" jdbcType="VARCHAR" property="date" />
   </resultMap>
+
   <select id="getAuditInfoCountWithReceive" resultType="int">
     select count (*) from audit_info
     <where>
       receiver = #{username}
     </where>
   </select>
-  <select id="getAuditInfoCountWithReceiveAndUnread" resultType="int">
-    select count (*) from audit_info
-    <where>
-      audit_status = 0 and receiver = #{username}
-    </where>
-  </select>
 
-  <select id="getAuditInfoCountWithSend" resultType="int">
-    select count (*) from audit_info where sender = #{username}
-  </select>
-
-  <select id="getAuditInfoCountWithSendAndUnread" resultType="int">
-    select count (*) from audit_info where audit_status = 0 and sender = #{username}
-  </select>
-
-  <select id="selectAuditInfoWithReceiveAndUnread" resultMap="BaseResultMap">
-    select * from audit_info where receiver = #{username} and audit_status = 0 order by id desc
-  </select>
-
-  <select id="selectAuditInfoWithReceiveAndRead" resultMap="BaseResultMap">
-    select * from audit_info where receiver = #{username} and audit_status = 0 order by id desc
-  </select>
-
-  <select id="selectAuditInfoWithSendAndUnread" resultMap="BaseResultMap">
-    select * from audit_info where sender = #{username} and audit_status = 0 order by id desc
-  </select>
-
-  <select id="selectAuditInfoWithSendAndRead" resultMap="BaseResultMap">
-    select * from audit_info where sender = #{username} and audit_status = 1 order by id desc
-  </select>
 </mapper>
