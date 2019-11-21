@@ -11,10 +11,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
- * @moduleName ControllerTimerAspect
- * @description 切面，日志打印接口被调用的时间与结果，
+ * @moduleName: ControllerTimerAspect
+ * @description: 切面，日志打印接口被调用的时间与结果，
  * 
- * @author 吴笛老师
+ * @author: 吴笛老师
  */
 @Aspect
 @Component

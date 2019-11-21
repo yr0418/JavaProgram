@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @moduleName DruidAutoConfig
- * @description druid 配置类
+ * @moduleName: DruidAutoConfig
+ * @description: druid 配置类
  *
- * @author 杨睿
+ * @author: 杨睿
  */
 @Configuration
 @EnableConfigurationProperties(DruidProperties.class)

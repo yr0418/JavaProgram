@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
 /**
- * @moduleName ImagesUtil
- * @description 图片保存到本地具体方法
- * @author 杨睿
+ * @moduleName: ImagesUtil
+ * @description: 图片保存到本地具体方法
+ * @author: 杨睿
  */
 @Component
 public class ImagesUtil {

@@ -7,11 +7,11 @@ import tk.mybatis.mapper.common.MySqlMapper;
 import tk.mybatis.mapper.common.ids.SelectByIdsMapper;
 
 /**
- * @moduleName CustomMapper
- * @description 底层 mapper，tk.mybatis
+ * @moduleName: CustomMapper
+ * @description: 底层 mapper，tk.mybatis
  * @param <T>
  *
- * @author 杨睿
+ * @author: 杨睿
  */
 public interface CustomMapper<T> extends Mapper<T>, MySqlMapper<T>, ConditionMapper<T>, SelectByIdsMapper<T> {
 }

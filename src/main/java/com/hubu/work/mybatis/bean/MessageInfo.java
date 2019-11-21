@@ -3,11 +3,11 @@ package com.hubu.work.mybatis.bean;
 import lombok.Data;
 
 /**
- * @moduleName MessageInfo
- * @description 记录用户某一类消息的总数与未读数
+ * @moduleName: MessageInfo
+ * @description: 记录用户某一类消息的总数与未读数
  *
- * @Author 杨睿
- * @since 2019-10-08 16:24
+ * @author: 杨睿
+ * @since: 2019-10-08 16:24
  **/
 @Data
 public class MessageInfo {

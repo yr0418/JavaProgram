@@ -7,11 +7,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @moduleName DateUtil
- * @description 指定时间格式，实现date与String之间的转换
+ * @moduleName: DateUtil
+ * @description: 指定时间格式，实现date与String之间的转换
  *
- * @author 杨睿
- * @since 2019-10-02 13:36
+ * @author: 杨睿
+ * @since: 2019-10-02 13:36
  **/
 @Component
 public class DateUtil {

@@ -19,10 +19,10 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
- * @moduleName WebMvcConfig
- * @description web 配置类
+ * @moduleName: WebMvcConfig
+ * @description: web 配置类
  *
- * @author 杨睿
+ * @author: 杨睿
  */
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurationSupport {

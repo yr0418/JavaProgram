@@ -3,10 +3,10 @@ package com.hubu.work.mybatis.bean;
 import lombok.Data;
 
 /**
- * @moduleName  QueryStudyInfo
- * @description  封装组队学习信息的查询条件
- * @author 杨睿
- * @since 2019/9/30 15:14
+ * @moduleName:  QueryStudyInfo
+ * @description:  封装组队学习信息的查询条件
+ * @author: 杨睿
+ * @since: 2019/9/30 15:14
  */
 @Data
 public class QueryInfo {

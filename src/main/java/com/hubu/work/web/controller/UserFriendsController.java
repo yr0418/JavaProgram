@@ -16,11 +16,11 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
- * @moduleName UserFriendsController
- * @description userFriends 对应的 控制器
+ * @moduleName: UserFriendsController
+ * @description: userFriends 对应的 控制器
  *
- * @author 杨睿
- * @since 2019/9/24 19:06
+ * @author: 杨睿
+ * @since: 2019/9/24 19:06
  */
 //@RestController
 //@RequestMapping(value = "userFriends")

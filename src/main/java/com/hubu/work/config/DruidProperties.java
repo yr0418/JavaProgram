@@ -4,10 +4,10 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * @moduleName DruidProperties
- * @description druid 配置属性类
+ * @moduleName: DruidProperties
+ * @description: druid 配置属性类
  * 
- * @author 杨睿
+ * @author: 杨睿
  */
 @Data
 @ConfigurationProperties(prefix = "druid")

@@ -9,10 +9,10 @@ import org.apache.ibatis.annotations.Param;
 import javax.annotation.security.PermitAll;
 
 /**
- * @moduleName UserInfoMapper
- * @description UserInfo 的 mapper层
+ * @moduleName: UserInfoMapper
+ * @description: UserInfo 的 mapper层
  *
- * @author 杨睿
+ * @author: 杨睿
  */
 public interface UserInfoMapper extends CustomMapper<UserInfo> {
 

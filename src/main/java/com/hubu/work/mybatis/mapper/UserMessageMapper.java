@@ -8,9 +8,9 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
+ * @moduleName: UserMessageMapper
+ * @description: UserMessage 的 mapper 层
  * @author 杨睿
- * @moduleName UserMessageMapper
- * @description UserMessage 的 mapper 层
  */
 public interface UserMessageMapper extends CustomMapper<UserMessage> {
 

@@ -45,7 +45,7 @@
 
         <!--指定每个表的生成策略-->
 
-        <table tableName="user_info"
+        <table tableName="field_value"
                enableCountByExample="false"
                enableDeleteByExample="false"
                enableSelectByExample="false"

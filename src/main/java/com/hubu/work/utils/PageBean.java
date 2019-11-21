@@ -5,10 +5,10 @@ import com.github.pagehelper.Page;
 import java.io.Serializable;
 import java.util.List;
 /**
- * @moduleName PageBean
- * @description PageHelper，自定义分页查询的返回值，
+ * @moduleName: PageBean
+ * @description: PageHelper，自定义分页查询的返回值，
  *
- * @author 杨睿
+ * @author: 杨睿
  */
 public class PageBean<T> implements Serializable {
   private static final long serialVersionUID = -9202109574544652243L;

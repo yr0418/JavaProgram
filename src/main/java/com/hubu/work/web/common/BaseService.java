@@ -17,11 +17,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * @moduleName BaseService
- * @description 底层 Service
- * @param <T>
+ * @moduleName: BaseService
+ * @description: 底层 Service
+ * @param: <T>
  *
- * @author 杨睿
+ * @author: 杨睿
  */
 public class BaseService<T> {
   @Autowired

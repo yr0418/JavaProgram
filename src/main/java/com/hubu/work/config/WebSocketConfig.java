@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 
 /**
- * @moduleName WebSocket配置类
- * @description 当使用Springboot自带的Tomcat容器时，加入该 bean,这个bean会自动注册使用了@ServerEndpoint注解声明的Websocket endpoint
- * @author 杨睿
- * @since 2019/9/24 10:25
+ * @moduleName: WebSocket配置类
+ * @description: 当使用Springboot自带的Tomcat容器时，加入该 bean,这个bean会自动注册使用了@ServerEndpoint注解声明的Websocket endpoint
+ * @author: 杨睿
+ * @since: 2019/9/24 10:25
  */
 @Configuration
 public class WebSocketConfig {

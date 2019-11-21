@@ -3,11 +3,11 @@ package com.hubu.work.mybatis.pojo;
 import javax.persistence.Id;
 
 /**
- * @moduleName FieldValue
- * @description 保存字段值的意义
+ * @moduleName: FieldValue
+ * @description: 保存字段值的意义
  *
- * @author 杨睿
- * @since 2019-11-18 16:45
+ * @author: 杨睿
+ * @since: 2019-11-18 16:45
  */
 public class FieldValue {
     @Id

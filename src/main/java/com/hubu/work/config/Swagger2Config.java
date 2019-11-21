@@ -16,10 +16,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * @moduleName Swagger2Config
- * @description Swagger 配置类
+ * @moduleName: Swagger2Config
+ * @description: Swagger 配置类
  *
- * @author 杨睿
+ * @author: 杨睿
  */
 @Configuration
 @EnableSwagger2

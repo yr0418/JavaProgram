@@ -10,10 +10,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @author 杨睿
- * @moduleName UserMessageService
- * @description UserMessage Service 层
- * @since 2019/9/21 17:00
+ * @moduleName: UserMessageService
+ * @description: UserMessage Service 层\
+ *
+ * @author: 杨睿
+ * @since: 2019/9/21 17:00
  */
 @Service
 public class UserMessageService extends BaseService<UserMessage> {

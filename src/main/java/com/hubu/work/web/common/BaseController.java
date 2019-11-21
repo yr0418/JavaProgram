@@ -14,11 +14,11 @@ import java.util.Arrays;
 import static com.hubu.work.utils.Constant.*;
 
 /**
- * @moduleName BaseController
- * @description 底层 Controller
- * @param <T>
+ * @moduleName: BaseController
+ * @description: 底层 Controller
+ * @param: <T>
  *
- * @author 杨睿
+ * @author: 杨睿
  */
 public class BaseController<T> {
     @Autowired

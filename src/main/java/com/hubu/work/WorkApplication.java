@@ -12,10 +12,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
- * @moduleName WorkApplication
- * @description Springboot 启动类
+ * @moduleName: WorkApplication
+ * @description: Springboot 启动类
  * 
- * @author 杨睿
+ * @author: 杨睿
  */
 @SpringBootApplication
 @MapperScan(value = "com.hubu.work.mybatis.mapper")

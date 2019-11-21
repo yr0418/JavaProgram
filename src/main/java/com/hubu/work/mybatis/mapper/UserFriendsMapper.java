@@ -8,10 +8,10 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * @moduleName UserFriendSMapper
- * @description UserFriends 对应的 mapper层
+ * @moduleName: UserFriendSMapper
+ * @description: UserFriends 对应的 mapper层
  * 
- * @author 杨睿
+ * @author: 杨睿
  */
 public interface UserFriendsMapper extends CustomMapper<UserFriends> {
     /**

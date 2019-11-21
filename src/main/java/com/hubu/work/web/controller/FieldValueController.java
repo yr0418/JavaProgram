@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @moduleName FieldValueController
- * @description field_value 对应的 Controller 层
+ * @moduleName: FieldValueController
+ * @description: field_value 对应的 Controller 层
  *
- * @author 杨睿
- * @since 2019-11-18 16:48
+ * @author: 杨睿
+ * @since: 2019-11-18 16:48
  **/
 @RestController
 @RequestMapping(value = "fieldValue")
