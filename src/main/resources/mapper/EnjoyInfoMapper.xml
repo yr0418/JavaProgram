@@ -28,4 +28,8 @@
   <update id="setLeftSizeDecrease">
         update enjoy_info set left_size = left_size - 1 where id = #{id}
     </update>
+  <select id="getLeftSize" resultType="int">
+        select left_size from enjoy_info where id = #{id}
+    </select>
+
 </mapper>

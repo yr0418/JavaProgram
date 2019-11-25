@@ -21,5 +21,5 @@ public class EnjoyInfoSevice {
         return enjoyInfoMapper.unValid(id);
     }
     public int setLeftSizeDecrease(Long id){ return enjoyInfoMapper.setLeftSizeDecrease(id); }
-
+    public int getLeftSize(Long id){ return enjoyInfoMapper.getLeftSize(id); }
 }

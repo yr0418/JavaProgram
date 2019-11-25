@@ -18,5 +18,10 @@ public interface EnjoyInfoMapper {
      * @return 影响的行数
      */
     int setLeftSizeDecrease(Long id);
-
+    /**
+     * 获取该活动的剩余位置
+     * @param id 该活动的 id
+     * @return 剩余人数
+     */
+    int getLeftSize(Long id);
 }
