@@ -20,4 +20,6 @@ public class EnjoyInfoSevice {
     public int unValid(Long id){
         return enjoyInfoMapper.unValid(id);
     }
+    public int setLeftSizeDecrease(Long id){ return enjoyInfoMapper.setLeftSizeDecrease(id); }
+
 }

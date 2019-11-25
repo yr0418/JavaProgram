@@ -18,10 +18,14 @@
     <result column="VALID" jdbcType="INTEGER" property="valid" />
   </resultMap>
   <update id="unValid">
-    update study_info
+    update enjoy_info
     <set>
       valid = 0
     </set>
     where id = #{id}
   </update>
+
+  <update id="setLeftSizeDecrease">
+        update enjoy_info set left_size = left_size - 1 where id = #{id}
+    </update>
 </mapper>

@@ -45,7 +45,7 @@
 
         <!--指定每个表的生成策略-->
 
-        <table tableName="lpl"
+        <table tableName="enjoy_info"
                enableCountByExample="false"
                enableDeleteByExample="false"
                enableSelectByExample="false"
