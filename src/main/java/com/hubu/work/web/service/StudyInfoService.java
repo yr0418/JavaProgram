@@ -19,4 +19,6 @@ public class StudyInfoService {
     public int setLeftSizeDecrease(Long id){
         return studyInfoMapper.setLeftSizeDecrease(id);
     }
+
+    public int getLeftSize(Long id){ return studyInfoMapper.getLeftSize(id); }
 }

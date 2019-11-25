@@ -30,4 +30,8 @@
         update study_info set left_size = left_size - 1 where id = #{id}
     </update>
 
+
+  <select id="getLeftSize" resultType="int">
+        select left_size from study_info where id = #{id}
+    </select>
 </mapper>
