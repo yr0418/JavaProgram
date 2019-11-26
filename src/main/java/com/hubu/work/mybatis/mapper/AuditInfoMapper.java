@@ -21,4 +21,12 @@ public interface AuditInfoMapper extends CustomMapper<AuditInfo> {
    * @return int
    */
   int getAuditInfoCountWithReceive(@Param("username") String username);
+
+  /**
+   * 查询用户接收到的申请信息中未读消息的数量
+   *
+   * @param username 用户名
+   * @return int
+   */
+  int getAuditInfoCountWithReceiveAndUnread(@Param("username") String username);
 }

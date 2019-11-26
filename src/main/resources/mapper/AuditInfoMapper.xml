@@ -18,5 +18,11 @@
       receiver = #{username}
     </where>
   </select>
+  <select id="getAuditInfoCountWithReceiveAndUnread" resultType="int">
+    select count (*) from audit_info
+    <where>
+      audit_status = 0 and receiver = #{username}
+    </where>
+  </select>
 
 </mapper>
