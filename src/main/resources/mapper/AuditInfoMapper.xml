@@ -24,5 +24,8 @@
       audit_status = 0 and receiver = #{username}
     </where>
   </select>
+  <select id="getAuditInfoCountWithSend" resultType="int">
+        select count (*) from audit_info where sender = #{username}
+    </select>
 
 </mapper>

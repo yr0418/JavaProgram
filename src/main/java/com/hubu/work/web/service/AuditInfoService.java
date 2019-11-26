@@ -24,6 +24,8 @@ public class AuditInfoService extends BaseService<AuditInfo> {
     return auditInfoMapper.getAuditInfoCountWithReceive(username); }
   public int getAuditInfoCountWithReceiveAndUnread(String username){
     return auditInfoMapper.getAuditInfoCountWithReceiveAndUnread(username); }
+  public int getAuditInfoCountWithSend(String username){
+    return auditInfoMapper.getAuditInfoCountWithSend(username); }
 
 
 }
