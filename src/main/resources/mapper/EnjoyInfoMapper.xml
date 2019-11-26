@@ -31,5 +31,13 @@
   <select id="getLeftSize" resultType="int">
         select left_size from enjoy_info where id = #{id}
     </select>
-
+  <select id="getEnjoyInfo" resultMap="BaseResultMap">
+    select * from enjoy_info
+    <where>
+      <if test="city != null and city != ''">
+        user_city = #{city}
+      </if>
+    </where>
+    order by id desc
+  </select>
 </mapper>
