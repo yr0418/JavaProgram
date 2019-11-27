@@ -33,4 +33,10 @@ public interface EnjoyInfoMapper extends CustomMapper<EnjoyInfo>{
      * @return Page
      */
     Page<EnjoyInfo> getEnjoyInfo(@Param("city") String city);
+    /**
+     * 获取用户发布的组队玩乐信息
+     * @param username 用户名
+     * @return Page
+     */
+    Page<EnjoyInfo> getEnjoyInfoWithUserIssue(@Param("username") String username);
 }

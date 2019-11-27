@@ -23,10 +23,14 @@ public class EnjoyInfoSevice extends BaseService<EnjoyInfo> {
     EnjoyInfoMapper enjoyInfoMapper;
 
 
-    public int unValid(Long id){
-        return enjoyInfoMapper.unValid(id);
-    }
-    public int setLeftSizeDecrease(Long id){ return enjoyInfoMapper.setLeftSizeDecrease(id); }
-    public int getLeftSize(Long id){ return enjoyInfoMapper.getLeftSize(id); }
-    public Page<EnjoyInfo> getEnjoyInfo(String city){ return enjoyInfoMapper.getEnjoyInfo(city); }
+    public int unValid(Long id)
+    { return enjoyInfoMapper.unValid(id); }
+    public int setLeftSizeDecrease(Long id)
+    { return enjoyInfoMapper.setLeftSizeDecrease(id); }
+    public int getLeftSize(Long id)
+    { return enjoyInfoMapper.getLeftSize(id); }
+    public Page<EnjoyInfo> getEnjoyInfo(String city)
+    { return enjoyInfoMapper.getEnjoyInfo(city); }
+    public Page<EnjoyInfo> getEnjoyInfoWithUserIssue(String username)
+    { return enjoyInfoMapper.getEnjoyInfoWithUserIssue(username); }
 }

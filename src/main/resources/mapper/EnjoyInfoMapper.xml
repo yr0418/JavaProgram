@@ -40,4 +40,12 @@
     </where>
     order by id desc
   </select>
+
+  <select id="getEnjoyInfoWithUserIssue" resultMap="BaseResultMap">
+    select * from enjoy_info
+    <where>
+      username = #{username}
+    </where>
+    order by id desc
+  </select>
 </mapper>
