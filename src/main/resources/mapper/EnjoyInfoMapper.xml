@@ -48,4 +48,14 @@
     </where>
     order by id desc
   </select>
+  <select id="getEnjoyInfoWithUserAttend" resultMap="BaseResultMap">
+    select * from enjoy_info
+    <where>
+      id in
+      <foreach item="item" index="index" collection="ids" open="(" separator="," close=") ">
+        #{item}
+      </foreach>
+    </where>
+    order by id desc
+  </select>
 </mapper>

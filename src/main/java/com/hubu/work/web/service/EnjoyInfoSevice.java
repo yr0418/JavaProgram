@@ -33,4 +33,6 @@ public class EnjoyInfoSevice extends BaseService<EnjoyInfo> {
     { return enjoyInfoMapper.getEnjoyInfo(city); }
     public Page<EnjoyInfo> getEnjoyInfoWithUserIssue(String username)
     { return enjoyInfoMapper.getEnjoyInfoWithUserIssue(username); }
+    public Page<EnjoyInfo> getEnjoyInfoWithUserAttend(List<Integer> ids)
+    { return enjoyInfoMapper.getEnjoyInfoWithUserAttend(ids); }
 }
