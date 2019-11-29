@@ -34,4 +34,12 @@
   <select id="getLeftSize" resultType="int">
         select left_size from study_info where id = #{id}
     </select>
+
+  <select id="getStudyInfoWithType2" resultMap="BaseResultMap">
+    select * from study_info
+    <where>
+      type = 2
+    </where>
+    order by id desc
+  </select>
 </mapper>
