@@ -5,6 +5,8 @@ import com.hubu.work.mybatis.bean.QueryInfo;
 import com.hubu.work.mybatis.pojo.StudyInfo;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 public interface StudyInfoMapper {
     /**
      * 根据主键，设置组队学习信息失效
@@ -46,4 +48,11 @@ public interface StudyInfoMapper {
      * @return Page
      */
     Page<StudyInfo> getStudyInfoWithUserIssue(@Param("username") String username);
+
+    /**
+     * 查询用户参加的组队学习信息
+     * @param ids 主键集
+     * @return Page
+     */
+    Page<StudyInfo> getStudyInfoWithUserAttend(@Param("ids") List<Integer> ids);
 }

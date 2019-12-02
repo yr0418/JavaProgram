@@ -72,4 +72,12 @@
     </where>
     order by id desc
   </select>
+
+  <select id="getStudyInfoWithUserAttend" resultMap="BaseResultMap">
+    select * from study_info where id in
+    <foreach item="item" index="index" collection="ids" open="(" separator="," close=") ">
+      #{item}
+    </foreach>
+    order by id desc
+  </select>
 </mapper>

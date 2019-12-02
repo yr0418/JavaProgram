@@ -7,6 +7,8 @@ import com.hubu.work.mybatis.pojo.StudyInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @moduleName: StudyInfoService
  * @description: StudyInfo  对应的 Service 层
@@ -30,5 +32,7 @@ public class StudyInfoService {
     public Page<StudyInfo> selectStudyInfoWithQueryInfo(QueryInfo queryInfo){ return studyInfoMapper.selectStudyInfoWithQueryInfo(queryInfo); }
 
     public Page<StudyInfo> getStudyInfoWithUserIssue(String username){ return studyInfoMapper.getStudyInfoWithUserIssue(username); }
+
+    public Page<StudyInfo> getStudyInfoWithUserAttend(List<Integer> ids){ return studyInfoMapper.getStudyInfoWithUserAttend(ids); }
 
 }
