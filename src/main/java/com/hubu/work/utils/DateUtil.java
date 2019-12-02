@@ -15,7 +15,7 @@ import java.util.Date;
  **/
 @Component
 public class DateUtil {
-  private static final String DATA_FORMAT = "yyyy-MM-dd";
+  private static final String DATA_FORMAT = "yyyy-MM-dd  HH:mm";
 
   /**
    * 获取当前系统时间

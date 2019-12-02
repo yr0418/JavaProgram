@@ -64,7 +64,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
     MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
     ObjectMapper mapper = new ObjectMapper();
     mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-    mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd"));
+    mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm"));
     converter.setObjectMapper(mapper);
     return converter;
   }

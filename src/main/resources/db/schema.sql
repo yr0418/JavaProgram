@@ -33,11 +33,11 @@ CREATE TABLE `enjoy_info`
     `action_name`  varchar(255) default null,
     `label`        varchar(255) DEFAULT NULL,
     `sex_specific` int(10)      DEFAULT NULL,
-    `time`         datetime     DEFAULT NULL,
+    `time`         varchar     DEFAULT NULL,
     `site`         varchar(255) DEFAULT NULL,
     `max_member`   int(10)      DEFAULT NULL,
-    `left_size`  int(10)      DEFAULT NULL,
-    `date`         date         default null,
+    `left_size`    int(10)      DEFAULT NULL,
+    `date`         datetime         default null,
     `ps`           varchar(255) DEFAULT NULL,
     `valid`        int(11)      DEFAULT NULL,
     PRIMARY KEY (`id`)
@@ -56,7 +56,7 @@ CREATE TABLE `study_info`
     `site`         varchar(255) DEFAULT NULL,
     `max_member`   int(10)      DEFAULT NULL,
     `left_size`  int(10)      DEFAULT NULL,
-    `date`         date         default null,
+    `date`         datetime         default null,
     `ps`           varchar(255) DEFAULT NULL,
     `valid`        int(10)      DEFAULT NULL,
     PRIMARY KEY (`id`)
