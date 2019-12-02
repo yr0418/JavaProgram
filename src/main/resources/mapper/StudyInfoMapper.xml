@@ -64,4 +64,12 @@
     </where>
     order by id desc
   </select>
+
+  <select id="getStudyInfoWithUserIssue" resultMap="BaseResultMap">
+    select * from study_info
+    <where>
+      username = #{username}
+    </where>
+    order by id desc
+  </select>
 </mapper>

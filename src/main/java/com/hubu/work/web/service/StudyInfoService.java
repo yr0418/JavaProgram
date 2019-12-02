@@ -28,4 +28,7 @@ public class StudyInfoService {
     public Page<StudyInfo> getStudyInfoWithType2(){ return studyInfoMapper.getStudyInfoWithType2(); }
 
     public Page<StudyInfo> selectStudyInfoWithQueryInfo(QueryInfo queryInfo){ return studyInfoMapper.selectStudyInfoWithQueryInfo(queryInfo); }
+
+    public Page<StudyInfo> getStudyInfoWithUserIssue(String username){ return studyInfoMapper.getStudyInfoWithUserIssue(username); }
+
 }

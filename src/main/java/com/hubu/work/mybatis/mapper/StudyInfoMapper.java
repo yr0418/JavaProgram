@@ -39,4 +39,11 @@ public interface StudyInfoMapper {
      * @return Page<StudyInfo>
      */
     Page<StudyInfo> selectStudyInfoWithQueryInfo(QueryInfo queryInfo);
+
+    /**
+     * 查询用户发布的组队学习信息
+     * @param username 用户名
+     * @return Page
+     */
+    Page<StudyInfo> getStudyInfoWithUserIssue(@Param("username") String username);
 }
