@@ -1,6 +1,7 @@
 package com.hubu.work.mybatis.mapper;
 
 import com.github.pagehelper.Page;
+import com.hubu.work.mybatis.bean.QueryInfo;
 import com.hubu.work.mybatis.pojo.StudyInfo;
 import org.apache.ibatis.annotations.Param;
 
@@ -31,4 +32,11 @@ public interface StudyInfoMapper {
      * @return Page<StudyInfo>
      */
     Page<StudyInfo> getStudyInfoWithType2();
+
+    /**
+     * 根据查询条件查询组队学习信息
+     * @param queryInfo 封装查询条件
+     * @return Page<StudyInfo>
+     */
+    Page<StudyInfo> selectStudyInfoWithQueryInfo(QueryInfo queryInfo);
 }

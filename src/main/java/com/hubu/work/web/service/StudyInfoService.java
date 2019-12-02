@@ -1,6 +1,7 @@
 package com.hubu.work.web.service;
 
 import com.github.pagehelper.Page;
+import com.hubu.work.mybatis.bean.QueryInfo;
 import com.hubu.work.mybatis.mapper.StudyInfoMapper;
 import com.hubu.work.mybatis.pojo.StudyInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,4 +26,6 @@ public class StudyInfoService {
     public int getLeftSize(Long id){ return studyInfoMapper.getLeftSize(id); }
 
     public Page<StudyInfo> getStudyInfoWithType2(){ return studyInfoMapper.getStudyInfoWithType2(); }
+
+    public Page<StudyInfo> selectStudyInfoWithQueryInfo(QueryInfo queryInfo){ return studyInfoMapper.selectStudyInfoWithQueryInfo(queryInfo); }
 }

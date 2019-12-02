@@ -42,4 +42,26 @@
     </where>
     order by id desc
   </select>
+
+  <select id="selectStudyInfoWithQueryInfo" resultMap="BaseResultMap">
+    select * from study_info
+    <where>
+      <if test=' type == "1" '>
+        type = 1 and user_school = #{userSchool}
+      </if>
+      <if test=' type == "2" '>
+        and type = 2
+      </if>
+      <if test="label != null and label != ''">
+        and label = #{label}
+      </if>
+      <if test="maxMember > 0">
+        and max_member = #{maxMember}
+      </if>
+      <if test=' valid == "1" '>
+        and valid = 1
+      </if>
+    </where>
+    order by id desc
+  </select>
 </mapper>
