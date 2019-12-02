@@ -27,5 +27,8 @@
   <select id="getAuditInfoCountWithSend" resultType="int">
         select count (*) from audit_info where sender = #{username}
     </select>
+  <select id="selectAuditInfoWithReceiveAndUnread" resultMap="BaseResultMap">
+    select * from audit_info where receiver = #{username} and audit_status = 0 order by id desc
+    </select>
 
 </mapper>
