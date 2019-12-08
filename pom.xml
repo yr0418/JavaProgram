@@ -54,6 +54,7 @@
       <version>1.1.9</version>
     </dependency>
 
+    <!--h2 数据库驱动-->
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>

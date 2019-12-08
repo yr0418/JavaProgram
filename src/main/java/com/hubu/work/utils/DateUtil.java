@@ -15,6 +15,9 @@ import java.util.Date;
  **/
 @Component
 public class DateUtil {
+  /**
+   * 同一时间的格式
+   */
   private static final String DATA_FORMAT = "yyyy-MM-dd  HH:mm";
 
   /**

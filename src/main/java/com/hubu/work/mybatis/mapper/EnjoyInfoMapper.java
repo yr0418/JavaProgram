@@ -8,7 +8,13 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface EnjoyInfoMapper extends CustomMapper<EnjoyInfo>{
+/**
+ * @moduleName: EnjoyInfoMapper
+ * @description: EnjoyInfo 对应的 mapper 层
+ *
+ * @author: 胡嘉兵
+ */
+public interface EnjoyInfoMapper extends CustomMapper<EnjoyInfo> {
     /**
      * 设置 valid 值为 0，组队信息失效
      * @param id 主键值
@@ -45,4 +51,11 @@ public interface EnjoyInfoMapper extends CustomMapper<EnjoyInfo>{
      * @return Page
      */
     Page<EnjoyInfo> getEnjoyInfoWithUserAttend(@Param("ids") List<Integer> ids);
+
+    /**
+     * 根据查询条件查询用户发布的组队玩乐信息
+     * @param queryInfo 封装查询条件
+     * @return Page
+     */
+    Page<EnjoyInfo> selectEnjoyInfoWithQueryInfo(QueryInfo queryInfo);
 }

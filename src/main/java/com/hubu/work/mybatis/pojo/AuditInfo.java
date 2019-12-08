@@ -3,10 +3,10 @@ package com.hubu.work.mybatis.pojo;
 import javax.persistence.Id;
 
 /**
- * @moduleName AuditInfo
- * @description 封装申请组队信息
+ * @moduleName: AuditInfo
+ * @description: 封装申请组队信息
  *
- * @Author 刘旭山
+ * @author: 刘旭山
  */
 public class AuditInfo {
     @Id

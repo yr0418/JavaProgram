@@ -1,13 +1,20 @@
 package com.hubu.work.mybatis.mapper;
 
 import com.github.pagehelper.Page;
+import com.hubu.work.mybatis.CustomMapper;
 import com.hubu.work.mybatis.bean.QueryInfo;
 import com.hubu.work.mybatis.pojo.StudyInfo;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface StudyInfoMapper {
+/**
+ * @moduleName: StudyInfoMapper
+ * @description: StudyInfo 对应的 mapper层
+ * @author: 刘江
+ */
+public interface StudyInfoMapper extends CustomMapper<StudyInfo> {
+
     /**
      * 根据主键，设置组队学习信息失效
      * @param id 主键
@@ -28,6 +35,13 @@ public interface StudyInfoMapper {
      * @return 剩余人数
      */
     int getLeftSize(Long id);
+
+    /**
+     * 查询最新发布的，与用户所在学校相同的线下组队学习
+     * @param school 用户所在的学校
+     * @return Page<StudyInfo>
+     */
+    Page<StudyInfo> getStudyInfoWithType1AndSchool(@Param("school") String school);
 
     /**
      * 查询最新发布的线上学习模式
@@ -55,4 +69,6 @@ public interface StudyInfoMapper {
      * @return Page
      */
     Page<StudyInfo> getStudyInfoWithUserAttend(@Param("ids") List<Integer> ids);
+
+
 }

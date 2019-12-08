@@ -64,6 +64,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
     MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
     ObjectMapper mapper = new ObjectMapper();
     mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    //设定时间的格式为：yyyy-MM-dd HH:mm
     mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm"));
     converter.setObjectMapper(mapper);
     return converter;
