@@ -2,12 +2,11 @@ package com.hubu.work.mybatis.pojo;
 
 import javax.persistence.Id;
 import java.util.Date;
-
 /**
- * @moduleName: EnjoyInfo
- * @description: 封装玩乐信息
+ * @moduleName EnjoyInfo
+ * @description 封装申请组队玩乐信息
  *
- * @author: 杨睿
+ * @Author 胡嘉兵
  */
 public class EnjoyInfo {
     @Id
