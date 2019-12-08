@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * @moduleName AuditInfoController
  * @description Audit_info 对应的控制器，提供处理申请消息的API
- * @Author 杨睿
+ * @Author 刘旭山
  * @since 2019-10-10 14:40
  **/
 @RestController
@@ -29,33 +29,5 @@ public class AuditInfoController extends BaseController<AuditInfo> {
   @Autowired
   AuditInfoService auditInfoService;
 
-  @Override
-  public int insert(@RequestBody AuditInfo auditInfo){
-    auditInfo.setDate(dateUtil.setTime());
-    auditInfo.setAuditStatus(0);
-    auditInfo.setAuditResult(0);
-    return auditInfoService.insert(auditInfo);
-  }
 
-  @ApiOperation(value = "获取用户接收到的用户申请信息")
-  @GetMapping(value = "getAuditInfoWithReceived")
-  public List<AuditInfo> getAuditInfoWithReceived(String username){
-    List<AuditInfo> list1 = auditInfoService.selectAuditInfoWithReceiveAndUnread(username);
-    List<AuditInfo> list2 = auditInfoService.selectAuditInfoWithReceiveAndRead(username);
-    List<AuditInfo> result = new ArrayList<>();
-    result.addAll(list1);
-    result.addAll(list2);
-    return result;
-  }
-
-  @ApiOperation(value = "获取用户发送的入队申请信息")
-  @GetMapping(value = "getAuditInfoWithSend")
-  public List<AuditInfo> getAuditInfoWithSend(String username){
-    List<AuditInfo> list1 = auditInfoService.selectAuditInfoWithSendAndRead(username);
-    List<AuditInfo> list2 = auditInfoService.selectAuditInfoWithSendAndUnread(username);
-    List<AuditInfo> result = new ArrayList<>();
-    result.addAll(list1);
-    result.addAll(list2);
-    return result;
-  }
 }

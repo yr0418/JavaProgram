@@ -6,7 +6,7 @@ import javax.persistence.Id;
  * @moduleName AuditInfo
  * @description 封装申请组队信息
  *
- * @Author 杨睿
+ * @Author 刘旭山
  */
 public class AuditInfo {
     @Id
