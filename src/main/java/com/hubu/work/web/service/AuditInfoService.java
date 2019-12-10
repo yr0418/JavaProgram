@@ -32,4 +32,6 @@ public class AuditInfoService extends BaseService<AuditInfo> {
     return auditInfoMapper.selectAuditInfoWithReceiveAndRead(username); }
   public List<AuditInfo> selectAuditInfoWithSendAndUnread(String username){
     return auditInfoMapper.selectAuditInfoWithSendAndUnread(username); }
+  public List<AuditInfo> selectAuditInfoWithSendAndRead(String username){
+    return auditInfoMapper.selectAuditInfoWithSendAndRead(username); }
 }

@@ -3773,3 +3773,57 @@ update audit_info set audit_state = 1 , audit_result = ? where id = ? [42122-199
 2019-10-28 11:27:12.712 DEBUG 11324 --- [http-nio-8888-exec-4] c.h.w.m.mapper.EnjoyInfoMapper.unValid   : ==> Parameters: 1(Long)
 2019-10-28 11:27:12.712 DEBUG 11324 --- [http-nio-8888-exec-4] c.h.w.m.mapper.EnjoyInfoMapper.unValid   : <==    Updates: 1
 2019-10-28 11:27:12.712  INFO 11324 --- [http-nio-8888-exec-4] c.hubu.work.utils.ControllerTimerAspect  : method: int com.hubu.work.web.controller.EnjoyInfoController.withDraw(Long,String) cost:11ms
+2019-11-21 22:15:08.424  INFO 15392 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on LAPTOP-AU76FG63 with PID 15392 (D:\JavaProgram\JavaProgram\target\classes started by hh in D:\JavaProgram\JavaProgram)
+2019-11-21 22:15:08.426 DEBUG 15392 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 22:15:08.426  INFO 15392 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-11-21 22:15:08.516  INFO 15392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 22:15:08.516  INFO 15392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 22:15:11.332  WARN 15392 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-11-21 22:15:11.423  WARN 15392 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hubu.work]' package. Please check your configuration.
+2019-11-21 22:15:12.381  INFO 15392 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$23973c68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-21 22:15:13.663  INFO 15392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-11-21 22:15:13.714  INFO 15392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 22:15:13.714  INFO 15392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-21 22:15:13.986  INFO 15392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 22:15:13.986  INFO 15392 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5470 ms
+2019-11-21 22:15:14.338  INFO 15392 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-11-21 22:15:14.347  INFO 15392 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-11-21 22:15:14.651  INFO 15392 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-21 22:15:14.897 ERROR 15392 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-11-21 22:15:14.897  INFO 15392 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-21 22:15:15.292  INFO 15392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 22:15:16.908  INFO 15392 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-21 22:15:17.269  INFO 15392 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-11-21 22:15:17.271  INFO 15392 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-11-21 22:15:17.272  INFO 15392 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-11-21 22:15:17.273  INFO 15392 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2019-11-21 22:15:17.544  WARN 15392 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-11-21 22:15:17.809  INFO 15392 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-21 22:15:17.825  INFO 15392 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-21 22:15:17.872  INFO 15392 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-21 22:15:18.736  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2019-11-21 22:15:18.736  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_1
+2019-11-21 22:15:18.736  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_1
+2019-11-21 22:15:18.752  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-11-21 22:15:18.752  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_1
+2019-11-21 22:15:18.752  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-21 22:15:18.767  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2019-11-21 22:15:18.767  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_2
+2019-11-21 22:15:18.767  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_2
+2019-11-21 22:15:18.783  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_2
+2019-11-21 22:15:18.783  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_2
+2019-11-21 22:15:18.783  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2019-11-21 22:15:18.798  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2019-11-21 22:15:18.798  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_3
+2019-11-21 22:15:18.814  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_3
+2019-11-21 22:15:18.830  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_3
+2019-11-21 22:15:18.830  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_3
+2019-11-21 22:15:18.830  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2019-11-21 22:15:18.845  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_4
+2019-11-21 22:15:18.845  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteByIdUsingDELETE_4
+2019-11-21 22:15:18.861  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPUT_4
+2019-11-21 22:15:18.876  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_4
+2019-11-21 22:15:18.876  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectByIdUsingPOST_4
+2019-11-21 22:15:18.876  INFO 15392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2019-11-21 22:15:18.970  INFO 15392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-11-21 22:15:18.970  INFO 15392 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 12.484 seconds (JVM running for 19.972)

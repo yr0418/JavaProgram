@@ -36,6 +36,8 @@
   <select id="selectAuditInfoWithSendAndUnread" resultMap="BaseResultMap">
     select * from audit_info where sender = #{username} and audit_status = 0 order by id desc
     </select>
-
+  <select id="selectAuditInfoWithSendAndRead" resultMap="BaseResultMap">
+    select * from audit_info where sender = #{username} and audit_status = 1 order by id desc
+     </select>
 
 </mapper>
