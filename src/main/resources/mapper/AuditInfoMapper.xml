@@ -63,4 +63,11 @@
       action_id = #{id} and audit_status = 0 and action_type = 3
     </where>
   </update>
+
+  <select id="getSenderWithEnjoyInfoNotValid" resultType="java.lang.String">
+    select sender from audit_info
+    <where>
+      action_id = #{id} and audit_status = 0 and action_type = 3
+    </where>
+  </select>
 </mapper>
