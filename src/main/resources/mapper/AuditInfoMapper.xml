@@ -39,5 +39,13 @@
   <select id="selectAuditInfoWithSendAndRead" resultMap="BaseResultMap">
     select * from audit_info where sender = #{username} and audit_status = 1 order by id desc
      </select>
-
+  <update id="updateAuditInfoWithStudyInfoNotValid">
+    update audit_info
+    <set>
+      audit_status = 1 and audit_result = 0
+    </set>
+    <where>
+      action_id = #{id} and audit_status = 0 and action_type = 1 or action_type = 2
+    </where>
+  </update>
 </mapper>

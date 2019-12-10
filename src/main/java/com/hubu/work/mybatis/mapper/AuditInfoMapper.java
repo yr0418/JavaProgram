@@ -67,4 +67,11 @@ public interface AuditInfoMapper extends CustomMapper<AuditInfo> {
    * @return List
    */
   List<AuditInfo> selectAuditInfoWithSendAndRead(@Param("username") String username);
+  /**
+   * 更新申请信息的状态，当申请的组队学习活动被撤销时，修改未审核的申请信息为 “已审核”，“申请失败”
+   *
+   * @param id 组队学习活动的id
+   * @return 影响的行数
+   */
+  int updateAuditInfoWithStudyInfoNotValid(Long id);
 }
