@@ -74,4 +74,15 @@ public interface AuditInfoMapper extends CustomMapper<AuditInfo> {
    * @return 影响的行数
    */
   int updateAuditInfoWithStudyInfoNotValid(Long id);
+
+  /**
+   * 当申请的组队学习活动被撤销时，获取申请该活动且申请未审核的用户集合
+   *
+   * @param id 组队学习活动的id
+   * @return List
+   */
+  List<String> getSenderWithStudyInfoNotValid(Long id);
+  public int updateAuditInfoWithEnjoyInfoNotValid(Long id){
+    return auditInfoMapper.updateAuditInfoWithEnjoyInfoNotValid(id);
+  }
 }
