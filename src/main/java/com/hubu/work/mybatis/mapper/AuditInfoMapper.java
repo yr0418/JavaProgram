@@ -98,4 +98,11 @@ public interface AuditInfoMapper extends CustomMapper<AuditInfo> {
    * @return List
    */
   List<String> getSenderWithEnjoyInfoNotValid(Long id);
+  /**
+   * 修改申请信息的申请审核结果
+   *
+   * @param result 申请审核结果
+   * @param id 申请消息的id
+   * @return 影响的行数
+   */
 }

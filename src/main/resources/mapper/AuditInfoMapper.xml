@@ -69,5 +69,7 @@
     <where>
       action_id = #{id} and audit_status = 0 and action_type = 3
     </where>
-  </select>
+  </select> <update id="readAuditInfo">
+        update audit_info set audit_status = 1 , audit_result = #{result} where id = #{id}
+    </update>
 </mapper>
