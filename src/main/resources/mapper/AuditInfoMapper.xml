@@ -54,4 +54,13 @@
       action_id = #{id} and audit_status = 0 and action_type = 1 or action_type = 2
     </where>
   </select>
+  <update id="updateAuditInfoWithEnjoyInfoNotValid">
+    update audit_info
+    <set>
+      audit_status = 1 and audit_result = 0
+    </set>
+    <where>
+      action_id = #{id} and audit_status = 0 and action_type = 3
+    </where>
+  </update>
 </mapper>

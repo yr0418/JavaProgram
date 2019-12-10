@@ -35,6 +35,8 @@ public class AuditInfoService extends BaseService<AuditInfo> {
   public List<AuditInfo> selectAuditInfoWithSendAndRead(String username){
     return auditInfoMapper.selectAuditInfoWithSendAndRead(username); }
   public List<String> getSenderWithStudyInfoNotValid(Long id){
-    return auditInfoMapper.getSenderWithStudyInfoNotValid(id);
+    return auditInfoMapper.getSenderWithStudyInfoNotValid(id); }
+  public List<String> getSenderWithEnjoyInfoNotValid(Long id){
+    return auditInfoMapper.getSenderWithEnjoyInfoNotValid(id);
   }
 }

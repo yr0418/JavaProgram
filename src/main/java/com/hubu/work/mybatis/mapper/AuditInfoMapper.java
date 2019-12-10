@@ -83,6 +83,12 @@ public interface AuditInfoMapper extends CustomMapper<AuditInfo> {
    */
   List<String> getSenderWithStudyInfoNotValid(Long id);
   public int updateAuditInfoWithEnjoyInfoNotValid(Long id){
-    return auditInfoMapper.updateAuditInfoWithEnjoyInfoNotValid(id);
-  }
+    return auditInfoMapper.updateAuditInfoWithEnjoyInfoNotValid(id); }
+  /**
+   * 更新申请信息的状态，当申请的组队玩乐活动被撤销时，修改未审核的申请信息为 “已审核”，“申请失败”
+   *
+   * @param id 组队玩乐活动的id
+   * @return 影响的行数
+   */
+  int updateAuditInfoWithEnjoyInfoNotValid(Long id);
 }
