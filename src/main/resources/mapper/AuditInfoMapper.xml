@@ -30,5 +30,8 @@
   <select id="selectAuditInfoWithReceiveAndUnread" resultMap="BaseResultMap">
     select * from audit_info where receiver = #{username} and audit_status = 0 order by id desc
     </select>
+  <select id="selectAuditInfoWithReceiveAndRead" resultMap="BaseResultMap">
+    select * from audit_info where receiver = #{username} and audit_status = 1 order by id desc
+    </select>
 
 </mapper>
