@@ -40,7 +40,7 @@ public interface EnjoyInfoMapper extends CustomMapper<EnjoyInfo>{
      */
     Page<EnjoyInfo> getEnjoyInfoWithUserIssue(@Param("username") String username);
     /**
-     * 获取用户参加过的组队玩乐信息
+     *  获取用户参加过的组队玩乐信息
      * @param ids 主键的集合
      * @return Page
      */
