@@ -143,7 +143,7 @@ public class EnjoyInfoController extends BaseController<EnjoyInfo> {
                 result.add(enjoyInfo);
             }
         }
-        //初始化 result 的属性
+        //初始化 result 的属性。
         result.setPageSize(page.getPageSize());
         result.setPageNum(page.getPageNum());
         result.setTotal(page.getTotal());
