@@ -24,7 +24,6 @@ import java.util.List;
  */
 //@RestController
 //@RequestMapping(value = "userFriends")
-
 public class UserFriendsController extends BaseController<UserFriends> {
     @Autowired
     UserFriendsService userFriendsService;
